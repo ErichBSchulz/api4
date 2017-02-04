@@ -34,7 +34,7 @@ use Civi\API\V4\ReflectionUtils;
  * Get actions for an entity with a list of accepted params
  */
 class GetActions extends Action {
-  
+
   private $_actions = array();
 
   public function _run(Result $result) {
@@ -62,6 +62,7 @@ class GetActions extends Action {
   }
 
   /**
+   * Populate the `_actions` property via `loadAction()`
    * @param $dir
    */
   private function scanDir($dir) {
@@ -76,7 +77,8 @@ class GetActions extends Action {
   }
 
   /**
-   * @param $actionName
+   * Populate the `_actions[$actionName]` using the actions
+   * @param $actionName string
    */
   private function loadAction($actionName) {
     try {

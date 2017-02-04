@@ -5,8 +5,8 @@ require_once 'api4.civix.php';
 /**
  * Procedural wrapper for the OO api version 4.
  *
- * @param $entity
- * @param $action
+ * @param $entity fixme string? camel case?
+ * @param $action fixme string? camel case?
  * @param array $params
  * @return \Civi\API\Result
  */
@@ -17,17 +17,21 @@ function civicrm_api4($entity, $action, $params = array()) {
 }
 
 /**
+ * fixme: what does this do? enables DI for unit testing? anything else?
  * @param Symfony\Component\DependencyInjection\ContainerBuilder $container
  */
 function api4_civicrm_container($container) {
+  // fisme - why add the file?
   $container->addResource(new \Symfony\Component\Config\Resource\FileResource(__FILE__));
   $container->setDefinition('action_object_provider', new \Symfony\Component\DependencyInjection\Definition(
     'Civi\API\Provider\ActionObjectProvider',
     array()
   ));
+  // dispatcher method does fixme
   $container->findDefinition('dispatcher')->addMethodCall('addSubscriber',
     array(new \Symfony\Component\DependencyInjection\Reference('action_object_provider'))
   );
+  // fixme ? register to kernel
   $container->findDefinition('civi_api_kernel')->addMethodCall('registerApiProvider',
     array(new \Symfony\Component\DependencyInjection\Reference('action_object_provider'))
   );

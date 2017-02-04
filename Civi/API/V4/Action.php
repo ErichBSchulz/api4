@@ -59,9 +59,10 @@ abstract class Action implements \ArrayAccess {
    */
   protected $checkPermissions = TRUE;
 
-
   /**
    * Rarely used options.
+   * Fixme - why have options and params? best practice for using one over
+   * other?
    *
    * @var array
    */

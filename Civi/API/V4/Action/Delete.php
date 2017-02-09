@@ -28,7 +28,7 @@ namespace Civi\API\V4\Action;
 use Civi\API\Result;
 
 /**
- * Here's an idea... if we use one action to extend another, "delete" inherits all the abilities of "get"
+ * "delete" inherits all the abilities of "get"
  */
 class Delete extends Get {
 
@@ -42,6 +42,12 @@ class Delete extends Get {
     parent::run($result);
     // Then act on the result
     foreach ($result as $item) {
+      // todo confirm we need a new object
+      $bao = new $bao_name();
+      // delte it!
+      $update_result_bao = $bao->delete();
+      // trim back the junk and just get the array:
+      $updated_results[] = $this->baoToArray($update_result_bao);
       // delete it
     }
     return $result;

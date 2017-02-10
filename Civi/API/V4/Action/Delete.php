@@ -41,15 +41,17 @@ class Delete extends Get {
     }
     parent::run($result);
     // Then act on the result
+    $fixme = array();
     foreach ($result as $item) {
       // todo confirm we need a new object
       $bao = new $bao_name();
-      // delte it!
+      $bao->id = $item['id'];
+      // delete it
       $update_result_bao = $bao->delete();
       // trim back the junk and just get the array:
-      $updated_results[] = $this->baoToArray($update_result_bao);
-      // delete it
+      $fixme[] = $this->baoToArray($update_result_bao);
     }
+    $result->exchangeArray($fixme);
     return $result;
   }
 

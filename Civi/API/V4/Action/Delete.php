@@ -32,26 +32,35 @@ use Civi\API\Result;
  */
 class Delete extends Get {
 
+  /**
+   * Batch delete function
+   * @todo much of this should be abstracted out to a generic batch handler
+   */
   public function _run(Result $result) {
-    // First run the parent action (get)
+    $bao_name = $this->getBaoName();
     $this->select = array('id');
     $defaults = $this->getParamDefaults();
     if ($defaults['where'] && !array_diff_key($this->where, $defaults['where'])) {
       throw new \API_Exception('Cannot delete with no "where" paramater specified');
     }
-    parent::run($result);
+    // run the parent action (get) to get the list
+    parent::_run($result);
     // Then act on the result
-    $fixme = array();
+    $ids = array();
     foreach ($result as $item) {
       // todo confirm we need a new object
       $bao = new $bao_name();
       $bao->id = $item['id'];
       // delete it
-      $update_result_bao = $bao->delete();
-      // trim back the junk and just get the array:
-      $fixme[] = $this->baoToArray($update_result_bao);
+      $action_result = $bao->delete();
+      if ($action_result) {
+        $ids[] = $item['id'];
+      }
+      else {
+        // fixme - what happens here???
+      }
     }
-    $result->exchangeArray($fixme);
+    $result->exchangeArray($ids);
     return $result;
   }
 

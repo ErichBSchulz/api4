@@ -7,7 +7,8 @@ Design Principles
 * **TDD** - tests come first; writing the tests will inform design decisions.
 * **Clean** - leave all the legacy cruft in v3 and start with a clean slate.
 * **Consistent** - uniformity between all entities as much as possible, minimize oddities.
-* **Strict** - ditch the aliases, unique names, camelCase conversions, and alternate syntaxes. Params will only be accepted in one format.
+* **Business-oriented** - accept new business-orientied APIs that are not table oriented along the lines of Order and Payment.
+* **Strict** - ditch the aliases, non-standard entity names, camelCase conversions, and alternate syntaxes. Params will only be accepted in one format.
 * **OOP** - use classes in the \Civi namespace - minimize boilerplate via class inheritance/traits.
 * **Discoverable** - params are self-documenting through fluent style and api reflection; no undocumented params
 * **Doable** - prioritize new features based on impact and keep scope proportionate to developer capacity.

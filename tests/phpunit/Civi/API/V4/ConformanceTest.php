@@ -2,6 +2,7 @@
 namespace Civi\API\V4;
 // fixme - what am I doing wrong to need this line?
 require_once 'UnitTestCase.php';
+require_once 'MockSubscriber.php';
 use Civi\Api4\Participant;
 use Civi\Api4\Contact;
 use Civi\Test\HeadlessInterface;
@@ -93,7 +94,11 @@ class ConformanceTest extends UnitTestCase {
   }
 
   public function testConformance() {
+    // set up listener for hooks:
     $this->hookClass->setMock($this);
+    // set up listener for events:
+    $kernel = \Civi::service('civi_api_kernel');
+    $dispatcher = $kernel->getDispatcher();
     // get list of all the entities we know about and loop over them:
     $entities = Entity::get()
       ->setCheckPermissions(FALSE)

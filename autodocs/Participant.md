@@ -1,8 +1,8 @@
-#<a name='Participant.top'></a>Participant
+#<a name='top'></a>Participant
 
-##<a name='Participant.fields'></a>Participant Fields
+##<a name='fields'></a>Participant Fields
 
-###<a name='Participant.field_$field'></a>id
+###<a name='field_$field'></a>id
 
 ```
 {
@@ -21,7 +21,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>contact_id
+###<a name='field_$field'></a>contact_id
 
 ```
 {
@@ -41,7 +41,7 @@
     "FKClassName": "CRM_Contact_DAO_Contact"
 }
 ```
-###<a name='Participant.field_$field'></a>event_id
+###<a name='field_$field'></a>event_id
 
 ```
 {
@@ -61,7 +61,7 @@
     "FKClassName": "CRM_Event_DAO_Event"
 }
 ```
-###<a name='Participant.field_$field'></a>status_id
+###<a name='field_$field'></a>status_id
 
 ```
 {
@@ -90,7 +90,7 @@
     }
 }
 ```
-###<a name='Participant.field_$field'></a>role_id
+###<a name='field_$field'></a>role_id
 
 ```
 {
@@ -118,7 +118,7 @@
     }
 }
 ```
-###<a name='Participant.field_$field'></a>register_date
+###<a name='field_$field'></a>register_date
 
 ```
 {
@@ -140,7 +140,7 @@
     }
 }
 ```
-###<a name='Participant.field_$field'></a>source
+###<a name='field_$field'></a>source
 
 ```
 {
@@ -160,7 +160,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>fee_level
+###<a name='field_$field'></a>fee_level
 
 ```
 {
@@ -178,7 +178,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>is_test
+###<a name='field_$field'></a>is_test
 
 ```
 {
@@ -195,7 +195,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>is_pay_later
+###<a name='field_$field'></a>is_pay_later
 
 ```
 {
@@ -212,7 +212,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>fee_amount
+###<a name='field_$field'></a>fee_amount
 
 ```
 {
@@ -234,7 +234,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>registered_by_id
+###<a name='field_$field'></a>registered_by_id
 
 ```
 {
@@ -254,7 +254,7 @@
     "FKClassName": "CRM_Event_DAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>discount_id
+###<a name='field_$field'></a>discount_id
 
 ```
 {
@@ -269,7 +269,7 @@
     "FKClassName": "CRM_Core_DAO_Discount"
 }
 ```
-###<a name='Participant.field_$field'></a>fee_currency
+###<a name='field_$field'></a>fee_currency
 
 ```
 {
@@ -299,7 +299,7 @@
     }
 }
 ```
-###<a name='Participant.field_$field'></a>campaign_id
+###<a name='field_$field'></a>campaign_id
 
 ```
 {
@@ -323,7 +323,7 @@
     }
 }
 ```
-###<a name='Participant.field_$field'></a>discount_amount
+###<a name='field_$field'></a>discount_amount
 
 ```
 {
@@ -336,7 +336,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>cart_id
+###<a name='field_$field'></a>cart_id
 
 ```
 {
@@ -350,7 +350,7 @@
     "FKClassName": "CRM_Event_Cart_DAO_Cart"
 }
 ```
-###<a name='Participant.field_$field'></a>must_wait
+###<a name='field_$field'></a>must_wait
 
 ```
 {
@@ -363,7 +363,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='Participant.field_$field'></a>transferred_to_contact_id
+###<a name='field_$field'></a>transferred_to_contact_id
 
 ```
 {
@@ -383,11 +383,11 @@
     "FKClassName": "CRM_Contact_DAO_Contact"
 }
 ```
-##<a name='Participant.action_get'></a>Action Participant.get
+##<a name='action_get'></a>Action Participant.get
 
 Base class for all get actions.: 
 
-##<a name='Participant.action_get_params'></a>Params
+##<a name='action_get_params'></a>Params
 
 * **where** (`array`: `[["is_test","=",0]]`)
   Array of conditions keyed by field.
@@ -409,11 +409,11 @@ Base class for all get actions.:
   Rarely used options.
 ### Participant.get hook calls: 
 ### Participant.get events
-##<a name='Participant.action_create'></a>Action Participant.create
+##<a name='action_create'></a>Action Participant.create
 
 Base class for all create actions.: 
 
-##<a name='Participant.action_create_params'></a>Params
+##<a name='action_create_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -429,11 +429,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Participant.create hook calls: 
 ### Participant.create events
-##<a name='Participant.action_delete'></a>Action Participant.delete
+##<a name='action_delete'></a>Action Participant.delete
 
 "delete" inherits all the abilities of "get": 
 
-##<a name='Participant.action_delete_params'></a>Params
+##<a name='action_delete_params'></a>Params
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -455,11 +455,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Participant.delete hook calls: 
 ### Participant.delete events
-##<a name='Participant.action_getActions'></a>Action Participant.getActions
+##<a name='action_getActions'></a>Action Participant.getActions
 
 Get actions for an entity with a list of accepted params: 
 
-##<a name='Participant.action_getActions_params'></a>Params
+##<a name='action_getActions_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -471,11 +471,11 @@ Get actions for an entity with a list of accepted params:
   Rarely used options.
 ### Participant.getActions hook calls: 
 ### Participant.getActions events
-##<a name='Participant.action_getFields'></a>Action Participant.getFields
+##<a name='action_getFields'></a>Action Participant.getFields
 
 Get fields for an entity: 
 
-##<a name='Participant.action_getFields_params'></a>Params
+##<a name='action_getFields_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -487,11 +487,11 @@ Get fields for an entity:
   Rarely used options.
 ### Participant.getFields hook calls: 
 ### Participant.getFields events
-##<a name='Participant.action_update'></a>Action Participant.update
+##<a name='action_update'></a>Action Participant.update
 
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
 
-##<a name='Participant.action_update_params'></a>Params
+##<a name='action_update_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set

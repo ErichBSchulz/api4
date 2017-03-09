@@ -1,10 +1,10 @@
-#<a name='Entity.top'></a>Entity
+#<a name='top'></a>Entity
 
-##<a name='Entity.action_get'></a>Action Entity.get
+##<a name='action_get'></a>Action Entity.get
 
 Get entities: 
 
-##<a name='Entity.action_get_params'></a>Params
+##<a name='action_get_params'></a>Params
 
 * **version** (`int`: `4`)
   Api version number; cannot be changed.
@@ -16,11 +16,11 @@ Get entities:
   Rarely used options.
 ### Entity.get hook calls: 
 ### Entity.get events
-##<a name='Entity.action_getActions'></a>Action Entity.getActions
+##<a name='action_getActions'></a>Action Entity.getActions
 
 Get actions for an entity with a list of accepted params: 
 
-##<a name='Entity.action_getActions_params'></a>Params
+##<a name='action_getActions_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??

@@ -1,8 +1,8 @@
-#<a name='Event.top'></a>Event
+#<a name='top'></a>Event
 
-##<a name='Event.fields'></a>Event Fields
+##<a name='fields'></a>Event Fields
 
-###<a name='Event.field_$field'></a>id
+###<a name='field_$field'></a>id
 
 ```
 {
@@ -16,7 +16,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='Event.field_$field'></a>title
+###<a name='field_$field'></a>title
 
 ```
 {
@@ -39,7 +39,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>summary
+###<a name='field_$field'></a>summary
 
 ```
 {
@@ -57,7 +57,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>description
+###<a name='field_$field'></a>description
 
 ```
 {
@@ -75,7 +75,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>event_type_id
+###<a name='field_$field'></a>event_type_id
 
 ```
 {
@@ -95,7 +95,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>participant_listing_id
+###<a name='field_$field'></a>participant_listing_id
 
 ```
 {
@@ -115,7 +115,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_public
+###<a name='field_$field'></a>is_public
 
 ```
 {
@@ -132,7 +132,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>start_date
+###<a name='field_$field'></a>start_date
 
 ```
 {
@@ -153,7 +153,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>end_date
+###<a name='field_$field'></a>end_date
 
 ```
 {
@@ -174,7 +174,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_online_registration
+###<a name='field_$field'></a>is_online_registration
 
 ```
 {
@@ -190,7 +190,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>registration_link_text
+###<a name='field_$field'></a>registration_link_text
 
 ```
 {
@@ -208,7 +208,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>registration_start_date
+###<a name='field_$field'></a>registration_start_date
 
 ```
 {
@@ -224,7 +224,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>registration_end_date
+###<a name='field_$field'></a>registration_end_date
 
 ```
 {
@@ -240,7 +240,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>max_participants
+###<a name='field_$field'></a>max_participants
 
 ```
 {
@@ -257,7 +257,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>event_full_text
+###<a name='field_$field'></a>event_full_text
 
 ```
 {
@@ -275,7 +275,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_monetary
+###<a name='field_$field'></a>is_monetary
 
 ```
 {
@@ -291,7 +291,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>financial_type_id
+###<a name='field_$field'></a>financial_type_id
 
 ```
 {
@@ -313,7 +313,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>payment_processor
+###<a name='field_$field'></a>payment_processor
 
 ```
 {
@@ -336,7 +336,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_map
+###<a name='field_$field'></a>is_map
 
 ```
 {
@@ -352,7 +352,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_active
+###<a name='field_$field'></a>is_active
 
 ```
 {
@@ -368,7 +368,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>fee_label
+###<a name='field_$field'></a>fee_label
 
 ```
 {
@@ -390,7 +390,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_show_location
+###<a name='field_$field'></a>is_show_location
 
 ```
 {
@@ -407,7 +407,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>loc_block_id
+###<a name='field_$field'></a>loc_block_id
 
 ```
 {
@@ -421,7 +421,7 @@
     "FKClassName": "CRM_Core_DAO_LocBlock"
 }
 ```
-###<a name='Event.field_$field'></a>default_role_id
+###<a name='field_$field'></a>default_role_id
 
 ```
 {
@@ -447,7 +447,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>intro_text
+###<a name='field_$field'></a>intro_text
 
 ```
 {
@@ -465,7 +465,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>footer_text
+###<a name='field_$field'></a>footer_text
 
 ```
 {
@@ -483,7 +483,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>confirm_title
+###<a name='field_$field'></a>confirm_title
 
 ```
 {
@@ -502,7 +502,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>confirm_text
+###<a name='field_$field'></a>confirm_text
 
 ```
 {
@@ -520,7 +520,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>confirm_footer_text
+###<a name='field_$field'></a>confirm_footer_text
 
 ```
 {
@@ -538,7 +538,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_email_confirm
+###<a name='field_$field'></a>is_email_confirm
 
 ```
 {
@@ -554,7 +554,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>confirm_email_text
+###<a name='field_$field'></a>confirm_email_text
 
 ```
 {
@@ -572,7 +572,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>confirm_from_name
+###<a name='field_$field'></a>confirm_from_name
 
 ```
 {
@@ -590,7 +590,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>confirm_from_email
+###<a name='field_$field'></a>confirm_from_email
 
 ```
 {
@@ -608,7 +608,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>cc_confirm
+###<a name='field_$field'></a>cc_confirm
 
 ```
 {
@@ -626,7 +626,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>bcc_confirm
+###<a name='field_$field'></a>bcc_confirm
 
 ```
 {
@@ -644,7 +644,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>default_fee_id
+###<a name='field_$field'></a>default_fee_id
 
 ```
 {
@@ -657,7 +657,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='Event.field_$field'></a>default_discount_fee_id
+###<a name='field_$field'></a>default_discount_fee_id
 
 ```
 {
@@ -670,7 +670,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='Event.field_$field'></a>thankyou_title
+###<a name='field_$field'></a>thankyou_title
 
 ```
 {
@@ -689,7 +689,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>thankyou_text
+###<a name='field_$field'></a>thankyou_text
 
 ```
 {
@@ -707,7 +707,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>thankyou_footer_text
+###<a name='field_$field'></a>thankyou_footer_text
 
 ```
 {
@@ -725,7 +725,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_pay_later
+###<a name='field_$field'></a>is_pay_later
 
 ```
 {
@@ -741,7 +741,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>pay_later_text
+###<a name='field_$field'></a>pay_later_text
 
 ```
 {
@@ -757,7 +757,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>pay_later_receipt
+###<a name='field_$field'></a>pay_later_receipt
 
 ```
 {
@@ -773,7 +773,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_partial_payment
+###<a name='field_$field'></a>is_partial_payment
 
 ```
 {
@@ -789,7 +789,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>initial_amount_label
+###<a name='field_$field'></a>initial_amount_label
 
 ```
 {
@@ -807,7 +807,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>initial_amount_help_text
+###<a name='field_$field'></a>initial_amount_help_text
 
 ```
 {
@@ -823,7 +823,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>min_initial_amount
+###<a name='field_$field'></a>min_initial_amount
 
 ```
 {
@@ -843,7 +843,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_multiple_registrations
+###<a name='field_$field'></a>is_multiple_registrations
 
 ```
 {
@@ -859,7 +859,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>max_additional_participants
+###<a name='field_$field'></a>max_additional_participants
 
 ```
 {
@@ -872,7 +872,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='Event.field_$field'></a>allow_same_participant_emails
+###<a name='field_$field'></a>allow_same_participant_emails
 
 ```
 {
@@ -888,7 +888,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>has_waitlist
+###<a name='field_$field'></a>has_waitlist
 
 ```
 {
@@ -904,7 +904,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>requires_approval
+###<a name='field_$field'></a>requires_approval
 
 ```
 {
@@ -920,7 +920,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>expiration_time
+###<a name='field_$field'></a>expiration_time
 
 ```
 {
@@ -936,7 +936,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>allow_selfcancelxfer
+###<a name='field_$field'></a>allow_selfcancelxfer
 
 ```
 {
@@ -952,7 +952,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>selfcancelxfer_time
+###<a name='field_$field'></a>selfcancelxfer_time
 
 ```
 {
@@ -968,7 +968,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>waitlist_text
+###<a name='field_$field'></a>waitlist_text
 
 ```
 {
@@ -986,7 +986,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>approval_req_text
+###<a name='field_$field'></a>approval_req_text
 
 ```
 {
@@ -1004,7 +1004,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_template
+###<a name='field_$field'></a>is_template
 
 ```
 {
@@ -1021,7 +1021,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>template_title
+###<a name='field_$field'></a>template_title
 
 ```
 {
@@ -1044,7 +1044,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>created_id
+###<a name='field_$field'></a>created_id
 
 ```
 {
@@ -1058,7 +1058,7 @@
     "FKClassName": "CRM_Contact_DAO_Contact"
 }
 ```
-###<a name='Event.field_$field'></a>created_date
+###<a name='field_$field'></a>created_date
 
 ```
 {
@@ -1071,7 +1071,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='Event.field_$field'></a>currency
+###<a name='field_$field'></a>currency
 
 ```
 {
@@ -1100,7 +1100,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>campaign_id
+###<a name='field_$field'></a>campaign_id
 
 ```
 {
@@ -1122,7 +1122,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_share
+###<a name='field_$field'></a>is_share
 
 ```
 {
@@ -1139,7 +1139,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_confirm_enabled
+###<a name='field_$field'></a>is_confirm_enabled
 
 ```
 {
@@ -1156,7 +1156,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>parent_event_id
+###<a name='field_$field'></a>parent_event_id
 
 ```
 {
@@ -1173,7 +1173,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>slot_label_id
+###<a name='field_$field'></a>slot_label_id
 
 ```
 {
@@ -1190,7 +1190,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>dedupe_rule_group_id
+###<a name='field_$field'></a>dedupe_rule_group_id
 
 ```
 {
@@ -1214,7 +1214,7 @@
     }
 }
 ```
-###<a name='Event.field_$field'></a>is_billing_required
+###<a name='field_$field'></a>is_billing_required
 
 ```
 {
@@ -1230,11 +1230,11 @@
     }
 }
 ```
-##<a name='Event.action_create'></a>Action Event.create
+##<a name='action_create'></a>Action Event.create
 
 Base class for all create actions.: 
 
-##<a name='Event.action_create_params'></a>Params
+##<a name='action_create_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -1250,11 +1250,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Event.create hook calls: 
 ### Event.create events
-##<a name='Event.action_delete'></a>Action Event.delete
+##<a name='action_delete'></a>Action Event.delete
 
 "delete" inherits all the abilities of "get": 
 
-##<a name='Event.action_delete_params'></a>Params
+##<a name='action_delete_params'></a>Params
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -1276,11 +1276,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Event.delete hook calls: 
 ### Event.delete events
-##<a name='Event.action_get'></a>Action Event.get
+##<a name='action_get'></a>Action Event.get
 
 Base class for all get actions.: 
 
-##<a name='Event.action_get_params'></a>Params
+##<a name='action_get_params'></a>Params
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -1302,11 +1302,11 @@ Base class for all get actions.:
   Rarely used options.
 ### Event.get hook calls: 
 ### Event.get events
-##<a name='Event.action_getActions'></a>Action Event.getActions
+##<a name='action_getActions'></a>Action Event.getActions
 
 Get actions for an entity with a list of accepted params: 
 
-##<a name='Event.action_getActions_params'></a>Params
+##<a name='action_getActions_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1318,11 +1318,11 @@ Get actions for an entity with a list of accepted params:
   Rarely used options.
 ### Event.getActions hook calls: 
 ### Event.getActions events
-##<a name='Event.action_getFields'></a>Action Event.getFields
+##<a name='action_getFields'></a>Action Event.getFields
 
 Get fields for an entity: 
 
-##<a name='Event.action_getFields_params'></a>Params
+##<a name='action_getFields_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1334,11 +1334,11 @@ Get fields for an entity:
   Rarely used options.
 ### Event.getFields hook calls: 
 ### Event.getFields events
-##<a name='Event.action_update'></a>Action Event.update
+##<a name='action_update'></a>Action Event.update
 
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
 
-##<a name='Event.action_update_params'></a>Params
+##<a name='action_update_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set

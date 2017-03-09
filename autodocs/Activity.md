@@ -1,8 +1,8 @@
-#<a name='Activity.top'></a>Activity
+#<a name='top'></a>Activity
 
-##<a name='Activity.fields'></a>Activity Fields
+##<a name='fields'></a>Activity Fields
 
-###<a name='Activity.field_$field'></a>id
+###<a name='field_$field'></a>id
 
 ```
 {
@@ -21,7 +21,7 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-###<a name='Activity.field_$field'></a>source_record_id
+###<a name='field_$field'></a>source_record_id
 
 ```
 {
@@ -34,7 +34,7 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-###<a name='Activity.field_$field'></a>activity_type_id
+###<a name='field_$field'></a>activity_type_id
 
 ```
 {
@@ -61,7 +61,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>subject
+###<a name='field_$field'></a>subject
 
 ```
 {
@@ -84,7 +84,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>activity_date_time
+###<a name='field_$field'></a>activity_date_time
 
 ```
 {
@@ -106,7 +106,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>duration
+###<a name='field_$field'></a>duration
 
 ```
 {
@@ -127,7 +127,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>location
+###<a name='field_$field'></a>location
 
 ```
 {
@@ -150,7 +150,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>phone_id
+###<a name='field_$field'></a>phone_id
 
 ```
 {
@@ -167,7 +167,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>phone_number
+###<a name='field_$field'></a>phone_number
 
 ```
 {
@@ -185,7 +185,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>details
+###<a name='field_$field'></a>details
 
 ```
 {
@@ -206,7 +206,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>status_id
+###<a name='field_$field'></a>status_id
 
 ```
 {
@@ -231,7 +231,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>priority_id
+###<a name='field_$field'></a>priority_id
 
 ```
 {
@@ -251,7 +251,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>parent_id
+###<a name='field_$field'></a>parent_id
 
 ```
 {
@@ -265,7 +265,7 @@
     "FKClassName": "CRM_Activity_DAO_Activity"
 }
 ```
-###<a name='Activity.field_$field'></a>is_test
+###<a name='field_$field'></a>is_test
 
 ```
 {
@@ -285,7 +285,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>medium_id
+###<a name='field_$field'></a>medium_id
 
 ```
 {
@@ -306,7 +306,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>is_auto
+###<a name='field_$field'></a>is_auto
 
 ```
 {
@@ -318,7 +318,7 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-###<a name='Activity.field_$field'></a>relationship_id
+###<a name='field_$field'></a>relationship_id
 
 ```
 {
@@ -333,7 +333,7 @@
     "FKClassName": "CRM_Contact_DAO_Relationship"
 }
 ```
-###<a name='Activity.field_$field'></a>is_current_revision
+###<a name='field_$field'></a>is_current_revision
 
 ```
 {
@@ -354,7 +354,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>original_id
+###<a name='field_$field'></a>original_id
 
 ```
 {
@@ -368,7 +368,7 @@
     "FKClassName": "CRM_Activity_DAO_Activity"
 }
 ```
-###<a name='Activity.field_$field'></a>result
+###<a name='field_$field'></a>result
 
 ```
 {
@@ -386,7 +386,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>is_deleted
+###<a name='field_$field'></a>is_deleted
 
 ```
 {
@@ -406,7 +406,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>campaign_id
+###<a name='field_$field'></a>campaign_id
 
 ```
 {
@@ -433,7 +433,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>engagement_level
+###<a name='field_$field'></a>engagement_level
 
 ```
 {
@@ -458,7 +458,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>weight
+###<a name='field_$field'></a>weight
 
 ```
 {
@@ -473,7 +473,7 @@
     }
 }
 ```
-###<a name='Activity.field_$field'></a>is_star
+###<a name='field_$field'></a>is_star
 
 ```
 {
@@ -491,11 +491,11 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-##<a name='Activity.action_create'></a>Action Activity.create
+##<a name='action_create'></a>Action Activity.create
 
 Base class for all create actions.: 
 
-##<a name='Activity.action_create_params'></a>Params
+##<a name='action_create_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -511,11 +511,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Activity.create hook calls: 
 ### Activity.create events
-##<a name='Activity.action_delete'></a>Action Activity.delete
+##<a name='action_delete'></a>Action Activity.delete
 
 "delete" inherits all the abilities of "get": 
 
-##<a name='Activity.action_delete_params'></a>Params
+##<a name='action_delete_params'></a>Params
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -537,11 +537,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Activity.delete hook calls: 
 ### Activity.delete events
-##<a name='Activity.action_get'></a>Action Activity.get
+##<a name='action_get'></a>Action Activity.get
 
 Base class for all get actions.: 
 
-##<a name='Activity.action_get_params'></a>Params
+##<a name='action_get_params'></a>Params
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -563,11 +563,11 @@ Base class for all get actions.:
   Rarely used options.
 ### Activity.get hook calls: 
 ### Activity.get events
-##<a name='Activity.action_getActions'></a>Action Activity.getActions
+##<a name='action_getActions'></a>Action Activity.getActions
 
 Get actions for an entity with a list of accepted params: 
 
-##<a name='Activity.action_getActions_params'></a>Params
+##<a name='action_getActions_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -579,11 +579,11 @@ Get actions for an entity with a list of accepted params:
   Rarely used options.
 ### Activity.getActions hook calls: 
 ### Activity.getActions events
-##<a name='Activity.action_getFields'></a>Action Activity.getFields
+##<a name='action_getFields'></a>Action Activity.getFields
 
 Get fields for an entity: 
 
-##<a name='Activity.action_getFields_params'></a>Params
+##<a name='action_getFields_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -595,11 +595,11 @@ Get fields for an entity:
   Rarely used options.
 ### Activity.getFields hook calls: 
 ### Activity.getFields events
-##<a name='Activity.action_update'></a>Action Activity.update
+##<a name='action_update'></a>Action Activity.update
 
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
 
-##<a name='Activity.action_update_params'></a>Params
+##<a name='action_update_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set

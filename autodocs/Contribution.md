@@ -1,8 +1,8 @@
-#<a name='Contribution.top'></a>Contribution
+#<a name='top'></a>Contribution
 
-##<a name='Contribution.fields'></a>Contribution Fields
+##<a name='fields'></a>Contribution Fields
 
-###<a name='Contribution.field_$field'></a>id
+###<a name='field_$field'></a>id
 
 ```
 {
@@ -21,7 +21,7 @@
     "bao": "CRM_Contribute_BAO_Contribution"
 }
 ```
-###<a name='Contribution.field_$field'></a>contact_id
+###<a name='field_$field'></a>contact_id
 
 ```
 {
@@ -44,7 +44,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>financial_type_id
+###<a name='field_$field'></a>financial_type_id
 
 ```
 {
@@ -70,7 +70,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>contribution_page_id
+###<a name='field_$field'></a>contribution_page_id
 
 ```
 {
@@ -97,7 +97,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>payment_instrument_id
+###<a name='field_$field'></a>payment_instrument_id
 
 ```
 {
@@ -117,7 +117,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>receive_date
+###<a name='field_$field'></a>receive_date
 
 ```
 {
@@ -139,7 +139,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>non_deductible_amount
+###<a name='field_$field'></a>non_deductible_amount
 
 ```
 {
@@ -164,7 +164,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>total_amount
+###<a name='field_$field'></a>total_amount
 
 ```
 {
@@ -190,7 +190,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>fee_amount
+###<a name='field_$field'></a>fee_amount
 
 ```
 {
@@ -215,7 +215,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>net_amount
+###<a name='field_$field'></a>net_amount
 
 ```
 {
@@ -240,7 +240,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>trxn_id
+###<a name='field_$field'></a>trxn_id
 
 ```
 {
@@ -263,7 +263,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>invoice_id
+###<a name='field_$field'></a>invoice_id
 
 ```
 {
@@ -286,7 +286,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>currency
+###<a name='field_$field'></a>currency
 
 ```
 {
@@ -316,7 +316,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>cancel_date
+###<a name='field_$field'></a>cancel_date
 
 ```
 {
@@ -338,7 +338,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>cancel_reason
+###<a name='field_$field'></a>cancel_reason
 
 ```
 {
@@ -358,7 +358,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>receipt_date
+###<a name='field_$field'></a>receipt_date
 
 ```
 {
@@ -380,7 +380,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>thankyou_date
+###<a name='field_$field'></a>thankyou_date
 
 ```
 {
@@ -402,7 +402,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>source
+###<a name='field_$field'></a>source
 
 ```
 {
@@ -425,7 +425,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>amount_level
+###<a name='field_$field'></a>amount_level
 
 ```
 {
@@ -445,7 +445,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>contribution_recur_id
+###<a name='field_$field'></a>contribution_recur_id
 
 ```
 {
@@ -463,7 +463,7 @@
     "FKClassName": "CRM_Contribute_DAO_ContributionRecur"
 }
 ```
-###<a name='Contribution.field_$field'></a>is_test
+###<a name='field_$field'></a>is_test
 
 ```
 {
@@ -483,7 +483,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>is_pay_later
+###<a name='field_$field'></a>is_pay_later
 
 ```
 {
@@ -503,7 +503,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>contribution_status_id
+###<a name='field_$field'></a>contribution_status_id
 
 ```
 {
@@ -528,7 +528,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>address_id
+###<a name='field_$field'></a>address_id
 
 ```
 {
@@ -546,7 +546,7 @@
     "FKClassName": "CRM_Core_DAO_Address"
 }
 ```
-###<a name='Contribution.field_$field'></a>check_number
+###<a name='field_$field'></a>check_number
 
 ```
 {
@@ -568,7 +568,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>campaign_id
+###<a name='field_$field'></a>campaign_id
 
 ```
 {
@@ -595,7 +595,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>creditnote_id
+###<a name='field_$field'></a>creditnote_id
 
 ```
 {
@@ -618,7 +618,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>tax_amount
+###<a name='field_$field'></a>tax_amount
 
 ```
 {
@@ -643,7 +643,7 @@
     }
 }
 ```
-###<a name='Contribution.field_$field'></a>revenue_recognition_date
+###<a name='field_$field'></a>revenue_recognition_date
 
 ```
 {
@@ -665,11 +665,11 @@
     }
 }
 ```
-##<a name='Contribution.action_create'></a>Action Contribution.create
+##<a name='action_create'></a>Action Contribution.create
 
 Base class for all create actions.: 
 
-##<a name='Contribution.action_create_params'></a>Params
+##<a name='action_create_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -685,11 +685,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Contribution.create hook calls: 
 ### Contribution.create events
-##<a name='Contribution.action_delete'></a>Action Contribution.delete
+##<a name='action_delete'></a>Action Contribution.delete
 
 "delete" inherits all the abilities of "get": 
 
-##<a name='Contribution.action_delete_params'></a>Params
+##<a name='action_delete_params'></a>Params
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -711,11 +711,11 @@ Base class for all create actions.:
   Rarely used options.
 ### Contribution.delete hook calls: 
 ### Contribution.delete events
-##<a name='Contribution.action_get'></a>Action Contribution.get
+##<a name='action_get'></a>Action Contribution.get
 
 Base class for all get actions.: 
 
-##<a name='Contribution.action_get_params'></a>Params
+##<a name='action_get_params'></a>Params
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -737,11 +737,11 @@ Base class for all get actions.:
   Rarely used options.
 ### Contribution.get hook calls: 
 ### Contribution.get events
-##<a name='Contribution.action_getActions'></a>Action Contribution.getActions
+##<a name='action_getActions'></a>Action Contribution.getActions
 
 Get actions for an entity with a list of accepted params: 
 
-##<a name='Contribution.action_getActions_params'></a>Params
+##<a name='action_getActions_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -753,11 +753,11 @@ Get actions for an entity with a list of accepted params:
   Rarely used options.
 ### Contribution.getActions hook calls: 
 ### Contribution.getActions events
-##<a name='Contribution.action_getFields'></a>Action Contribution.getFields
+##<a name='action_getFields'></a>Action Contribution.getFields
 
 Get fields for an entity: 
 
-##<a name='Contribution.action_getFields_params'></a>Params
+##<a name='action_getFields_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -769,11 +769,11 @@ Get fields for an entity:
   Rarely used options.
 ### Contribution.getFields hook calls: 
 ### Contribution.getFields events
-##<a name='Contribution.action_update'></a>Action Contribution.update
+##<a name='action_update'></a>Action Contribution.update
 
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
 
-##<a name='Contribution.action_update_params'></a>Params
+##<a name='action_update_params'></a>Params
 
 * **values** (`array`: `[]`)
   Field values to set

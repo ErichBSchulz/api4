@@ -7,7 +7,7 @@
 Get entities
 
 
-##<a name='action_get_params'></a>Params
+###<a name='action_get_params'></a>Params
 
 * **version** (`int`: `4`)
   Api version number; cannot be changed.
@@ -25,7 +25,7 @@ Get entities
 Get actions for an entity with a list of accepted params
 
 
-##<a name='action_getActions_params'></a>Params
+###<a name='action_getActions_params'></a>Params
 
 * **checkPermissions** (`??`: `false`)
   ??

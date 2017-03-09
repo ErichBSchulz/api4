@@ -1,13 +1,13 @@
 
-#<a name='top'></a>Entity
+#<a name='top'></a>Entity [:house:](index.md)
 
 
-##<a name='action_get'></a>Action Entity.get
+##<a name='action_get'></a>Action Entity.get [:house:](index.md)
 
 Get entities
 
 
-###<a name='action_get_params'></a>Params
+###<a name='action_get_params'></a>Params [:house:](index.md)
 
 * **version** (`int`: `4`)
   Api version number; cannot be changed.
@@ -20,12 +20,12 @@ Get entities
 ### Entity.get hook calls: 
 ### Entity.get events
 
-##<a name='action_getActions'></a>Action Entity.getActions
+##<a name='action_getActions'></a>Action Entity.getActions [:house:](index.md)
 
 Get actions for an entity with a list of accepted params
 
 
-###<a name='action_getActions_params'></a>Params
+###<a name='action_getActions_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??

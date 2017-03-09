@@ -1,8 +1,11 @@
+
 #<a name='top'></a>Entity
+
 
 ##<a name='action_get'></a>Action Entity.get
 
 Get entities
+
 
 ##<a name='action_get_params'></a>Params
 
@@ -16,9 +19,11 @@ Get entities
   Rarely used options.
 ### Entity.get hook calls: 
 ### Entity.get events
+
 ##<a name='action_getActions'></a>Action Entity.getActions
 
 Get actions for an entity with a list of accepted params
+
 
 ##<a name='action_getActions_params'></a>Params
 

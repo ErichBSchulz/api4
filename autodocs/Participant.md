@@ -1,8 +1,11 @@
+
 #<a name='top'></a>Participant
+
 
 ##<a name='action_get'></a>Action Participant.get
 
 Base class for all get actions.
+
 
 ##<a name='action_get_params'></a>Params
 
@@ -26,9 +29,11 @@ Base class for all get actions.
   Rarely used options.
 ### Participant.get hook calls: 
 ### Participant.get events
+
 ##<a name='action_create'></a>Action Participant.create
 
 Base class for all create actions.
+
 
 ##<a name='action_create_params'></a>Params
 
@@ -46,9 +51,11 @@ Base class for all create actions.
   Rarely used options.
 ### Participant.create hook calls: 
 ### Participant.create events
+
 ##<a name='action_delete'></a>Action Participant.delete
 
 "delete" inherits all the abilities of "get"
+
 
 ##<a name='action_delete_params'></a>Params
 
@@ -72,9 +79,11 @@ Base class for all create actions.
   Rarely used options.
 ### Participant.delete hook calls: 
 ### Participant.delete events
+
 ##<a name='action_getActions'></a>Action Participant.getActions
 
 Get actions for an entity with a list of accepted params
+
 
 ##<a name='action_getActions_params'></a>Params
 
@@ -88,9 +97,11 @@ Get actions for an entity with a list of accepted params
   Rarely used options.
 ### Participant.getActions hook calls: 
 ### Participant.getActions events
+
 ##<a name='action_getFields'></a>Action Participant.getFields
 
 Get fields for an entity
+
 
 ##<a name='action_getFields_params'></a>Params
 
@@ -104,9 +115,11 @@ Get fields for an entity
   Rarely used options.
 ### Participant.getFields hook calls: 
 ### Participant.getFields events
+
 ##<a name='action_update'></a>Action Participant.update
 
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
+
 
 ##<a name='action_update_params'></a>Params
 
@@ -132,7 +145,9 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
   Rarely used options.
 ### Participant.update hook calls: 
 ### Participant.update events
+
 ##<a name='fields'></a>Participant Fields
+
 
 ###<a name='field_id'></a>id
 
@@ -153,6 +168,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_contact_id'></a>contact_id
 
 ```
@@ -173,6 +189,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "FKClassName": "CRM_Contact_DAO_Contact"
 }
 ```
+
 ###<a name='field_event_id'></a>event_id
 
 ```
@@ -193,6 +210,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "FKClassName": "CRM_Event_DAO_Event"
 }
 ```
+
 ###<a name='field_status_id'></a>status_id
 
 ```
@@ -222,6 +240,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_role_id'></a>role_id
 
 ```
@@ -250,6 +269,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_register_date'></a>register_date
 
 ```
@@ -272,6 +292,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_source'></a>source
 
 ```
@@ -292,6 +313,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_fee_level'></a>fee_level
 
 ```
@@ -310,6 +332,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_is_test'></a>is_test
 
 ```
@@ -327,6 +350,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_is_pay_later'></a>is_pay_later
 
 ```
@@ -344,6 +368,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_fee_amount'></a>fee_amount
 
 ```
@@ -366,6 +391,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_registered_by_id'></a>registered_by_id
 
 ```
@@ -386,6 +412,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "FKClassName": "CRM_Event_DAO_Participant"
 }
 ```
+
 ###<a name='field_discount_id'></a>discount_id
 
 ```
@@ -401,6 +428,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "FKClassName": "CRM_Core_DAO_Discount"
 }
 ```
+
 ###<a name='field_fee_currency'></a>fee_currency
 
 ```
@@ -431,6 +459,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_campaign_id'></a>campaign_id
 
 ```
@@ -455,6 +484,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_discount_amount'></a>discount_amount
 
 ```
@@ -468,6 +498,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_cart_id'></a>cart_id
 
 ```
@@ -482,6 +513,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "FKClassName": "CRM_Event_Cart_DAO_Cart"
 }
 ```
+
 ###<a name='field_must_wait'></a>must_wait
 
 ```
@@ -495,6 +527,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
+
 ###<a name='field_transferred_to_contact_id'></a>transferred_to_contact_id
 
 ```

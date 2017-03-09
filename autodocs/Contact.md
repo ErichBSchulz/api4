@@ -1,8 +1,11 @@
+
 #<a name='top'></a>Contact
+
 
 ##<a name='action_create'></a>Action Contact.create
 
 Base class for all create actions.
+
 
 ##<a name='action_create_params'></a>Params
 
@@ -20,9 +23,11 @@ Base class for all create actions.
   Rarely used options.
 ### Contact.create hook calls: 
 ### Contact.create events
+
 ##<a name='action_delete'></a>Action Contact.delete
 
 "delete" inherits all the abilities of "get"
+
 
 ##<a name='action_delete_params'></a>Params
 
@@ -46,9 +51,11 @@ Base class for all create actions.
   Rarely used options.
 ### Contact.delete hook calls: 
 ### Contact.delete events
+
 ##<a name='action_get'></a>Action Contact.get
 
 Base class for all get actions.
+
 
 ##<a name='action_get_params'></a>Params
 
@@ -72,9 +79,11 @@ Base class for all get actions.
   Rarely used options.
 ### Contact.get hook calls: 
 ### Contact.get events
+
 ##<a name='action_getActions'></a>Action Contact.getActions
 
 Get actions for an entity with a list of accepted params
+
 
 ##<a name='action_getActions_params'></a>Params
 
@@ -88,9 +97,11 @@ Get actions for an entity with a list of accepted params
   Rarely used options.
 ### Contact.getActions hook calls: 
 ### Contact.getActions events
+
 ##<a name='action_getFields'></a>Action Contact.getFields
 
 Get fields for an entity
+
 
 ##<a name='action_getFields_params'></a>Params
 
@@ -104,9 +115,11 @@ Get fields for an entity
   Rarely used options.
 ### Contact.getFields hook calls: 
 ### Contact.getFields events
+
 ##<a name='action_update'></a>Action Contact.update
 
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
+
 
 ##<a name='action_update_params'></a>Params
 
@@ -132,7 +145,9 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
   Rarely used options.
 ### Contact.update hook calls: 
 ### Contact.update events
+
 ##<a name='fields'></a>Contact Fields
+
 
 ###<a name='field_id'></a>id
 
@@ -153,6 +168,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
+
 ###<a name='field_contact_type'></a>contact_type
 
 ```
@@ -181,6 +197,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_contact_sub_type'></a>contact_sub_type
 
 ```
@@ -210,6 +227,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_do_not_email'></a>do_not_email
 
 ```
@@ -230,6 +248,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_do_not_phone'></a>do_not_phone
 
 ```
@@ -250,6 +269,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_do_not_mail'></a>do_not_mail
 
 ```
@@ -270,6 +290,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_do_not_sms'></a>do_not_sms
 
 ```
@@ -290,6 +311,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_do_not_trade'></a>do_not_trade
 
 ```
@@ -310,6 +332,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_is_opt_out'></a>is_opt_out
 
 ```
@@ -332,6 +355,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_legal_identifier'></a>legal_identifier
 
 ```
@@ -355,6 +379,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_external_identifier'></a>external_identifier
 
 ```
@@ -378,6 +403,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_sort_name'></a>sort_name
 
 ```
@@ -400,6 +426,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_display_name'></a>display_name
 
 ```
@@ -422,6 +449,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_nick_name'></a>nick_name
 
 ```
@@ -445,6 +473,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_legal_name'></a>legal_name
 
 ```
@@ -468,6 +497,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_image_URL'></a>image_URL
 
 ```
@@ -489,6 +519,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_preferred_communication_method'></a>preferred_communication_method
 
 ```
@@ -516,6 +547,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_preferred_language'></a>preferred_language
 
 ```
@@ -544,6 +576,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_preferred_mail_format'></a>preferred_mail_format
 
 ```
@@ -571,6 +604,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_hash'></a>hash
 
 ```
@@ -590,6 +624,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
+
 ###<a name='field_api_key'></a>api_key
 
 ```
@@ -605,6 +640,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
+
 ###<a name='field_source'></a>source
 
 ```
@@ -628,6 +664,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_first_name'></a>first_name
 
 ```
@@ -651,6 +688,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_middle_name'></a>middle_name
 
 ```
@@ -674,6 +712,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_last_name'></a>last_name
 
 ```
@@ -697,6 +736,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_prefix_id'></a>prefix_id
 
 ```
@@ -722,6 +762,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_suffix_id'></a>suffix_id
 
 ```
@@ -747,6 +788,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_formal_title'></a>formal_title
 
 ```
@@ -770,6 +812,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_communication_style_id'></a>communication_style_id
 
 ```
@@ -794,6 +837,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_email_greeting_id'></a>email_greeting_id
 
 ```
@@ -807,6 +851,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
+
 ###<a name='field_email_greeting_custom'></a>email_greeting_custom
 
 ```
@@ -830,6 +875,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_email_greeting_display'></a>email_greeting_display
 
 ```
@@ -848,6 +894,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_postal_greeting_id'></a>postal_greeting_id
 
 ```
@@ -864,6 +911,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_postal_greeting_custom'></a>postal_greeting_custom
 
 ```
@@ -887,6 +935,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_postal_greeting_display'></a>postal_greeting_display
 
 ```
@@ -905,6 +954,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_addressee_id'></a>addressee_id
 
 ```
@@ -918,6 +968,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
+
 ###<a name='field_addressee_custom'></a>addressee_custom
 
 ```
@@ -941,6 +992,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_addressee_display'></a>addressee_display
 
 ```
@@ -959,6 +1011,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_job_title'></a>job_title
 
 ```
@@ -982,6 +1035,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_gender_id'></a>gender_id
 
 ```
@@ -1007,6 +1061,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_birth_date'></a>birth_date
 
 ```
@@ -1029,6 +1084,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_is_deceased'></a>is_deceased
 
 ```
@@ -1049,6 +1105,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_deceased_date'></a>deceased_date
 
 ```
@@ -1071,6 +1128,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_household_name'></a>household_name
 
 ```
@@ -1094,6 +1152,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_primary_contact_id'></a>primary_contact_id
 
 ```
@@ -1111,6 +1170,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_organization_name'></a>organization_name
 
 ```
@@ -1134,6 +1194,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_sic_code'></a>sic_code
 
 ```
@@ -1157,6 +1218,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_user_unique_id'></a>user_unique_id
 
 ```
@@ -1181,6 +1243,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_employer_id'></a>employer_id
 
 ```
@@ -1202,6 +1265,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_is_deleted'></a>is_deleted
 
 ```
@@ -1222,6 +1286,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     }
 }
 ```
+
 ###<a name='field_created_date'></a>created_date
 
 ```
@@ -1241,6 +1306,7 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
+
 ###<a name='field_modified_date'></a>modified_date
 
 ```

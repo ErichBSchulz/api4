@@ -1,8 +1,140 @@
 #<a name='top'></a>Contribution
 
+##<a name='action_create'></a>Action Contribution.create
+
+Base class for all create actions.
+
+##<a name='action_create_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **bao** (`object`: `null`)
+  Bao object based on the entity
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contribution.create hook calls: 
+### Contribution.create events
+##<a name='action_delete'></a>Action Contribution.delete
+
+"delete" inherits all the abilities of "get"
+
+##<a name='action_delete_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contribution.delete hook calls: 
+### Contribution.delete events
+##<a name='action_get'></a>Action Contribution.get
+
+Base class for all get actions.
+
+##<a name='action_get_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contribution.get hook calls: 
+### Contribution.get events
+##<a name='action_getActions'></a>Action Contribution.getActions
+
+Get actions for an entity with a list of accepted params
+
+##<a name='action_getActions_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contribution.getActions hook calls: 
+### Contribution.getActions events
+##<a name='action_getFields'></a>Action Contribution.getFields
+
+Get fields for an entity
+
+##<a name='action_getFields_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contribution.getFields hook calls: 
+### Contribution.getFields events
+##<a name='action_update'></a>Action Contribution.update
+
+Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
+
+##<a name='action_update_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contribution.update hook calls: 
+### Contribution.update events
 ##<a name='fields'></a>Contribution Fields
 
-###<a name='field_$field'></a>id
+###<a name='field_id'></a>id
 
 ```
 {
@@ -21,7 +153,7 @@
     "bao": "CRM_Contribute_BAO_Contribution"
 }
 ```
-###<a name='field_$field'></a>contact_id
+###<a name='field_contact_id'></a>contact_id
 
 ```
 {
@@ -44,7 +176,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>financial_type_id
+###<a name='field_financial_type_id'></a>financial_type_id
 
 ```
 {
@@ -70,7 +202,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>contribution_page_id
+###<a name='field_contribution_page_id'></a>contribution_page_id
 
 ```
 {
@@ -97,7 +229,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>payment_instrument_id
+###<a name='field_payment_instrument_id'></a>payment_instrument_id
 
 ```
 {
@@ -117,7 +249,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>receive_date
+###<a name='field_receive_date'></a>receive_date
 
 ```
 {
@@ -139,7 +271,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>non_deductible_amount
+###<a name='field_non_deductible_amount'></a>non_deductible_amount
 
 ```
 {
@@ -164,7 +296,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>total_amount
+###<a name='field_total_amount'></a>total_amount
 
 ```
 {
@@ -190,7 +322,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>fee_amount
+###<a name='field_fee_amount'></a>fee_amount
 
 ```
 {
@@ -215,7 +347,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>net_amount
+###<a name='field_net_amount'></a>net_amount
 
 ```
 {
@@ -240,7 +372,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>trxn_id
+###<a name='field_trxn_id'></a>trxn_id
 
 ```
 {
@@ -263,7 +395,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>invoice_id
+###<a name='field_invoice_id'></a>invoice_id
 
 ```
 {
@@ -286,7 +418,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>currency
+###<a name='field_currency'></a>currency
 
 ```
 {
@@ -316,7 +448,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>cancel_date
+###<a name='field_cancel_date'></a>cancel_date
 
 ```
 {
@@ -338,7 +470,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>cancel_reason
+###<a name='field_cancel_reason'></a>cancel_reason
 
 ```
 {
@@ -358,7 +490,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>receipt_date
+###<a name='field_receipt_date'></a>receipt_date
 
 ```
 {
@@ -380,7 +512,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>thankyou_date
+###<a name='field_thankyou_date'></a>thankyou_date
 
 ```
 {
@@ -402,7 +534,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>source
+###<a name='field_source'></a>source
 
 ```
 {
@@ -425,7 +557,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>amount_level
+###<a name='field_amount_level'></a>amount_level
 
 ```
 {
@@ -445,7 +577,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>contribution_recur_id
+###<a name='field_contribution_recur_id'></a>contribution_recur_id
 
 ```
 {
@@ -463,7 +595,7 @@
     "FKClassName": "CRM_Contribute_DAO_ContributionRecur"
 }
 ```
-###<a name='field_$field'></a>is_test
+###<a name='field_is_test'></a>is_test
 
 ```
 {
@@ -483,7 +615,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_pay_later
+###<a name='field_is_pay_later'></a>is_pay_later
 
 ```
 {
@@ -503,7 +635,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>contribution_status_id
+###<a name='field_contribution_status_id'></a>contribution_status_id
 
 ```
 {
@@ -528,7 +660,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>address_id
+###<a name='field_address_id'></a>address_id
 
 ```
 {
@@ -546,7 +678,7 @@
     "FKClassName": "CRM_Core_DAO_Address"
 }
 ```
-###<a name='field_$field'></a>check_number
+###<a name='field_check_number'></a>check_number
 
 ```
 {
@@ -568,7 +700,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>campaign_id
+###<a name='field_campaign_id'></a>campaign_id
 
 ```
 {
@@ -595,7 +727,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>creditnote_id
+###<a name='field_creditnote_id'></a>creditnote_id
 
 ```
 {
@@ -618,7 +750,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>tax_amount
+###<a name='field_tax_amount'></a>tax_amount
 
 ```
 {
@@ -643,7 +775,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>revenue_recognition_date
+###<a name='field_revenue_recognition_date'></a>revenue_recognition_date
 
 ```
 {
@@ -665,136 +797,4 @@
     }
 }
 ```
-##<a name='action_create'></a>Action Contribution.create
-
-Base class for all create actions.: 
-
-##<a name='action_create_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **bao** (`object`: `null`)
-  Bao object based on the entity
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contribution.create hook calls: 
-### Contribution.create events
-##<a name='action_delete'></a>Action Contribution.delete
-
-"delete" inherits all the abilities of "get": 
-
-##<a name='action_delete_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contribution.delete hook calls: 
-### Contribution.delete events
-##<a name='action_get'></a>Action Contribution.get
-
-Base class for all get actions.: 
-
-##<a name='action_get_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contribution.get hook calls: 
-### Contribution.get events
-##<a name='action_getActions'></a>Action Contribution.getActions
-
-Get actions for an entity with a list of accepted params: 
-
-##<a name='action_getActions_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contribution.getActions hook calls: 
-### Contribution.getActions events
-##<a name='action_getFields'></a>Action Contribution.getFields
-
-Get fields for an entity: 
-
-##<a name='action_getFields_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contribution.getFields hook calls: 
-### Contribution.getFields events
-##<a name='action_update'></a>Action Contribution.update
-
-Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
-
-##<a name='action_update_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contribution.update hook calls: 
-### Contribution.update events
 ###### This file was automatically generated. Do not edit directly.

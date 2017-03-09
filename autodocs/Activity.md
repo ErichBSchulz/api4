@@ -1,8 +1,140 @@
 #<a name='top'></a>Activity
 
+##<a name='action_create'></a>Action Activity.create
+
+Base class for all create actions.
+
+##<a name='action_create_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **bao** (`object`: `null`)
+  Bao object based on the entity
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Activity.create hook calls: 
+### Activity.create events
+##<a name='action_delete'></a>Action Activity.delete
+
+"delete" inherits all the abilities of "get"
+
+##<a name='action_delete_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Activity.delete hook calls: 
+### Activity.delete events
+##<a name='action_get'></a>Action Activity.get
+
+Base class for all get actions.
+
+##<a name='action_get_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Activity.get hook calls: 
+### Activity.get events
+##<a name='action_getActions'></a>Action Activity.getActions
+
+Get actions for an entity with a list of accepted params
+
+##<a name='action_getActions_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Activity.getActions hook calls: 
+### Activity.getActions events
+##<a name='action_getFields'></a>Action Activity.getFields
+
+Get fields for an entity
+
+##<a name='action_getFields_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Activity.getFields hook calls: 
+### Activity.getFields events
+##<a name='action_update'></a>Action Activity.update
+
+Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
+
+##<a name='action_update_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Activity.update hook calls: 
+### Activity.update events
 ##<a name='fields'></a>Activity Fields
 
-###<a name='field_$field'></a>id
+###<a name='field_id'></a>id
 
 ```
 {
@@ -21,7 +153,7 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-###<a name='field_$field'></a>source_record_id
+###<a name='field_source_record_id'></a>source_record_id
 
 ```
 {
@@ -34,7 +166,7 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-###<a name='field_$field'></a>activity_type_id
+###<a name='field_activity_type_id'></a>activity_type_id
 
 ```
 {
@@ -61,7 +193,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>subject
+###<a name='field_subject'></a>subject
 
 ```
 {
@@ -84,7 +216,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>activity_date_time
+###<a name='field_activity_date_time'></a>activity_date_time
 
 ```
 {
@@ -106,7 +238,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>duration
+###<a name='field_duration'></a>duration
 
 ```
 {
@@ -127,7 +259,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>location
+###<a name='field_location'></a>location
 
 ```
 {
@@ -150,7 +282,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>phone_id
+###<a name='field_phone_id'></a>phone_id
 
 ```
 {
@@ -167,7 +299,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>phone_number
+###<a name='field_phone_number'></a>phone_number
 
 ```
 {
@@ -185,7 +317,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>details
+###<a name='field_details'></a>details
 
 ```
 {
@@ -206,7 +338,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>status_id
+###<a name='field_status_id'></a>status_id
 
 ```
 {
@@ -231,7 +363,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>priority_id
+###<a name='field_priority_id'></a>priority_id
 
 ```
 {
@@ -251,7 +383,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>parent_id
+###<a name='field_parent_id'></a>parent_id
 
 ```
 {
@@ -265,7 +397,7 @@
     "FKClassName": "CRM_Activity_DAO_Activity"
 }
 ```
-###<a name='field_$field'></a>is_test
+###<a name='field_is_test'></a>is_test
 
 ```
 {
@@ -285,7 +417,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>medium_id
+###<a name='field_medium_id'></a>medium_id
 
 ```
 {
@@ -306,7 +438,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_auto
+###<a name='field_is_auto'></a>is_auto
 
 ```
 {
@@ -318,7 +450,7 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-###<a name='field_$field'></a>relationship_id
+###<a name='field_relationship_id'></a>relationship_id
 
 ```
 {
@@ -333,7 +465,7 @@
     "FKClassName": "CRM_Contact_DAO_Relationship"
 }
 ```
-###<a name='field_$field'></a>is_current_revision
+###<a name='field_is_current_revision'></a>is_current_revision
 
 ```
 {
@@ -354,7 +486,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>original_id
+###<a name='field_original_id'></a>original_id
 
 ```
 {
@@ -368,7 +500,7 @@
     "FKClassName": "CRM_Activity_DAO_Activity"
 }
 ```
-###<a name='field_$field'></a>result
+###<a name='field_result'></a>result
 
 ```
 {
@@ -386,7 +518,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_deleted
+###<a name='field_is_deleted'></a>is_deleted
 
 ```
 {
@@ -406,7 +538,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>campaign_id
+###<a name='field_campaign_id'></a>campaign_id
 
 ```
 {
@@ -433,7 +565,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>engagement_level
+###<a name='field_engagement_level'></a>engagement_level
 
 ```
 {
@@ -458,7 +590,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>weight
+###<a name='field_weight'></a>weight
 
 ```
 {
@@ -473,7 +605,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_star
+###<a name='field_is_star'></a>is_star
 
 ```
 {
@@ -491,136 +623,4 @@
     "bao": "CRM_Activity_BAO_Activity"
 }
 ```
-##<a name='action_create'></a>Action Activity.create
-
-Base class for all create actions.: 
-
-##<a name='action_create_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **bao** (`object`: `null`)
-  Bao object based on the entity
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Activity.create hook calls: 
-### Activity.create events
-##<a name='action_delete'></a>Action Activity.delete
-
-"delete" inherits all the abilities of "get": 
-
-##<a name='action_delete_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Activity.delete hook calls: 
-### Activity.delete events
-##<a name='action_get'></a>Action Activity.get
-
-Base class for all get actions.: 
-
-##<a name='action_get_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Activity.get hook calls: 
-### Activity.get events
-##<a name='action_getActions'></a>Action Activity.getActions
-
-Get actions for an entity with a list of accepted params: 
-
-##<a name='action_getActions_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Activity.getActions hook calls: 
-### Activity.getActions events
-##<a name='action_getFields'></a>Action Activity.getFields
-
-Get fields for an entity: 
-
-##<a name='action_getFields_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Activity.getFields hook calls: 
-### Activity.getFields events
-##<a name='action_update'></a>Action Activity.update
-
-Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
-
-##<a name='action_update_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Activity.update hook calls: 
-### Activity.update events
 ###### This file was automatically generated. Do not edit directly.

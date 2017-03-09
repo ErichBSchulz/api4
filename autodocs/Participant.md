@@ -1,8 +1,140 @@
 #<a name='top'></a>Participant
 
+##<a name='action_get'></a>Action Participant.get
+
+Base class for all get actions.
+
+##<a name='action_get_params'></a>Params
+
+* **where** (`array`: `[["is_test","=",0]]`)
+  Array of conditions keyed by field.
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Participant.get hook calls: 
+### Participant.get events
+##<a name='action_create'></a>Action Participant.create
+
+Base class for all create actions.
+
+##<a name='action_create_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **bao** (`object`: `null`)
+  Bao object based on the entity
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Participant.create hook calls: 
+### Participant.create events
+##<a name='action_delete'></a>Action Participant.delete
+
+"delete" inherits all the abilities of "get"
+
+##<a name='action_delete_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Participant.delete hook calls: 
+### Participant.delete events
+##<a name='action_getActions'></a>Action Participant.getActions
+
+Get actions for an entity with a list of accepted params
+
+##<a name='action_getActions_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Participant.getActions hook calls: 
+### Participant.getActions events
+##<a name='action_getFields'></a>Action Participant.getFields
+
+Get fields for an entity
+
+##<a name='action_getFields_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Participant.getFields hook calls: 
+### Participant.getFields events
+##<a name='action_update'></a>Action Participant.update
+
+Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
+
+##<a name='action_update_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Participant.update hook calls: 
+### Participant.update events
 ##<a name='fields'></a>Participant Fields
 
-###<a name='field_$field'></a>id
+###<a name='field_id'></a>id
 
 ```
 {
@@ -21,7 +153,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>contact_id
+###<a name='field_contact_id'></a>contact_id
 
 ```
 {
@@ -41,7 +173,7 @@
     "FKClassName": "CRM_Contact_DAO_Contact"
 }
 ```
-###<a name='field_$field'></a>event_id
+###<a name='field_event_id'></a>event_id
 
 ```
 {
@@ -61,7 +193,7 @@
     "FKClassName": "CRM_Event_DAO_Event"
 }
 ```
-###<a name='field_$field'></a>status_id
+###<a name='field_status_id'></a>status_id
 
 ```
 {
@@ -90,7 +222,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>role_id
+###<a name='field_role_id'></a>role_id
 
 ```
 {
@@ -118,7 +250,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>register_date
+###<a name='field_register_date'></a>register_date
 
 ```
 {
@@ -140,7 +272,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>source
+###<a name='field_source'></a>source
 
 ```
 {
@@ -160,7 +292,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>fee_level
+###<a name='field_fee_level'></a>fee_level
 
 ```
 {
@@ -178,7 +310,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>is_test
+###<a name='field_is_test'></a>is_test
 
 ```
 {
@@ -195,7 +327,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>is_pay_later
+###<a name='field_is_pay_later'></a>is_pay_later
 
 ```
 {
@@ -212,7 +344,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>fee_amount
+###<a name='field_fee_amount'></a>fee_amount
 
 ```
 {
@@ -234,7 +366,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>registered_by_id
+###<a name='field_registered_by_id'></a>registered_by_id
 
 ```
 {
@@ -254,7 +386,7 @@
     "FKClassName": "CRM_Event_DAO_Participant"
 }
 ```
-###<a name='field_$field'></a>discount_id
+###<a name='field_discount_id'></a>discount_id
 
 ```
 {
@@ -269,7 +401,7 @@
     "FKClassName": "CRM_Core_DAO_Discount"
 }
 ```
-###<a name='field_$field'></a>fee_currency
+###<a name='field_fee_currency'></a>fee_currency
 
 ```
 {
@@ -299,7 +431,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>campaign_id
+###<a name='field_campaign_id'></a>campaign_id
 
 ```
 {
@@ -323,7 +455,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>discount_amount
+###<a name='field_discount_amount'></a>discount_amount
 
 ```
 {
@@ -336,7 +468,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>cart_id
+###<a name='field_cart_id'></a>cart_id
 
 ```
 {
@@ -350,7 +482,7 @@
     "FKClassName": "CRM_Event_Cart_DAO_Cart"
 }
 ```
-###<a name='field_$field'></a>must_wait
+###<a name='field_must_wait'></a>must_wait
 
 ```
 {
@@ -363,7 +495,7 @@
     "bao": "CRM_Event_BAO_Participant"
 }
 ```
-###<a name='field_$field'></a>transferred_to_contact_id
+###<a name='field_transferred_to_contact_id'></a>transferred_to_contact_id
 
 ```
 {
@@ -383,136 +515,4 @@
     "FKClassName": "CRM_Contact_DAO_Contact"
 }
 ```
-##<a name='action_get'></a>Action Participant.get
-
-Base class for all get actions.: 
-
-##<a name='action_get_params'></a>Params
-
-* **where** (`array`: `[["is_test","=",0]]`)
-  Array of conditions keyed by field.
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Participant.get hook calls: 
-### Participant.get events
-##<a name='action_create'></a>Action Participant.create
-
-Base class for all create actions.: 
-
-##<a name='action_create_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **bao** (`object`: `null`)
-  Bao object based on the entity
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Participant.create hook calls: 
-### Participant.create events
-##<a name='action_delete'></a>Action Participant.delete
-
-"delete" inherits all the abilities of "get": 
-
-##<a name='action_delete_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Participant.delete hook calls: 
-### Participant.delete events
-##<a name='action_getActions'></a>Action Participant.getActions
-
-Get actions for an entity with a list of accepted params: 
-
-##<a name='action_getActions_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Participant.getActions hook calls: 
-### Participant.getActions events
-##<a name='action_getFields'></a>Action Participant.getFields
-
-Get fields for an entity: 
-
-##<a name='action_getFields_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Participant.getFields hook calls: 
-### Participant.getFields events
-##<a name='action_update'></a>Action Participant.update
-
-Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
-
-##<a name='action_update_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Participant.update hook calls: 
-### Participant.update events
 ###### This file was automatically generated. Do not edit directly.

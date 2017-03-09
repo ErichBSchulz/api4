@@ -1,8 +1,140 @@
 #<a name='top'></a>Event
 
+##<a name='action_create'></a>Action Event.create
+
+Base class for all create actions.
+
+##<a name='action_create_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **bao** (`object`: `null`)
+  Bao object based on the entity
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Event.create hook calls: 
+### Event.create events
+##<a name='action_delete'></a>Action Event.delete
+
+"delete" inherits all the abilities of "get"
+
+##<a name='action_delete_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Event.delete hook calls: 
+### Event.delete events
+##<a name='action_get'></a>Action Event.get
+
+Base class for all get actions.
+
+##<a name='action_get_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Event.get hook calls: 
+### Event.get events
+##<a name='action_getActions'></a>Action Event.getActions
+
+Get actions for an entity with a list of accepted params
+
+##<a name='action_getActions_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Event.getActions hook calls: 
+### Event.getActions events
+##<a name='action_getFields'></a>Action Event.getFields
+
+Get fields for an entity
+
+##<a name='action_getFields_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Event.getFields hook calls: 
+### Event.getFields events
+##<a name='action_update'></a>Action Event.update
+
+Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
+
+##<a name='action_update_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Event.update hook calls: 
+### Event.update events
 ##<a name='fields'></a>Event Fields
 
-###<a name='field_$field'></a>id
+###<a name='field_id'></a>id
 
 ```
 {
@@ -16,7 +148,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='field_$field'></a>title
+###<a name='field_title'></a>title
 
 ```
 {
@@ -39,7 +171,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>summary
+###<a name='field_summary'></a>summary
 
 ```
 {
@@ -57,7 +189,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>description
+###<a name='field_description'></a>description
 
 ```
 {
@@ -75,7 +207,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>event_type_id
+###<a name='field_event_type_id'></a>event_type_id
 
 ```
 {
@@ -95,7 +227,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>participant_listing_id
+###<a name='field_participant_listing_id'></a>participant_listing_id
 
 ```
 {
@@ -115,7 +247,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_public
+###<a name='field_is_public'></a>is_public
 
 ```
 {
@@ -132,7 +264,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>start_date
+###<a name='field_start_date'></a>start_date
 
 ```
 {
@@ -153,7 +285,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>end_date
+###<a name='field_end_date'></a>end_date
 
 ```
 {
@@ -174,7 +306,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_online_registration
+###<a name='field_is_online_registration'></a>is_online_registration
 
 ```
 {
@@ -190,7 +322,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>registration_link_text
+###<a name='field_registration_link_text'></a>registration_link_text
 
 ```
 {
@@ -208,7 +340,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>registration_start_date
+###<a name='field_registration_start_date'></a>registration_start_date
 
 ```
 {
@@ -224,7 +356,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>registration_end_date
+###<a name='field_registration_end_date'></a>registration_end_date
 
 ```
 {
@@ -240,7 +372,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>max_participants
+###<a name='field_max_participants'></a>max_participants
 
 ```
 {
@@ -257,7 +389,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>event_full_text
+###<a name='field_event_full_text'></a>event_full_text
 
 ```
 {
@@ -275,7 +407,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_monetary
+###<a name='field_is_monetary'></a>is_monetary
 
 ```
 {
@@ -291,7 +423,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>financial_type_id
+###<a name='field_financial_type_id'></a>financial_type_id
 
 ```
 {
@@ -313,7 +445,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>payment_processor
+###<a name='field_payment_processor'></a>payment_processor
 
 ```
 {
@@ -336,7 +468,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_map
+###<a name='field_is_map'></a>is_map
 
 ```
 {
@@ -352,7 +484,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_active
+###<a name='field_is_active'></a>is_active
 
 ```
 {
@@ -368,7 +500,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>fee_label
+###<a name='field_fee_label'></a>fee_label
 
 ```
 {
@@ -390,7 +522,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_show_location
+###<a name='field_is_show_location'></a>is_show_location
 
 ```
 {
@@ -407,7 +539,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>loc_block_id
+###<a name='field_loc_block_id'></a>loc_block_id
 
 ```
 {
@@ -421,7 +553,7 @@
     "FKClassName": "CRM_Core_DAO_LocBlock"
 }
 ```
-###<a name='field_$field'></a>default_role_id
+###<a name='field_default_role_id'></a>default_role_id
 
 ```
 {
@@ -447,7 +579,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>intro_text
+###<a name='field_intro_text'></a>intro_text
 
 ```
 {
@@ -465,7 +597,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>footer_text
+###<a name='field_footer_text'></a>footer_text
 
 ```
 {
@@ -483,7 +615,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>confirm_title
+###<a name='field_confirm_title'></a>confirm_title
 
 ```
 {
@@ -502,7 +634,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>confirm_text
+###<a name='field_confirm_text'></a>confirm_text
 
 ```
 {
@@ -520,7 +652,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>confirm_footer_text
+###<a name='field_confirm_footer_text'></a>confirm_footer_text
 
 ```
 {
@@ -538,7 +670,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_email_confirm
+###<a name='field_is_email_confirm'></a>is_email_confirm
 
 ```
 {
@@ -554,7 +686,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>confirm_email_text
+###<a name='field_confirm_email_text'></a>confirm_email_text
 
 ```
 {
@@ -572,7 +704,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>confirm_from_name
+###<a name='field_confirm_from_name'></a>confirm_from_name
 
 ```
 {
@@ -590,7 +722,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>confirm_from_email
+###<a name='field_confirm_from_email'></a>confirm_from_email
 
 ```
 {
@@ -608,7 +740,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>cc_confirm
+###<a name='field_cc_confirm'></a>cc_confirm
 
 ```
 {
@@ -626,7 +758,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>bcc_confirm
+###<a name='field_bcc_confirm'></a>bcc_confirm
 
 ```
 {
@@ -644,7 +776,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>default_fee_id
+###<a name='field_default_fee_id'></a>default_fee_id
 
 ```
 {
@@ -657,7 +789,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='field_$field'></a>default_discount_fee_id
+###<a name='field_default_discount_fee_id'></a>default_discount_fee_id
 
 ```
 {
@@ -670,7 +802,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='field_$field'></a>thankyou_title
+###<a name='field_thankyou_title'></a>thankyou_title
 
 ```
 {
@@ -689,7 +821,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>thankyou_text
+###<a name='field_thankyou_text'></a>thankyou_text
 
 ```
 {
@@ -707,7 +839,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>thankyou_footer_text
+###<a name='field_thankyou_footer_text'></a>thankyou_footer_text
 
 ```
 {
@@ -725,7 +857,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_pay_later
+###<a name='field_is_pay_later'></a>is_pay_later
 
 ```
 {
@@ -741,7 +873,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>pay_later_text
+###<a name='field_pay_later_text'></a>pay_later_text
 
 ```
 {
@@ -757,7 +889,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>pay_later_receipt
+###<a name='field_pay_later_receipt'></a>pay_later_receipt
 
 ```
 {
@@ -773,7 +905,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_partial_payment
+###<a name='field_is_partial_payment'></a>is_partial_payment
 
 ```
 {
@@ -789,7 +921,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>initial_amount_label
+###<a name='field_initial_amount_label'></a>initial_amount_label
 
 ```
 {
@@ -807,7 +939,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>initial_amount_help_text
+###<a name='field_initial_amount_help_text'></a>initial_amount_help_text
 
 ```
 {
@@ -823,7 +955,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>min_initial_amount
+###<a name='field_min_initial_amount'></a>min_initial_amount
 
 ```
 {
@@ -843,7 +975,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_multiple_registrations
+###<a name='field_is_multiple_registrations'></a>is_multiple_registrations
 
 ```
 {
@@ -859,7 +991,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>max_additional_participants
+###<a name='field_max_additional_participants'></a>max_additional_participants
 
 ```
 {
@@ -872,7 +1004,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='field_$field'></a>allow_same_participant_emails
+###<a name='field_allow_same_participant_emails'></a>allow_same_participant_emails
 
 ```
 {
@@ -888,7 +1020,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>has_waitlist
+###<a name='field_has_waitlist'></a>has_waitlist
 
 ```
 {
@@ -904,7 +1036,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>requires_approval
+###<a name='field_requires_approval'></a>requires_approval
 
 ```
 {
@@ -920,7 +1052,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>expiration_time
+###<a name='field_expiration_time'></a>expiration_time
 
 ```
 {
@@ -936,7 +1068,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>allow_selfcancelxfer
+###<a name='field_allow_selfcancelxfer'></a>allow_selfcancelxfer
 
 ```
 {
@@ -952,7 +1084,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>selfcancelxfer_time
+###<a name='field_selfcancelxfer_time'></a>selfcancelxfer_time
 
 ```
 {
@@ -968,7 +1100,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>waitlist_text
+###<a name='field_waitlist_text'></a>waitlist_text
 
 ```
 {
@@ -986,7 +1118,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>approval_req_text
+###<a name='field_approval_req_text'></a>approval_req_text
 
 ```
 {
@@ -1004,7 +1136,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_template
+###<a name='field_is_template'></a>is_template
 
 ```
 {
@@ -1021,7 +1153,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>template_title
+###<a name='field_template_title'></a>template_title
 
 ```
 {
@@ -1044,7 +1176,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>created_id
+###<a name='field_created_id'></a>created_id
 
 ```
 {
@@ -1058,7 +1190,7 @@
     "FKClassName": "CRM_Contact_DAO_Contact"
 }
 ```
-###<a name='field_$field'></a>created_date
+###<a name='field_created_date'></a>created_date
 
 ```
 {
@@ -1071,7 +1203,7 @@
     "bao": "CRM_Event_BAO_Event"
 }
 ```
-###<a name='field_$field'></a>currency
+###<a name='field_currency'></a>currency
 
 ```
 {
@@ -1100,7 +1232,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>campaign_id
+###<a name='field_campaign_id'></a>campaign_id
 
 ```
 {
@@ -1122,7 +1254,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_share
+###<a name='field_is_share'></a>is_share
 
 ```
 {
@@ -1139,7 +1271,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_confirm_enabled
+###<a name='field_is_confirm_enabled'></a>is_confirm_enabled
 
 ```
 {
@@ -1156,7 +1288,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>parent_event_id
+###<a name='field_parent_event_id'></a>parent_event_id
 
 ```
 {
@@ -1173,7 +1305,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>slot_label_id
+###<a name='field_slot_label_id'></a>slot_label_id
 
 ```
 {
@@ -1190,7 +1322,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>dedupe_rule_group_id
+###<a name='field_dedupe_rule_group_id'></a>dedupe_rule_group_id
 
 ```
 {
@@ -1214,7 +1346,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_billing_required
+###<a name='field_is_billing_required'></a>is_billing_required
 
 ```
 {
@@ -1230,136 +1362,4 @@
     }
 }
 ```
-##<a name='action_create'></a>Action Event.create
-
-Base class for all create actions.: 
-
-##<a name='action_create_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **bao** (`object`: `null`)
-  Bao object based on the entity
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Event.create hook calls: 
-### Event.create events
-##<a name='action_delete'></a>Action Event.delete
-
-"delete" inherits all the abilities of "get": 
-
-##<a name='action_delete_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Event.delete hook calls: 
-### Event.delete events
-##<a name='action_get'></a>Action Event.get
-
-Base class for all get actions.: 
-
-##<a name='action_get_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Event.get hook calls: 
-### Event.get events
-##<a name='action_getActions'></a>Action Event.getActions
-
-Get actions for an entity with a list of accepted params: 
-
-##<a name='action_getActions_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Event.getActions hook calls: 
-### Event.getActions events
-##<a name='action_getFields'></a>Action Event.getFields
-
-Get fields for an entity: 
-
-##<a name='action_getFields_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Event.getFields hook calls: 
-### Event.getFields events
-##<a name='action_update'></a>Action Event.update
-
-Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
-
-##<a name='action_update_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Event.update hook calls: 
-### Event.update events
 ###### This file was automatically generated. Do not edit directly.

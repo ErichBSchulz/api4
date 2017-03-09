@@ -1,8 +1,140 @@
 #<a name='top'></a>Contact
 
+##<a name='action_create'></a>Action Contact.create
+
+Base class for all create actions.
+
+##<a name='action_create_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **bao** (`object`: `null`)
+  Bao object based on the entity
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contact.create hook calls: 
+### Contact.create events
+##<a name='action_delete'></a>Action Contact.delete
+
+"delete" inherits all the abilities of "get"
+
+##<a name='action_delete_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contact.delete hook calls: 
+### Contact.delete events
+##<a name='action_get'></a>Action Contact.get
+
+Base class for all get actions.
+
+##<a name='action_get_params'></a>Params
+
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contact.get hook calls: 
+### Contact.get events
+##<a name='action_getActions'></a>Action Contact.getActions
+
+Get actions for an entity with a list of accepted params
+
+##<a name='action_getActions_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contact.getActions hook calls: 
+### Contact.getActions events
+##<a name='action_getFields'></a>Action Contact.getFields
+
+Get fields for an entity
+
+##<a name='action_getFields_params'></a>Params
+
+* **checkPermissions** (`??`: `false`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contact.getFields hook calls: 
+### Contact.getFields events
+##<a name='action_update'></a>Action Contact.update
+
+Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
+
+##<a name='action_update_params'></a>Params
+
+* **values** (`array`: `[]`)
+  Field values to set
+* **select** (`array`: `[]`)
+  Fields to return. Defaults to all non-custom fields.
+* **where** (`array`: `[]`)
+  Array of conditions keyed by field.
+* **orderBy** (`array`: `[]`)
+  Array of field(s) to use in ordering the results
+* **limit** (`int`: `0`)
+  Maximum number of results to return.
+* **offset** (`??`: `0`)
+  ??
+* **version** (`int`: `4`)
+  Api version number; cannot be changed.
+* **chain** (`array`: `[]`)
+  A list of api actions to execute on the results.
+* **checkPermissions** (`bool|string|int`: `true`)
+  Whether to enforce acl permissions based on the current user.
+* **options** (`array`: `[]`)
+  Rarely used options.
+### Contact.update hook calls: 
+### Contact.update events
 ##<a name='fields'></a>Contact Fields
 
-###<a name='field_$field'></a>id
+###<a name='field_id'></a>id
 
 ```
 {
@@ -21,7 +153,7 @@
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
-###<a name='field_$field'></a>contact_type
+###<a name='field_contact_type'></a>contact_type
 
 ```
 {
@@ -49,7 +181,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>contact_sub_type
+###<a name='field_contact_sub_type'></a>contact_sub_type
 
 ```
 {
@@ -78,7 +210,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>do_not_email
+###<a name='field_do_not_email'></a>do_not_email
 
 ```
 {
@@ -98,7 +230,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>do_not_phone
+###<a name='field_do_not_phone'></a>do_not_phone
 
 ```
 {
@@ -118,7 +250,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>do_not_mail
+###<a name='field_do_not_mail'></a>do_not_mail
 
 ```
 {
@@ -138,7 +270,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>do_not_sms
+###<a name='field_do_not_sms'></a>do_not_sms
 
 ```
 {
@@ -158,7 +290,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>do_not_trade
+###<a name='field_do_not_trade'></a>do_not_trade
 
 ```
 {
@@ -178,7 +310,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_opt_out
+###<a name='field_is_opt_out'></a>is_opt_out
 
 ```
 {
@@ -200,7 +332,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>legal_identifier
+###<a name='field_legal_identifier'></a>legal_identifier
 
 ```
 {
@@ -223,7 +355,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>external_identifier
+###<a name='field_external_identifier'></a>external_identifier
 
 ```
 {
@@ -246,7 +378,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>sort_name
+###<a name='field_sort_name'></a>sort_name
 
 ```
 {
@@ -268,7 +400,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>display_name
+###<a name='field_display_name'></a>display_name
 
 ```
 {
@@ -290,7 +422,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>nick_name
+###<a name='field_nick_name'></a>nick_name
 
 ```
 {
@@ -313,7 +445,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>legal_name
+###<a name='field_legal_name'></a>legal_name
 
 ```
 {
@@ -336,7 +468,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>image_URL
+###<a name='field_image_URL'></a>image_URL
 
 ```
 {
@@ -357,7 +489,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>preferred_communication_method
+###<a name='field_preferred_communication_method'></a>preferred_communication_method
 
 ```
 {
@@ -384,7 +516,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>preferred_language
+###<a name='field_preferred_language'></a>preferred_language
 
 ```
 {
@@ -412,7 +544,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>preferred_mail_format
+###<a name='field_preferred_mail_format'></a>preferred_mail_format
 
 ```
 {
@@ -439,7 +571,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>hash
+###<a name='field_hash'></a>hash
 
 ```
 {
@@ -458,7 +590,7 @@
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
-###<a name='field_$field'></a>api_key
+###<a name='field_api_key'></a>api_key
 
 ```
 {
@@ -473,7 +605,7 @@
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
-###<a name='field_$field'></a>source
+###<a name='field_source'></a>source
 
 ```
 {
@@ -496,7 +628,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>first_name
+###<a name='field_first_name'></a>first_name
 
 ```
 {
@@ -519,7 +651,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>middle_name
+###<a name='field_middle_name'></a>middle_name
 
 ```
 {
@@ -542,7 +674,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>last_name
+###<a name='field_last_name'></a>last_name
 
 ```
 {
@@ -565,7 +697,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>prefix_id
+###<a name='field_prefix_id'></a>prefix_id
 
 ```
 {
@@ -590,7 +722,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>suffix_id
+###<a name='field_suffix_id'></a>suffix_id
 
 ```
 {
@@ -615,7 +747,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>formal_title
+###<a name='field_formal_title'></a>formal_title
 
 ```
 {
@@ -638,7 +770,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>communication_style_id
+###<a name='field_communication_style_id'></a>communication_style_id
 
 ```
 {
@@ -662,7 +794,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>email_greeting_id
+###<a name='field_email_greeting_id'></a>email_greeting_id
 
 ```
 {
@@ -675,7 +807,7 @@
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
-###<a name='field_$field'></a>email_greeting_custom
+###<a name='field_email_greeting_custom'></a>email_greeting_custom
 
 ```
 {
@@ -698,7 +830,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>email_greeting_display
+###<a name='field_email_greeting_display'></a>email_greeting_display
 
 ```
 {
@@ -716,7 +848,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>postal_greeting_id
+###<a name='field_postal_greeting_id'></a>postal_greeting_id
 
 ```
 {
@@ -732,7 +864,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>postal_greeting_custom
+###<a name='field_postal_greeting_custom'></a>postal_greeting_custom
 
 ```
 {
@@ -755,7 +887,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>postal_greeting_display
+###<a name='field_postal_greeting_display'></a>postal_greeting_display
 
 ```
 {
@@ -773,7 +905,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>addressee_id
+###<a name='field_addressee_id'></a>addressee_id
 
 ```
 {
@@ -786,7 +918,7 @@
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
-###<a name='field_$field'></a>addressee_custom
+###<a name='field_addressee_custom'></a>addressee_custom
 
 ```
 {
@@ -809,7 +941,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>addressee_display
+###<a name='field_addressee_display'></a>addressee_display
 
 ```
 {
@@ -827,7 +959,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>job_title
+###<a name='field_job_title'></a>job_title
 
 ```
 {
@@ -850,7 +982,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>gender_id
+###<a name='field_gender_id'></a>gender_id
 
 ```
 {
@@ -875,7 +1007,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>birth_date
+###<a name='field_birth_date'></a>birth_date
 
 ```
 {
@@ -897,7 +1029,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_deceased
+###<a name='field_is_deceased'></a>is_deceased
 
 ```
 {
@@ -917,7 +1049,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>deceased_date
+###<a name='field_deceased_date'></a>deceased_date
 
 ```
 {
@@ -939,7 +1071,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>household_name
+###<a name='field_household_name'></a>household_name
 
 ```
 {
@@ -962,7 +1094,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>primary_contact_id
+###<a name='field_primary_contact_id'></a>primary_contact_id
 
 ```
 {
@@ -979,7 +1111,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>organization_name
+###<a name='field_organization_name'></a>organization_name
 
 ```
 {
@@ -1002,7 +1134,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>sic_code
+###<a name='field_sic_code'></a>sic_code
 
 ```
 {
@@ -1025,7 +1157,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>user_unique_id
+###<a name='field_user_unique_id'></a>user_unique_id
 
 ```
 {
@@ -1049,7 +1181,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>employer_id
+###<a name='field_employer_id'></a>employer_id
 
 ```
 {
@@ -1070,7 +1202,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>is_deleted
+###<a name='field_is_deleted'></a>is_deleted
 
 ```
 {
@@ -1090,7 +1222,7 @@
     }
 }
 ```
-###<a name='field_$field'></a>created_date
+###<a name='field_created_date'></a>created_date
 
 ```
 {
@@ -1109,7 +1241,7 @@
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
-###<a name='field_$field'></a>modified_date
+###<a name='field_modified_date'></a>modified_date
 
 ```
 {
@@ -1128,136 +1260,4 @@
     "bao": "CRM_Contact_BAO_Contact"
 }
 ```
-##<a name='action_create'></a>Action Contact.create
-
-Base class for all create actions.: 
-
-##<a name='action_create_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **bao** (`object`: `null`)
-  Bao object based on the entity
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contact.create hook calls: 
-### Contact.create events
-##<a name='action_delete'></a>Action Contact.delete
-
-"delete" inherits all the abilities of "get": 
-
-##<a name='action_delete_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contact.delete hook calls: 
-### Contact.delete events
-##<a name='action_get'></a>Action Contact.get
-
-Base class for all get actions.: 
-
-##<a name='action_get_params'></a>Params
-
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contact.get hook calls: 
-### Contact.get events
-##<a name='action_getActions'></a>Action Contact.getActions
-
-Get actions for an entity with a list of accepted params: 
-
-##<a name='action_getActions_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contact.getActions hook calls: 
-### Contact.getActions events
-##<a name='action_getFields'></a>Action Contact.getFields
-
-Get fields for an entity: 
-
-##<a name='action_getFields_params'></a>Params
-
-* **checkPermissions** (`??`: `false`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contact.getFields hook calls: 
-### Contact.getFields events
-##<a name='action_update'></a>Action Contact.update
-
-Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get": 
-
-##<a name='action_update_params'></a>Params
-
-* **values** (`array`: `[]`)
-  Field values to set
-* **select** (`array`: `[]`)
-  Fields to return. Defaults to all non-custom fields.
-* **where** (`array`: `[]`)
-  Array of conditions keyed by field.
-* **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
-* **limit** (`int`: `0`)
-  Maximum number of results to return.
-* **offset** (`??`: `0`)
-  ??
-* **version** (`int`: `4`)
-  Api version number; cannot be changed.
-* **chain** (`array`: `[]`)
-  A list of api actions to execute on the results.
-* **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
-* **options** (`array`: `[]`)
-  Rarely used options.
-### Contact.update hook calls: 
-### Contact.update events
 ###### This file was automatically generated. Do not edit directly.

@@ -25,6 +25,7 @@ In REST/javascript this cannot be disabled.
 
 ##<a name='create_example'></a>Example [:house:](index.md)
 
+This is the example derived from the unit tests.
 
 ###<a name='create_example_params'></a>Params [:house:](index.md)
 
@@ -54,7 +55,7 @@ In REST/javascript this cannot be disabled.
 
 ```
 {
-    "id": 574,
+    "id": 620,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -114,7 +115,7 @@ In REST/javascript this cannot be disabled.
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170310104729",
+    "created_date": "20170310235222",
     "currency": null,
     "campaign_id": null,
     "is_share": null,
@@ -129,8 +130,9 @@ In REST/javascript this cannot be disabled.
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
 
-####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+####<a name='create_example_events_0'></a>api.authorize - Civi\API\Event\AuthorizeEvent [:house:](index.md)
 
+> [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 Methods:
 ```
 [
@@ -149,8 +151,9 @@ Methods:
 ]
 ```
 
-####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
+####<a name='create_example_events_1'></a>api.prepare - Civi\API\Event\PrepareEvent [:house:](index.md)
 
+> [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 Methods:
 ```
 [
@@ -168,8 +171,9 @@ Methods:
 ]
 ```
 
-####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
+####<a name='create_example_events_2'></a>api.respond - Civi\API\Event\RespondEvent [:house:](index.md)
 
+> [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 Methods:
 ```
 [
@@ -190,13 +194,9 @@ Methods:
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
 
-```
-{
-    "pre": 1,
-    "post": 1,
-    "apiWrappers": 1
-}
-```
+* [pre](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_/pre) 1
+* [post](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_/post) 1
+* [apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_/apiWrappers) 1
 
 ##<a name='action_delete'></a>Action Event.delete [:house:](index.md)
 

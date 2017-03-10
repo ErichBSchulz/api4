@@ -23,6 +23,271 @@ In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
 
+##<a name='create_example'></a>Example [:house:](index.md)
+
+
+###<a name='create_example_params'></a>Params [:house:](index.md)
+
+```
+{
+    "Values": {
+        "first_name": "Anthony",
+        "middle_name": "J.",
+        "last_name": "Anderson",
+        "contact_type": "Individual"
+    }
+}
+```
+
+###<a name='create_example_result'></a>Result [:house:](index.md)
+
+```
+{
+    "id": "927",
+    "contact_type": "Individual",
+    "contact_sub_type": null,
+    "do_not_email": "0",
+    "do_not_phone": "0",
+    "do_not_mail": "0",
+    "do_not_sms": "0",
+    "do_not_trade": "0",
+    "is_opt_out": "0",
+    "legal_identifier": null,
+    "external_identifier": null,
+    "sort_name": null,
+    "display_name": null,
+    "nick_name": null,
+    "legal_name": null,
+    "image_URL": null,
+    "preferred_communication_method": "",
+    "preferred_language": null,
+    "preferred_mail_format": "Both",
+    "hash": "54a36dac886504ebcc46183841603bfa",
+    "api_key": null,
+    "source": null,
+    "first_name": "Anthony",
+    "middle_name": "J.",
+    "last_name": "Anderson",
+    "prefix_id": null,
+    "suffix_id": null,
+    "formal_title": null,
+    "communication_style_id": null,
+    "email_greeting_id": "1",
+    "email_greeting_custom": null,
+    "email_greeting_display": null,
+    "postal_greeting_id": "1",
+    "postal_greeting_custom": null,
+    "postal_greeting_display": null,
+    "addressee_id": "1",
+    "addressee_custom": null,
+    "addressee_display": null,
+    "job_title": null,
+    "gender_id": null,
+    "birth_date": null,
+    "is_deceased": "0",
+    "deceased_date": null,
+    "household_name": null,
+    "primary_contact_id": null,
+    "organization_name": null,
+    "sic_code": null,
+    "user_unique_id": null,
+    "employer_id": null,
+    "is_deleted": "0",
+    "created_date": "2017-03-10 10:47:29",
+    "modified_date": "2017-03-10 10:47:29"
+}
+```
+
+###<a name='create_example_events'></a>Events [:house:](index.md)
+
+
+####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
+
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
+
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
+
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
+
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
+
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_7'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_8'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
+
+```
+{
+    "pre": 1,
+    "post": 1,
+    "apiWrappers": 1
+}
+```
+
 ##<a name='action_delete'></a>Action Contact.delete [:house:](index.md)
 
 "delete" inherits all the abilities of "get"

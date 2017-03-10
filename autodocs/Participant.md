@@ -53,6 +53,123 @@ In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
 
+##<a name='create_example'></a>Example [:house:](index.md)
+
+
+###<a name='create_example_params'></a>Params [:house:](index.md)
+
+```
+{
+    "Values": {
+        "event_id": "575",
+        "contact_id": "929",
+        "status_id": 2,
+        "role_id": 1,
+        "register_date": 20070219,
+        "source": "Wimbeldon",
+        "event_level": "Payment"
+    }
+}
+```
+
+###<a name='create_example_result'></a>Result [:house:](index.md)
+
+```
+{
+    "id": 21,
+    "contact_id": "929",
+    "event_id": "575",
+    "status_id": 2,
+    "role_id": 1,
+    "register_date": "20070219",
+    "source": "Wimbeldon",
+    "fee_level": null,
+    "is_test": null,
+    "is_pay_later": null,
+    "fee_amount": null,
+    "registered_by_id": null,
+    "discount_id": null,
+    "fee_currency": null,
+    "campaign_id": null,
+    "discount_amount": null,
+    "cart_id": null,
+    "must_wait": null,
+    "transferred_to_contact_id": null
+}
+```
+
+###<a name='create_example_events'></a>Events [:house:](index.md)
+
+
+####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
+
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
+
+```
+{
+    "pre": 1,
+    "post": 1,
+    "apiWrappers": 1
+}
+```
+
 ##<a name='action_delete'></a>Action Participant.delete [:house:](index.md)
 
 "delete" inherits all the abilities of "get"

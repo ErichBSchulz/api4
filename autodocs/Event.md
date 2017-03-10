@@ -4,114 +4,130 @@
 
 ##<a name='create_example'></a>Example!!!!! [:house:](index.md)
 
+
+###<a name='create_example_params'></a>Params [:house:](index.md)
+
 ```
 {
-    "params": {
-        "Values": {
-            "title": "Annual CiviCRM meet",
-            "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
-            "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
-            "event_type_id": 1,
-            "is_public": 1,
-            "start_date": 20081021,
-            "end_date": 20081023,
-            "is_online_registration": 1,
-            "registration_start_date": 20080601,
-            "registration_end_date": 20081015,
-            "max_participants": 100,
-            "event_full_text": "Sorry! We are already full",
-            "is_monetary": 0,
-            "is_active": 1,
-            "is_show_location": 0
-        }
-    },
-    "result": {
-        "id": 525,
+    "Values": {
         "title": "Annual CiviCRM meet",
         "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
         "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
         "event_type_id": 1,
-        "participant_listing_id": null,
         "is_public": 1,
         "start_date": 20081021,
         "end_date": 20081023,
         "is_online_registration": 1,
-        "registration_link_text": null,
         "registration_start_date": 20080601,
         "registration_end_date": 20081015,
         "max_participants": 100,
         "event_full_text": "Sorry! We are already full",
         "is_monetary": 0,
-        "financial_type_id": null,
-        "payment_processor": null,
-        "is_map": null,
         "is_active": 1,
-        "fee_label": null,
-        "is_show_location": 0,
-        "loc_block_id": null,
-        "default_role_id": null,
-        "intro_text": null,
-        "footer_text": null,
-        "confirm_title": null,
-        "confirm_text": null,
-        "confirm_footer_text": null,
-        "is_email_confirm": null,
-        "confirm_email_text": null,
-        "confirm_from_name": null,
-        "confirm_from_email": null,
-        "cc_confirm": null,
-        "bcc_confirm": null,
-        "default_fee_id": null,
-        "default_discount_fee_id": null,
-        "thankyou_title": null,
-        "thankyou_text": null,
-        "thankyou_footer_text": null,
-        "is_pay_later": null,
-        "pay_later_text": null,
-        "pay_later_receipt": null,
-        "is_partial_payment": null,
-        "initial_amount_label": null,
-        "initial_amount_help_text": null,
-        "min_initial_amount": null,
-        "is_multiple_registrations": null,
-        "max_additional_participants": null,
-        "allow_same_participant_emails": null,
-        "has_waitlist": null,
-        "requires_approval": null,
-        "expiration_time": null,
-        "allow_selfcancelxfer": null,
-        "selfcancelxfer_time": null,
-        "waitlist_text": null,
-        "approval_req_text": null,
-        "is_template": 0,
-        "template_title": null,
-        "created_id": null,
-        "created_date": "20170310102404",
-        "currency": null,
-        "campaign_id": null,
-        "is_share": null,
-        "is_confirm_enabled": null,
-        "parent_event_id": null,
-        "slot_label_id": null,
-        "dedupe_rule_group_id": null,
-        "is_billing_required": null
+        "is_show_location": 0
+    }
+}
+```
+
+###<a name='create_example_result'></a>Result [:house:](index.md)
+
+```
+{
+    "id": 532,
+    "title": "Annual CiviCRM meet",
+    "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
+    "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
+    "event_type_id": 1,
+    "participant_listing_id": null,
+    "is_public": 1,
+    "start_date": 20081021,
+    "end_date": 20081023,
+    "is_online_registration": 1,
+    "registration_link_text": null,
+    "registration_start_date": 20080601,
+    "registration_end_date": 20081015,
+    "max_participants": 100,
+    "event_full_text": "Sorry! We are already full",
+    "is_monetary": 0,
+    "financial_type_id": null,
+    "payment_processor": null,
+    "is_map": null,
+    "is_active": 1,
+    "fee_label": null,
+    "is_show_location": 0,
+    "loc_block_id": null,
+    "default_role_id": null,
+    "intro_text": null,
+    "footer_text": null,
+    "confirm_title": null,
+    "confirm_text": null,
+    "confirm_footer_text": null,
+    "is_email_confirm": null,
+    "confirm_email_text": null,
+    "confirm_from_name": null,
+    "confirm_from_email": null,
+    "cc_confirm": null,
+    "bcc_confirm": null,
+    "default_fee_id": null,
+    "default_discount_fee_id": null,
+    "thankyou_title": null,
+    "thankyou_text": null,
+    "thankyou_footer_text": null,
+    "is_pay_later": null,
+    "pay_later_text": null,
+    "pay_later_receipt": null,
+    "is_partial_payment": null,
+    "initial_amount_label": null,
+    "initial_amount_help_text": null,
+    "min_initial_amount": null,
+    "is_multiple_registrations": null,
+    "max_additional_participants": null,
+    "allow_same_participant_emails": null,
+    "has_waitlist": null,
+    "requires_approval": null,
+    "expiration_time": null,
+    "allow_selfcancelxfer": null,
+    "selfcancelxfer_time": null,
+    "waitlist_text": null,
+    "approval_req_text": null,
+    "is_template": 0,
+    "template_title": null,
+    "created_id": null,
+    "created_date": "20170310102826",
+    "currency": null,
+    "campaign_id": null,
+    "is_share": null,
+    "is_confirm_enabled": null,
+    "parent_event_id": null,
+    "slot_label_id": null,
+    "dedupe_rule_group_id": null,
+    "is_billing_required": null
+}
+```
+
+###<a name='create_example_events'></a>Events [:house:](index.md)
+
+```
+[
+    {
+
     },
-    "hook_calls": {
-        "pre": 1,
-        "post": 1,
-        "apiWrappers": 1
+    {
+
     },
-    "events": [
-        {
+    {
 
-        },
-        {
+    }
+]
+```
 
-        },
-        {
+###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
 
-        }
-    ]
+```
+{
+    "pre": 1,
+    "post": 1,
+    "apiWrappers": 1
 }
 ```
 

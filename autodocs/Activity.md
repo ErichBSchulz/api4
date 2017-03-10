@@ -4,57 +4,73 @@
 
 ##<a name='create_example'></a>Example!!!!! [:house:](index.md)
 
+
+###<a name='create_example_params'></a>Params [:house:](index.md)
+
 ```
 {
-    "params": {
-        "Values": {
-            "subject": "unit testing",
-            "source_contact_id": "849"
-        }
-    },
-    "result": {
-        "id": 1725,
-        "source_record_id": null,
-        "activity_type_id": null,
+    "Values": {
         "subject": "unit testing",
-        "activity_date_time": null,
-        "duration": null,
-        "location": null,
-        "phone_id": null,
-        "phone_number": null,
-        "details": null,
-        "status_id": 1,
-        "priority_id": 2,
-        "parent_id": null,
-        "is_test": null,
-        "medium_id": null,
-        "is_auto": null,
-        "relationship_id": null,
-        "is_current_revision": null,
-        "original_id": null,
-        "result": null,
-        "is_deleted": null,
-        "campaign_id": null,
-        "engagement_level": null,
-        "weight": null,
-        "is_star": null
+        "source_contact_id": "860"
+    }
+}
+```
+
+###<a name='create_example_result'></a>Result [:house:](index.md)
+
+```
+{
+    "id": 1748,
+    "source_record_id": null,
+    "activity_type_id": null,
+    "subject": "unit testing",
+    "activity_date_time": null,
+    "duration": null,
+    "location": null,
+    "phone_id": null,
+    "phone_number": null,
+    "details": null,
+    "status_id": 1,
+    "priority_id": 2,
+    "parent_id": null,
+    "is_test": null,
+    "medium_id": null,
+    "is_auto": null,
+    "relationship_id": null,
+    "is_current_revision": null,
+    "original_id": null,
+    "result": null,
+    "is_deleted": null,
+    "campaign_id": null,
+    "engagement_level": null,
+    "weight": null,
+    "is_star": null
+}
+```
+
+###<a name='create_example_events'></a>Events [:house:](index.md)
+
+```
+[
+    {
+
     },
-    "hook_calls": {
-        "pre": 1,
-        "post": 1,
-        "apiWrappers": 1
+    {
+
     },
-    "events": [
-        {
+    {
 
-        },
-        {
+    }
+]
+```
 
-        },
-        {
+###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
 
-        }
-    ]
+```
+{
+    "pre": 1,
+    "post": 1,
+    "apiWrappers": 1
 }
 ```
 

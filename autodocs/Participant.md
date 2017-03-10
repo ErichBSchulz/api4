@@ -40,8 +40,8 @@ In REST/javascript this cannot be disabled.
 ```
 {
     "Values": {
-        "event_id": "533",
-        "contact_id": "863",
+        "event_id": "554",
+        "contact_id": "896",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -56,8 +56,8 @@ In REST/javascript this cannot be disabled.
 ```
 {
     "id": 21,
-    "contact_id": "863",
-    "event_id": "533",
+    "contact_id": "896",
+    "event_id": "554",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -79,17 +79,63 @@ In REST/javascript this cannot be disabled.
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
+
+####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+
+Methods:
 ```
 [
-    {
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    }
+####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
 ]
 ```
 

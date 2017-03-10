@@ -10,7 +10,7 @@
 ```
 {
     "Values": {
-        "contact_id": "862",
+        "contact_id": "895",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -21,8 +21,8 @@
 
 ```
 {
-    "id": 80,
-    "contact_id": "862",
+    "id": 83,
+    "contact_id": "895",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -55,62 +55,358 @@
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
+
+####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+
+Methods:
 ```
 [
-    {
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_7'></a>api.authorize [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_8'></a>api.authorize [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_9'></a>api.prepare [:house:](index.md)
 
-    }
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_10'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_11'></a>api.prepare [:house:](index.md)
+
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_12'></a>api.authorize [:house:](index.md)
+
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_13'></a>api.prepare [:house:](index.md)
+
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_14'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_15'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_16'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_17'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
 ]
 ```
 

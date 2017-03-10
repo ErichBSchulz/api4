@@ -11,7 +11,7 @@
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "860"
+        "source_contact_id": "893"
     }
 }
 ```
@@ -20,7 +20,7 @@
 
 ```
 {
-    "id": 1748,
+    "id": 1817,
     "source_record_id": null,
     "activity_type_id": null,
     "subject": "unit testing",
@@ -50,17 +50,63 @@
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
+
+####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+
+Methods:
 ```
 [
-    {
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    }
+####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
 ]
 ```
 

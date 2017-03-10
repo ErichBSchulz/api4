@@ -22,7 +22,7 @@
 
 ```
 {
-    "id": "861",
+    "id": "894",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -41,7 +41,7 @@
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "dc9180e35826b0b6e271149872480446",
+    "hash": "9a2f5c6ddb94640f28f74d409e37f143",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -72,42 +72,188 @@
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-10 10:28:25",
-    "modified_date": "2017-03-10 10:28:25"
+    "created_date": "2017-03-10 10:34:14",
+    "modified_date": "2017-03-10 10:34:14"
 }
 ```
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
+
+####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+
+Methods:
 ```
 [
-    {
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    }
+####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
+
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_7'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
+
+####<a name='create_example_events_8'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
 ]
 ```
 

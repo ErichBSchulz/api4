@@ -33,7 +33,7 @@
 
 ```
 {
-    "id": 532,
+    "id": 553,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -93,7 +93,7 @@
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170310102826",
+    "created_date": "20170310103414",
     "currency": null,
     "campaign_id": null,
     "is_share": null,
@@ -107,17 +107,63 @@
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
+
+####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+
+Methods:
 ```
 [
-    {
+    "authorize",
+    "isAuthorized",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    },
-    {
+####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
 
-    },
-    {
+Methods:
+```
+[
+    "setApiRequest",
+    "__construct",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
+]
+```
 
-    }
+####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
+
+Methods:
+```
+[
+    "__construct",
+    "getResponse",
+    "setResponse",
+    "getApiKernel",
+    "getApiProvider",
+    "getApiRequest",
+    "isPropagationStopped",
+    "stopPropagation",
+    "setDispatcher",
+    "getDispatcher",
+    "getName",
+    "setName"
 ]
 ```
 

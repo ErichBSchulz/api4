@@ -14,11 +14,10 @@ Get entities
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Entity.get hook calls: 
-### Entity.get events
 
 ##<a name='action_getActions'></a>Action Entity.getActions [:house:](index.md)
 
@@ -35,6 +34,4 @@ Get actions for an entity with a list of accepted params
   A list of api actions to execute on the results.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Entity.getActions hook calls: 
-### Entity.getActions events
 ###### This file was automatically generated. Do not edit directly.

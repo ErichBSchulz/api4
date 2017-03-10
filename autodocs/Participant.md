@@ -10,13 +10,16 @@ Base class for all get actions.
 ###<a name='action_get_params'></a>Params [:house:](index.md)
 
 * **where** (`array`: `[["is_test","=",0]]`)
-  Array of conditions keyed by field.
+  Array of conditions keyed by field.  $example->addWhere('contact_id.contact_type', 'IN', array('Individual', 'Household'))
+
+$example->addWhere('contact_type', 'IN', array('Individual', 'Household'))
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
 * **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
+  Array of field(s) to use in ordering the results  Defaults to id ASC
+$example->addOrderBy('sort_name', 'ASC')
 * **limit** (`int`: `0`)
-  Maximum number of results to return.
+  Maximum number of results to return.  Defaults to unlimited.
 * **offset** (`??`: `0`)
   ??
 * **version** (`int`: `4`)
@@ -24,11 +27,65 @@ Base class for all get actions.
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Participant.get hook calls: 
-### Participant.get events
+
+##<a name='create_example'></a>Example!!!!! [:house:](index.md)
+
+```
+{
+    "params": {
+        "Values": {
+            "event_id": "526",
+            "contact_id": "852",
+            "status_id": 2,
+            "role_id": 1,
+            "register_date": 20070219,
+            "source": "Wimbeldon",
+            "event_level": "Payment"
+        }
+    },
+    "result": {
+        "id": 21,
+        "contact_id": "852",
+        "event_id": "526",
+        "status_id": 2,
+        "role_id": 1,
+        "register_date": "20070219",
+        "source": "Wimbeldon",
+        "fee_level": null,
+        "is_test": null,
+        "is_pay_later": null,
+        "fee_amount": null,
+        "registered_by_id": null,
+        "discount_id": null,
+        "fee_currency": null,
+        "campaign_id": null,
+        "discount_amount": null,
+        "cart_id": null,
+        "must_wait": null,
+        "transferred_to_contact_id": null
+    },
+    "hook_calls": {
+        "pre": 1,
+        "post": 1,
+        "apiWrappers": 1
+    },
+    "events": [
+        {
+
+        },
+        {
+
+        },
+        {
+
+        }
+    ]
+}
+```
 
 ##<a name='action_create'></a>Action Participant.create [:house:](index.md)
 
@@ -46,11 +103,10 @@ Base class for all create actions.
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Participant.create hook calls: 
-### Participant.create events
 
 ##<a name='action_delete'></a>Action Participant.delete [:house:](index.md)
 
@@ -62,11 +118,12 @@ Base class for all create actions.
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
 * **where** (`array`: `[]`)
-  Array of conditions keyed by field.
+  Array of conditions keyed by field.  $example->addWhere('contact_type', 'IN', array('Individual', 'Household'))
 * **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
+  Array of field(s) to use in ordering the results  Defaults to id ASC
+$example->addOrderBy('sort_name', 'ASC')
 * **limit** (`int`: `0`)
-  Maximum number of results to return.
+  Maximum number of results to return.  Defaults to unlimited.
 * **offset** (`??`: `0`)
   ??
 * **version** (`int`: `4`)
@@ -74,11 +131,10 @@ Base class for all create actions.
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Participant.delete hook calls: 
-### Participant.delete events
 
 ##<a name='action_getActions'></a>Action Participant.getActions [:house:](index.md)
 
@@ -95,8 +151,6 @@ Get actions for an entity with a list of accepted params
   A list of api actions to execute on the results.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Participant.getActions hook calls: 
-### Participant.getActions events
 
 ##<a name='action_getFields'></a>Action Participant.getFields [:house:](index.md)
 
@@ -113,8 +167,6 @@ Get fields for an entity
   A list of api actions to execute on the results.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Participant.getFields hook calls: 
-### Participant.getFields events
 
 ##<a name='action_update'></a>Action Participant.update [:house:](index.md)
 
@@ -128,11 +180,12 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
 * **where** (`array`: `[]`)
-  Array of conditions keyed by field.
+  Array of conditions keyed by field.  $example->addWhere('contact_type', 'IN', array('Individual', 'Household'))
 * **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
+  Array of field(s) to use in ordering the results  Defaults to id ASC
+$example->addOrderBy('sort_name', 'ASC')
 * **limit** (`int`: `0`)
-  Maximum number of results to return.
+  Maximum number of results to return.  Defaults to unlimited.
 * **offset** (`??`: `0`)
   ??
 * **version** (`int`: `4`)
@@ -140,11 +193,10 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Participant.update hook calls: 
-### Participant.update events
 
 ##<a name='fields'></a>Participant Fields [:house:](index.md)
 

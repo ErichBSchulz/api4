@@ -2,6 +2,109 @@
 #<a name='top'></a>Contact [:house:](index.md)
 
 
+##<a name='create_example'></a>Example!!!!! [:house:](index.md)
+
+```
+{
+    "params": {
+        "Values": {
+            "first_name": "Anthony",
+            "middle_name": "J.",
+            "last_name": "Anderson",
+            "contact_type": "Individual"
+        }
+    },
+    "result": {
+        "id": "850",
+        "contact_type": "Individual",
+        "contact_sub_type": null,
+        "do_not_email": "0",
+        "do_not_phone": "0",
+        "do_not_mail": "0",
+        "do_not_sms": "0",
+        "do_not_trade": "0",
+        "is_opt_out": "0",
+        "legal_identifier": null,
+        "external_identifier": null,
+        "sort_name": null,
+        "display_name": null,
+        "nick_name": null,
+        "legal_name": null,
+        "image_URL": null,
+        "preferred_communication_method": "",
+        "preferred_language": null,
+        "preferred_mail_format": "Both",
+        "hash": "44ea768302db507bfbad63247b90a07e",
+        "api_key": null,
+        "source": null,
+        "first_name": "Anthony",
+        "middle_name": "J.",
+        "last_name": "Anderson",
+        "prefix_id": null,
+        "suffix_id": null,
+        "formal_title": null,
+        "communication_style_id": null,
+        "email_greeting_id": "1",
+        "email_greeting_custom": null,
+        "email_greeting_display": null,
+        "postal_greeting_id": "1",
+        "postal_greeting_custom": null,
+        "postal_greeting_display": null,
+        "addressee_id": "1",
+        "addressee_custom": null,
+        "addressee_display": null,
+        "job_title": null,
+        "gender_id": null,
+        "birth_date": null,
+        "is_deceased": "0",
+        "deceased_date": null,
+        "household_name": null,
+        "primary_contact_id": null,
+        "organization_name": null,
+        "sic_code": null,
+        "user_unique_id": null,
+        "employer_id": null,
+        "is_deleted": "0",
+        "created_date": "2017-03-10 10:24:03",
+        "modified_date": "2017-03-10 10:24:03"
+    },
+    "hook_calls": {
+        "pre": 1,
+        "post": 1,
+        "apiWrappers": 1
+    },
+    "events": [
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        }
+    ]
+}
+```
+
 ##<a name='action_create'></a>Action Contact.create [:house:](index.md)
 
 Base class for all create actions.
@@ -18,11 +121,10 @@ Base class for all create actions.
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Contact.create hook calls: 
-### Contact.create events
 
 ##<a name='action_delete'></a>Action Contact.delete [:house:](index.md)
 
@@ -34,11 +136,12 @@ Base class for all create actions.
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
 * **where** (`array`: `[]`)
-  Array of conditions keyed by field.
+  Array of conditions keyed by field.  $example->addWhere('contact_type', 'IN', array('Individual', 'Household'))
 * **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
+  Array of field(s) to use in ordering the results  Defaults to id ASC
+$example->addOrderBy('sort_name', 'ASC')
 * **limit** (`int`: `0`)
-  Maximum number of results to return.
+  Maximum number of results to return.  Defaults to unlimited.
 * **offset** (`??`: `0`)
   ??
 * **version** (`int`: `4`)
@@ -46,11 +149,10 @@ Base class for all create actions.
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Contact.delete hook calls: 
-### Contact.delete events
 
 ##<a name='action_get'></a>Action Contact.get [:house:](index.md)
 
@@ -62,11 +164,12 @@ Base class for all get actions.
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
 * **where** (`array`: `[]`)
-  Array of conditions keyed by field.
+  Array of conditions keyed by field.  $example->addWhere('contact_type', 'IN', array('Individual', 'Household'))
 * **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
+  Array of field(s) to use in ordering the results  Defaults to id ASC
+$example->addOrderBy('sort_name', 'ASC')
 * **limit** (`int`: `0`)
-  Maximum number of results to return.
+  Maximum number of results to return.  Defaults to unlimited.
 * **offset** (`??`: `0`)
   ??
 * **version** (`int`: `4`)
@@ -74,11 +177,10 @@ Base class for all get actions.
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Contact.get hook calls: 
-### Contact.get events
 
 ##<a name='action_getActions'></a>Action Contact.getActions [:house:](index.md)
 
@@ -95,8 +197,6 @@ Get actions for an entity with a list of accepted params
   A list of api actions to execute on the results.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Contact.getActions hook calls: 
-### Contact.getActions events
 
 ##<a name='action_getFields'></a>Action Contact.getFields [:house:](index.md)
 
@@ -113,8 +213,6 @@ Get fields for an entity
   A list of api actions to execute on the results.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Contact.getFields hook calls: 
-### Contact.getFields events
 
 ##<a name='action_update'></a>Action Contact.update [:house:](index.md)
 
@@ -128,11 +226,12 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
 * **where** (`array`: `[]`)
-  Array of conditions keyed by field.
+  Array of conditions keyed by field.  $example->addWhere('contact_type', 'IN', array('Individual', 'Household'))
 * **orderBy** (`array`: `[]`)
-  Array of field(s) to use in ordering the results
+  Array of field(s) to use in ordering the results  Defaults to id ASC
+$example->addOrderBy('sort_name', 'ASC')
 * **limit** (`int`: `0`)
-  Maximum number of results to return.
+  Maximum number of results to return.  Defaults to unlimited.
 * **offset** (`??`: `0`)
   ??
 * **version** (`int`: `4`)
@@ -140,11 +239,10 @@ Here's an idea... if we use one action to extend another, "update" inherits all 
 * **chain** (`array`: `[]`)
   A list of api actions to execute on the results.
 * **checkPermissions** (`bool|string|int`: `true`)
-  Whether to enforce acl permissions based on the current user.
+  Whether to enforce acl permissions based on the current user.  Setting to FALSE will disable permission checks and override ACLs.
+In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
-### Contact.update hook calls: 
-### Contact.update events
 
 ##<a name='fields'></a>Contact Fields [:house:](index.md)
 

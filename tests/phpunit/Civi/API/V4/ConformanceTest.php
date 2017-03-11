@@ -180,11 +180,11 @@ class ConformanceTest extends UnitTestCase {
         $this->assertEquals(array($id), (array) $delete_result,
           "unexpected delete result from $entity");
         $clause = array('id', '=', $id);
-        $delete_result = $entity_class::get()
+        $post_delete_result = $entity_class::get()
           ->setCheckPermissions(FALSE)
           ->addClause($clause)
           ->execute();
-        $this->assertEquals(0, count($delete_result),
+        $this->assertEquals(0, count($post_delete_result),
           "still getting back data after delete of $entity");
         if ($doc_path) {
           $examples["$entity.delete"] = array(

@@ -85,8 +85,11 @@ class Documenter  {
   }
 
   /**
-   * Render the ConformanceTest trace blob into markdown.
-   * Makes and index table of Entity | Actions | Fields
+   * Render the ConformanceTest trace blob into a collection of markdown files.
+   *
+   * Makes an index table of "Entity | Actions | Fields" as well as one file
+   * per entity.
+   *
    * @param array blob
    */
   public function blobToMarkDown($blob) {

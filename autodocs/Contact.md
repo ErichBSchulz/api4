@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1428",
+    "id": "1439",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "7bb7a408d5715a80a9f96e527e3c1c66",
+    "hash": "519d786f8e4036af7804923ec31ae6e0",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 07:56:27",
-    "modified_date": "2017-03-11 07:56:27"
+    "created_date": "2017-03-11 08:09:56",
+    "modified_date": "2017-03-11 08:09:56"
 }
 ```
 
@@ -702,7 +702,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1428"
+        "1439"
     ]
 }
 ```
@@ -711,7 +711,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-
+    "0": "1439"
 }
 ```
 
@@ -753,7 +753,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -796,7 +796,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -923,7 +923,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -966,7 +966,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -1009,7 +1009,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -1136,7 +1136,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -1210,8 +1210,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1428": {
-        "id": "1428",
+    "1439": {
+        "id": "1439",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1220,7 +1220,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "7bb7a408d5715a80a9f96e527e3c1c66",
+        "hash": "519d786f8e4036af7804923ec31ae6e0",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1232,8 +1232,8 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-11 07:56:27",
-        "modified_date": "2017-03-11 07:56:27"
+        "created_date": "2017-03-11 08:09:56",
+        "modified_date": "2017-03-11 08:09:56"
     }
 }
 ```
@@ -1270,7 +1270,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -1313,7 +1313,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [
@@ -1440,7 +1440,7 @@ Params:
         [
             "id",
             "=",
-            "1428"
+            "1439"
         ]
     ],
     "orderBy": [

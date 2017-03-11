@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1380",
+    "id": "1391",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "40ce55ea8c92eb326ed286779390b9e4",
+    "hash": "728213dedd25ad4173d28d1bf03bc0c0",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,14 +95,14 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 07:34:04",
-    "modified_date": "2017-03-11 07:34:04"
+    "created_date": "2017-03-11 07:46:47",
+    "modified_date": "2017-03-11 07:46:47"
 }
 ```
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
-
+* [api.authorize - Contact::create](Contact.md/#create_example_events_0)* [api.prepare - Contact::create](Contact.md/#create_example_events_1)* [api.authorize](Contact.md/#create_example_events_2)* [api.authorize](Contact.md/#create_example_events_3)* [api.prepare](Contact.md/#create_example_events_4)* [api.respond](Contact.md/#create_example_events_5)* [api.prepare](Contact.md/#create_example_events_6)* [api.respond](Contact.md/#create_example_events_7)* [api.respond - Contact::create](Contact.md/#create_example_events_8)
 ####<a name='create_example_events_0'></a>api.authorize - Contact::create [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -681,7 +681,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1380"
+        "1391"
     ]
 }
 ```
@@ -696,7 +696,7 @@ This is the example derived from the unit tests. A log
 
 ###<a name='delete_example_events'></a>Events [:house:](index.md)
 
-
+* [api.authorize - Contact::delete](Contact.md/#delete_example_events_0)* [api.prepare - Contact::delete](Contact.md/#delete_example_events_1)* [api.authorize - Contact::getFields](Contact.md/#delete_example_events_2)* [api.prepare - Contact::getFields](Contact.md/#delete_example_events_3)* [api.respond - Contact::getFields](Contact.md/#delete_example_events_4)* [api.respond - Contact::delete](Contact.md/#delete_example_events_5)* [api.authorize - Contact::get](Contact.md/#delete_example_events_6)* [api.prepare - Contact::get](Contact.md/#delete_example_events_7)* [api.authorize - Contact::getFields](Contact.md/#delete_example_events_8)* [api.prepare - Contact::getFields](Contact.md/#delete_example_events_9)* [api.respond - Contact::getFields](Contact.md/#delete_example_events_10)* [api.respond - Contact::get](Contact.md/#delete_example_events_11)
 ####<a name='delete_example_events_0'></a>api.authorize - Contact::delete [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -720,7 +720,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -763,7 +763,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -890,7 +890,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -933,7 +933,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -976,7 +976,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -1103,7 +1103,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -1177,8 +1177,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1380": {
-        "id": "1380",
+    "1391": {
+        "id": "1391",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1187,7 +1187,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "40ce55ea8c92eb326ed286779390b9e4",
+        "hash": "728213dedd25ad4173d28d1bf03bc0c0",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1199,15 +1199,15 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-11 07:34:04",
-        "modified_date": "2017-03-11 07:34:04"
+        "created_date": "2017-03-11 07:46:47",
+        "modified_date": "2017-03-11 07:46:47"
     }
 }
 ```
 
 ###<a name='get_example_events'></a>Events [:house:](index.md)
 
-
+* [api.authorize - Contact::get](Contact.md/#get_example_events_0)* [api.prepare - Contact::get](Contact.md/#get_example_events_1)* [api.authorize - Contact::getFields](Contact.md/#get_example_events_2)* [api.prepare - Contact::getFields](Contact.md/#get_example_events_3)* [api.respond - Contact::getFields](Contact.md/#get_example_events_4)* [api.respond - Contact::get](Contact.md/#get_example_events_5)
 ####<a name='get_example_events_0'></a>api.authorize - Contact::get [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -1231,7 +1231,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -1274,7 +1274,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [
@@ -1401,7 +1401,7 @@ Params:
         [
             "id",
             "=",
-            "1380"
+            "1391"
         ]
     ],
     "orderBy": [

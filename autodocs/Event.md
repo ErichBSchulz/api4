@@ -56,7 +56,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 860,
+    "id": 867,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -116,7 +116,7 @@ This is the example derived from the unit tests. A log
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170311073405",
+    "created_date": "20170311074647",
     "currency": null,
     "campaign_id": null,
     "is_share": null,
@@ -130,7 +130,7 @@ This is the example derived from the unit tests. A log
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
-
+* [api.authorize - Event::create](Event.md/#create_example_events_0)* [api.prepare - Event::create](Event.md/#create_example_events_1)* [api.respond - Event::create](Event.md/#create_example_events_2)
 ####<a name='create_example_events_0'></a>api.authorize - Event::create [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -587,7 +587,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        860
+        867
     ]
 }
 ```
@@ -602,7 +602,7 @@ This is the example derived from the unit tests. A log
 
 ###<a name='delete_example_events'></a>Events [:house:](index.md)
 
-
+* [api.authorize - Event::delete](Event.md/#delete_example_events_0)* [api.prepare - Event::delete](Event.md/#delete_example_events_1)* [api.authorize - Event::getFields](Event.md/#delete_example_events_2)* [api.prepare - Event::getFields](Event.md/#delete_example_events_3)* [api.respond - Event::getFields](Event.md/#delete_example_events_4)* [api.respond - Event::delete](Event.md/#delete_example_events_5)* [api.authorize - Event::get](Event.md/#delete_example_events_6)* [api.prepare - Event::get](Event.md/#delete_example_events_7)* [api.authorize - Event::getFields](Event.md/#delete_example_events_8)* [api.prepare - Event::getFields](Event.md/#delete_example_events_9)* [api.respond - Event::getFields](Event.md/#delete_example_events_10)* [api.respond - Event::get](Event.md/#delete_example_events_11)
 ####<a name='delete_example_events_0'></a>api.authorize - Event::delete [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -626,7 +626,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -669,7 +669,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -796,7 +796,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -839,7 +839,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -882,7 +882,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -1009,7 +1009,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -1094,8 +1094,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "860": {
-        "id": "860",
+    "867": {
+        "id": "867",
         "title": "Annual CiviCRM meet",
         "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
         "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -1123,7 +1123,7 @@ This is the example derived from the unit tests. A log
         "allow_selfcancelxfer": "0",
         "selfcancelxfer_time": "0",
         "is_template": "0",
-        "created_date": "2017-03-11 07:34:05",
+        "created_date": "2017-03-11 07:46:47",
         "is_share": "1",
         "is_confirm_enabled": "1",
         "is_billing_required": "0"
@@ -1133,7 +1133,7 @@ This is the example derived from the unit tests. A log
 
 ###<a name='get_example_events'></a>Events [:house:](index.md)
 
-
+* [api.authorize - Event::get](Event.md/#get_example_events_0)* [api.prepare - Event::get](Event.md/#get_example_events_1)* [api.authorize - Event::getFields](Event.md/#get_example_events_2)* [api.prepare - Event::getFields](Event.md/#get_example_events_3)* [api.respond - Event::getFields](Event.md/#get_example_events_4)* [api.respond - Event::get](Event.md/#get_example_events_5)
 ####<a name='get_example_events_0'></a>api.authorize - Event::get [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -1157,7 +1157,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -1200,7 +1200,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [
@@ -1327,7 +1327,7 @@ Params:
         [
             "id",
             "=",
-            860
+            867
         ]
     ],
     "orderBy": [

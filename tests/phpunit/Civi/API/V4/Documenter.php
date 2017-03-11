@@ -140,13 +140,17 @@ class Documenter  {
             . "\n```\n";
           $string .= $this->heading(3, $entity, "${action}_example_events",
             "Events");
+          $event_string = '';
+          $event_index = '';
           foreach ($example['events'] as $n => $event) {
             $request = $event->getApiRequest();
             $api_call = is_object($request)
                 ? ' - ' . $request->getEntity() . '::' .  $request->getAction()
                 : '';
-            $string .= $this->heading(4, $entity, "${action}_example_events_$n",
-              $event->getName() . $api_call);
+            $anchor = "${action}_example_events_$n";
+            $title = $event->getName() . $api_call;
+            $event_index .= '* ' . $this->link($entity, $anchor, $title);
+            $event_string .= $this->heading(4, $entity, $anchor, $title);
             $parent = get_parent_class($event);
             $event_methods = get_class_methods($event);
             if ($parent) {
@@ -154,16 +158,16 @@ class Documenter  {
               // subtract parent methods:
               $event_methods = array_diff($event_methods, $parent_methods);
             }
-            $string .= "> " . $this->classLink(get_class($event))
+            $event_string .= "> " . $this->classLink(get_class($event))
               . ($parent ? ' extends ' . $this->classLink($parent) : '')
               . "\n\n";
-            $string .= "*Methods:* "
+            $event_string .= "*Methods:* "
               . $this->methodList($event_methods)
               . ($parent
                 ? "\n\n*Inherits:* " . $this->methodList($parent_methods)
                 : '')
               . "\n\n";
-            $string .= $this->heading(5, $entity,
+            $event_string .= $this->heading(5, $entity,
               "${action}_example_event_params_$n", "API Request params")
               . (is_object($request)
                 ? '*Methods*:' . $this->methodList(get_class_methods($request))
@@ -173,6 +177,8 @@ class Documenter  {
                 : json_encode($request, JSON_PRETTY_PRINT))
               . "\n\n";
           }
+          $string .= $event_index . $event_string;
+          // hooks
           $string .= $this->heading(3, $entity, "${action}_example_hook_calls",
             "Hook calls");
           foreach ($example['hook_calls'] as $hook => $hook_call) {

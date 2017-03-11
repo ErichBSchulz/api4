@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1413",
+    "id": "1428",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "76d5c727039ab9132adefe27c131b1f1",
+    "hash": "7bb7a408d5715a80a9f96e527e3c1c66",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 07:52:00",
-    "modified_date": "2017-03-11 07:52:00"
+    "created_date": "2017-03-11 07:56:27",
+    "modified_date": "2017-03-11 07:56:27"
 }
 ```
 
@@ -104,12 +104,12 @@ This is the example derived from the unit tests. A log
 
 * [api.authorize - Contact::create](Contact.md/#create_example_events_0)
 * [api.prepare - Contact::create](Contact.md/#create_example_events_1)
-* [api.authorize](Contact.md/#create_example_events_2)
-* [api.authorize](Contact.md/#create_example_events_3)
-* [api.prepare](Contact.md/#create_example_events_4)
-* [api.respond](Contact.md/#create_example_events_5)
-* [api.prepare](Contact.md/#create_example_events_6)
-* [api.respond](Contact.md/#create_example_events_7)
+* [api.authorize - Setting::getvalue](Contact.md/#create_example_events_2)
+* [api.authorize - Setting::getfields](Contact.md/#create_example_events_3)
+* [api.prepare - Setting::getfields](Contact.md/#create_example_events_4)
+* [api.respond - Setting::getfields](Contact.md/#create_example_events_5)
+* [api.prepare - Setting::getvalue](Contact.md/#create_example_events_6)
+* [api.respond - Setting::getvalue](Contact.md/#create_example_events_7)
 * [api.respond - Contact::create](Contact.md/#create_example_events_8)
 
 ####<a name='create_example_events_0'></a>api.authorize - Contact::create [:house:](index.md)
@@ -328,7 +328,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
+####<a name='create_example_events_2'></a>api.authorize - Setting::getvalue [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -358,7 +358,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
+####<a name='create_example_events_3'></a>api.authorize - Setting::getfields [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -387,7 +387,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
+####<a name='create_example_events_4'></a>api.prepare - Setting::getfields [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -422,7 +422,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
+####<a name='create_example_events_5'></a>api.respond - Setting::getfields [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -457,7 +457,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
+####<a name='create_example_events_6'></a>api.prepare - Setting::getvalue [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -499,7 +499,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_7'></a>api.respond [:house:](index.md)
+####<a name='create_example_events_7'></a>api.respond - Setting::getvalue [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -702,7 +702,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1413"
+        "1428"
     ]
 }
 ```
@@ -753,7 +753,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -796,7 +796,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -923,7 +923,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -966,7 +966,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -1009,7 +1009,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -1136,7 +1136,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -1210,8 +1210,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1413": {
-        "id": "1413",
+    "1428": {
+        "id": "1428",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1220,7 +1220,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "76d5c727039ab9132adefe27c131b1f1",
+        "hash": "7bb7a408d5715a80a9f96e527e3c1c66",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1232,8 +1232,8 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-11 07:52:00",
-        "modified_date": "2017-03-11 07:52:00"
+        "created_date": "2017-03-11 07:56:27",
+        "modified_date": "2017-03-11 07:56:27"
     }
 }
 ```
@@ -1270,7 +1270,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -1313,7 +1313,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [
@@ -1440,7 +1440,7 @@ Params:
         [
             "id",
             "=",
-            "1413"
+            "1428"
         ]
     ],
     "orderBy": [

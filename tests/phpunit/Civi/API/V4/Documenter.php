@@ -144,11 +144,12 @@ class Documenter  {
           $event_index = '';
           foreach ($example['events'] as $n => $event) {
             $request = $event->getApiRequest();
+            // v3 is an array, v4 a proper object
             $api_call = is_object($request)
-                ? ' - ' . $request->getEntity() . '::' .  $request->getAction()
-                : '';
+                ? $request->getEntity() . '::' .  $request->getAction()
+                : $request['entity'] . '::' .  $request['action'];
             $anchor = "${action}_example_events_$n";
-            $title = $event->getName() . $api_call;
+            $title = $event->getName() . ' - ' . $api_call;
             $event_index .= '* ' . $this->link($entity, $anchor, $title) . "\n";
             $event_string .= $this->heading(4, $entity, $anchor, $title);
             $parent = get_parent_class($event);

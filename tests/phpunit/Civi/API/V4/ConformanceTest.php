@@ -47,27 +47,6 @@ class ConformanceTest extends UnitTestCase {
   }
 
   /**
-   * Temporary bodge to help with debugging
-   * @param string $entity
-   * @param string $action
-   * @param array $calls to hooks since last reset
-   */
-  protected function reportHookCalls($entity, $action, $calls) {
-    $this->report("### $entity.$action hook calls: \n"
-      . json_encode($calls, JSON_PRETTY_PRINT));
-  }
-
-  /**
-   * Temporary bodge to help with debugging
-   * @param MockSubscriber $subscriber
-   */
-  protected function reportEvents($subscriber) {
-    return;
-    foreach ($subscriber->getEventLog() as $event) {
-    }
-  }
-
-  /**
    * Check that a number of hook calls have taken place
    * @param array $calls to hooks since last reset
    */
@@ -156,58 +135,74 @@ class ConformanceTest extends UnitTestCase {
           ->execute();
         $this->assertArrayHasKey('id', $create_result, "create missing ID");
         $id = $create_result['id'];
-        $hook_calls = array(
+        $expected_hook_calls = array(
           'pre' => 1,
           'post' => 1,
           'apiWrappers' => 1,
         //  'permission_check' => 1,
         );
-        $this->assertHooksCalled($entity, 'Create', $hook_calls);
+        $this->assertHooksCalled($entity, 'Create', $expected_hook_calls);
         $this->assertGreaterThanOrEqual(1, $id, "$entity ID not positive");
-        $this->reportHookCalls($entity, 'Create', $this->hook_calls);
-        $this->reportEvents($subscriber);
-        $examples["$entity.create"] = array(
-          'params' => array('Values' => $dummy),
-          'result' => $create_result,
-          'hook_calls' => $hook_calls,
-          'events' => $subscriber->getEventLog(),
-        );
-        // retrieve
+        if ($doc_path) {
+          $examples["$entity.create"] = array(
+            'params' => array('Values' => $dummy),
+            'result' => $create_result,
+            'hook_calls' => $this->hook_calls,
+            'events' => $subscriber->getEventLog(),
+          );
+        }
+        // retrieve (get)
         $this->resetHookLog();
+        $subscriber->resetEventLog();
         $get_result = $entity_class::get()
           ->setCheckPermissions(FALSE)
           ->addClause(array('id', '=', $id))
           ->execute();
-        $hook_calls = array(
+        $expected_hook_calls = array(
           'apiWrappers' => 2,
         );
-        $this->assertHooksCalled($entity, 'Get', $hook_calls);
-        $this->reportHookCalls($entity, 'Get', $this->hook_calls);
-        $this->report("Hook calls: \n" . json_encode($this->hook_calls, JSON_PRETTY_PRINT));
+        $this->assertHooksCalled($entity, 'Get', $expected_hook_calls);
         $this->assertEquals(1, count($get_result),
           "failed to get single fresh $entity");
+        if ($doc_path) {
+          $examples["$entity.get"] = array(
+            'params' => array('Values' => $dummy),
+            'result' => $get_result,
+            'hook_calls' => $this->hook_calls,
+            'events' => $subscriber->getEventLog(),
+          );
+        }
         // update
 
         // delete
         $this->resetHookLog();
+        $subscriber->resetEventLog();
         $delete_result = $entity_class::delete()
           ->setCheckPermissions(FALSE)
           ->addClause(array('id', '=', $id))
           ->execute();
-        $hook_calls = array(
+        $expected_hook_calls = array(
           'apiWrappers' => 2,
         );
-        $this->assertHooksCalled($entity, 'Get', $hook_calls);
-        $this->reportHookCalls($entity, 'Delete', $this->hook_calls);
+        $this->assertHooksCalled($entity, 'Get', $expected_hook_calls);
         // should get back an array of deleted id:
         $this->assertEquals(array($id), (array) $delete_result,
           "unexpected delete result from $entity");
-        $get_deleted_result = $entity_class::get()
+        $clause = array('id', '=', $id);
+        $delete_result = $entity_class::get()
           ->setCheckPermissions(FALSE)
-          ->addClause(array('id', '=', $id))
+          ->addClause($clause)
           ->execute();
-        $this->assertEquals(0, count($get_deleted_result),
+        $this->assertEquals(0, count($delete_result),
           "still getting back data after delete of $entity");
+        if ($doc_path) {
+          $examples["$entity.delete"] = array(
+            'params' => array('Clause' => $clause),
+            'result' => $delete_result,
+            'hook_calls' => $this->hook_calls,
+            'events' => $subscriber->getEventLog(),
+          );
+        }
       }
       $blob['entity'][$entity] = $entity_blob;
     }

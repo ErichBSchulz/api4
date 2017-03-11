@@ -152,10 +152,10 @@ class Documenter  {
             $string .= "> " . $this->classLink(get_class($event))
               . ($parent ? ' extends ' . $this->classLink($parent) : '')
               . "\n\n";
-            $string .= "Methods: "
+            $string .= "**Methods:** "
               . $this->methodList($event_methods)
               . ($parent
-                ? ' inherits: ' . $this->methodList($parent_methods)
+                ? "\n\n**Inherits:** " . $this->methodList($parent_methods)
                 : '')
               . "\n\n";
           }

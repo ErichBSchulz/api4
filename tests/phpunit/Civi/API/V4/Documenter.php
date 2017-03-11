@@ -85,7 +85,7 @@ class Documenter  {
   }
 
   /**
-   * Convert a data blob into markdown
+   * Render the ConformanceTest trace blob into markdown.
    * Makes and index table of Entity | Actions | Fields
    * @param array blob
    */
@@ -122,6 +122,7 @@ class Documenter  {
         }
         // (optional) example
         if (isset($blob['examples']["$entity.$action"])) {
+          $index .= ' ' . $this->link($entity, "${action}_example", ":art:");
           $example = $blob['examples']["$entity.$action"];
           $string .= $this->heading(2, $entity, "${action}_example",
             "Example");

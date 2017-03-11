@@ -42,8 +42,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "847",
-        "contact_id": "1360",
+        "event_id": "854",
+        "contact_id": "1371",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -59,8 +59,8 @@ This is the example derived from the unit tests. A log
 {
     "21": {
         "id": "21",
-        "contact_id": "1360",
-        "event_id": "847",
+        "contact_id": "1371",
+        "event_id": "854",
         "status_id": "2",
         "role_id": "1",
         "register_date": "2007-02-19 00:00:00",
@@ -337,8 +337,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "847",
-        "contact_id": "1360",
+        "event_id": "854",
+        "contact_id": "1371",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -353,8 +353,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "id": 21,
-    "contact_id": "1360",
-    "event_id": "847",
+    "contact_id": "1371",
+    "event_id": "854",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -394,8 +394,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "847",
-        "contact_id": "1360",
+        "event_id": "854",
+        "contact_id": "1371",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -472,8 +472,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "847",
-        "contact_id": "1360",
+        "event_id": "854",
+        "contact_id": "1371",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -550,8 +550,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "847",
-        "contact_id": "1360",
+        "event_id": "854",
+        "contact_id": "1371",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,

@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1280",
+    "id": "1291",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "cef7885d3c9f97cf93db05edfc4ed7b4",
+    "hash": "f40d54bc8e227db51de25a10eed12660",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 03:41:16",
-    "modified_date": "2017-03-11 03:41:16"
+    "created_date": "2017-03-11 03:43:07",
+    "modified_date": "2017-03-11 03:43:07"
 }
 ```
 
@@ -114,9 +114,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_0'></a>API Request params [:house:](index.md)
 
-{
-
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
 ```
 {
     "values": {
@@ -207,7 +205,8 @@ This is the example derived from the unit tests. A log
     "options": [
 
     ]
-}```
+}
+```
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -221,9 +220,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_1'></a>API Request params [:house:](index.md)
 
-{
-
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
 ```
 {
     "values": {
@@ -314,7 +311,8 @@ This is the example derived from the unit tests. A log
     "options": [
 
     ]
-}```
+}
+```
 
 
 ####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
@@ -328,21 +326,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
 
-{
-    "id": 18,
-    "version": 3,
-    "params": {
-        "name": "lcMessages",
-        "group": "Localization Preferences",
-        "version": 3
-    },
-    "extra": null,
-    "fields": null,
-    "entity": "Setting",
-    "action": "getvalue",
-    "function": "civicrm_api3_setting_getvalue",
-    "is_generic": false
-}
+
 
 
 ####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
@@ -356,20 +340,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_3'></a>API Request params [:house:](index.md)
 
-{
-    "id": 19,
-    "version": 3,
-    "params": {
-        "action": "getvalue",
-        "version": 3
-    },
-    "extra": null,
-    "fields": null,
-    "entity": "Setting",
-    "action": "getfields",
-    "function": "civicrm_api3_setting_getfields",
-    "is_generic": false
-}
+
 
 
 ####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
@@ -383,26 +354,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_4'></a>API Request params [:house:](index.md)
 
-{
-    "id": 19,
-    "version": 3,
-    "params": {
-        "action": "getvalue",
-        "version": 3
-    },
-    "extra": null,
-    "fields": {
-        "action": {
-            "api.aliases": [
-                "api_action"
-            ]
-        }
-    },
-    "entity": "Setting",
-    "action": "getfields",
-    "function": "civicrm_api3_setting_getfields",
-    "is_generic": false
-}
+
 
 
 ####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
@@ -416,26 +368,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_5'></a>API Request params [:house:](index.md)
 
-{
-    "id": 19,
-    "version": 3,
-    "params": {
-        "action": "getvalue",
-        "version": 3
-    },
-    "extra": null,
-    "fields": {
-        "action": {
-            "api.aliases": [
-                "api_action"
-            ]
-        }
-    },
-    "entity": "Setting",
-    "action": "getfields",
-    "function": "civicrm_api3_setting_getfields",
-    "is_generic": false
-}
+
 
 
 ####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
@@ -449,33 +382,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_6'></a>API Request params [:house:](index.md)
 
-{
-    "id": 18,
-    "version": 3,
-    "params": {
-        "name": "lcMessages",
-        "group": "Localization Preferences",
-        "version": 3
-    },
-    "extra": null,
-    "fields": {
-        "name": {
-            "title": "name of setting field",
-            "api.required": 1,
-            "type": 2
-        },
-        "group": {
-            "api.required": 0,
-            "title": "Setting Group",
-            "description": "Settings Group. This is required if the setting is not stored in config",
-            "type": 2
-        }
-    },
-    "entity": "Setting",
-    "action": "getvalue",
-    "function": "civicrm_api3_setting_getvalue",
-    "is_generic": false
-}
+
 
 
 ####<a name='create_example_events_7'></a>api.respond [:house:](index.md)
@@ -489,33 +396,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_7'></a>API Request params [:house:](index.md)
 
-{
-    "id": 18,
-    "version": 3,
-    "params": {
-        "name": "lcMessages",
-        "group": "Localization Preferences",
-        "version": 3
-    },
-    "extra": null,
-    "fields": {
-        "name": {
-            "title": "name of setting field",
-            "api.required": 1,
-            "type": 2
-        },
-        "group": {
-            "api.required": 0,
-            "title": "Setting Group",
-            "description": "Settings Group. This is required if the setting is not stored in config",
-            "type": 2
-        }
-    },
-    "entity": "Setting",
-    "action": "getvalue",
-    "function": "civicrm_api3_setting_getvalue",
-    "is_generic": false
-}
+
 
 
 ####<a name='create_example_events_8'></a>api.respond [:house:](index.md)
@@ -529,9 +410,7 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_8'></a>API Request params [:house:](index.md)
 
-{
-
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
 ```
 {
     "values": {
@@ -622,7 +501,8 @@ This is the example derived from the unit tests. A log
     "options": [
 
     ]
-}```
+}
+```
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

@@ -142,7 +142,7 @@ class Documenter  {
             "Events");
           foreach ($example['events'] as $n => $event) {
             $request = $event->getApiRequest();
-            $api_call = (is_object($request)
+            $api_call = is_object($request)
                 ? ' - ' . $request->getEntity() . '::' .  $request->getAction()
                 : '';
             $string .= $this->heading(4, $entity, "${action}_example_events_$n",

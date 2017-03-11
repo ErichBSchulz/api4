@@ -56,7 +56,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 853,
+    "id": 860,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -116,7 +116,7 @@ This is the example derived from the unit tests. A log
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170311072747",
+    "created_date": "20170311073405",
     "currency": null,
     "campaign_id": null,
     "is_share": null,
@@ -131,7 +131,7 @@ This is the example derived from the unit tests. A log
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
 
-####<a name='create_example_events_0'></a>api.authorize [:house:](index.md)
+####<a name='create_example_events_0'></a>api.authorize - Event::create [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -267,7 +267,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
+####<a name='create_example_events_1'></a>api.prepare - Event::create [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -403,7 +403,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
+####<a name='create_example_events_2'></a>api.respond - Event::create [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -587,7 +587,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        853
+        860
     ]
 }
 ```
@@ -603,7 +603,7 @@ This is the example derived from the unit tests. A log
 ###<a name='delete_example_events'></a>Events [:house:](index.md)
 
 
-####<a name='delete_example_events_0'></a>api.authorize [:house:](index.md)
+####<a name='delete_example_events_0'></a>api.authorize - Event::delete [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -626,7 +626,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -646,7 +646,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_1'></a>api.prepare [:house:](index.md)
+####<a name='delete_example_events_1'></a>api.prepare - Event::delete [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -669,7 +669,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -689,7 +689,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_2'></a>api.authorize [:house:](index.md)
+####<a name='delete_example_events_2'></a>api.authorize - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -717,7 +717,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_3'></a>api.prepare [:house:](index.md)
+####<a name='delete_example_events_3'></a>api.prepare - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -745,7 +745,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_4'></a>api.respond [:house:](index.md)
+####<a name='delete_example_events_4'></a>api.respond - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -773,7 +773,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_5'></a>api.respond [:house:](index.md)
+####<a name='delete_example_events_5'></a>api.respond - Event::delete [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -796,7 +796,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -816,7 +816,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_6'></a>api.authorize [:house:](index.md)
+####<a name='delete_example_events_6'></a>api.authorize - Event::get [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -839,7 +839,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -859,7 +859,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_7'></a>api.prepare [:house:](index.md)
+####<a name='delete_example_events_7'></a>api.prepare - Event::get [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -882,7 +882,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -902,7 +902,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_8'></a>api.authorize [:house:](index.md)
+####<a name='delete_example_events_8'></a>api.authorize - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -930,7 +930,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_9'></a>api.prepare [:house:](index.md)
+####<a name='delete_example_events_9'></a>api.prepare - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -958,7 +958,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_10'></a>api.respond [:house:](index.md)
+####<a name='delete_example_events_10'></a>api.respond - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -986,7 +986,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_11'></a>api.respond [:house:](index.md)
+####<a name='delete_example_events_11'></a>api.respond - Event::get [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -1009,7 +1009,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -1094,8 +1094,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "853": {
-        "id": "853",
+    "860": {
+        "id": "860",
         "title": "Annual CiviCRM meet",
         "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
         "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -1123,7 +1123,7 @@ This is the example derived from the unit tests. A log
         "allow_selfcancelxfer": "0",
         "selfcancelxfer_time": "0",
         "is_template": "0",
-        "created_date": "2017-03-11 07:27:47",
+        "created_date": "2017-03-11 07:34:05",
         "is_share": "1",
         "is_confirm_enabled": "1",
         "is_billing_required": "0"
@@ -1134,7 +1134,7 @@ This is the example derived from the unit tests. A log
 ###<a name='get_example_events'></a>Events [:house:](index.md)
 
 
-####<a name='get_example_events_0'></a>api.authorize [:house:](index.md)
+####<a name='get_example_events_0'></a>api.authorize - Event::get [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -1157,7 +1157,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -1177,7 +1177,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_1'></a>api.prepare [:house:](index.md)
+####<a name='get_example_events_1'></a>api.prepare - Event::get [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -1200,7 +1200,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [
@@ -1220,7 +1220,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_2'></a>api.authorize [:house:](index.md)
+####<a name='get_example_events_2'></a>api.authorize - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -1248,7 +1248,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_3'></a>api.prepare [:house:](index.md)
+####<a name='get_example_events_3'></a>api.prepare - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -1276,7 +1276,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_4'></a>api.respond [:house:](index.md)
+####<a name='get_example_events_4'></a>api.respond - Event::getFields [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -1304,7 +1304,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_5'></a>api.respond [:house:](index.md)
+####<a name='get_example_events_5'></a>api.respond - Event::get [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -1327,7 +1327,7 @@ Params:
         [
             "id",
             "=",
-            853
+            860
         ]
     ],
     "orderBy": [

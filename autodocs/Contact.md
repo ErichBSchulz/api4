@@ -9,7 +9,7 @@ Action | Params | Example
 [getActions](Contact.md/#action_getActions) | [Params](Contact.md/#getActions_params) | 
 [getFields](Contact.md/#action_getFields) | [Params](Contact.md/#getFields_params) | 
 [update](Contact.md/#action_update) | [Params](Contact.md/#update_params) | 
-
+**Fields**:  [id](Contact.md/#field_id) [contact_type](Contact.md/#field_contact_type) [contact_sub_type](Contact.md/#field_contact_sub_type) [do_not_email](Contact.md/#field_do_not_email) [do_not_phone](Contact.md/#field_do_not_phone) [do_not_mail](Contact.md/#field_do_not_mail) [do_not_sms](Contact.md/#field_do_not_sms) [do_not_trade](Contact.md/#field_do_not_trade) [is_opt_out](Contact.md/#field_is_opt_out) [legal_identifier](Contact.md/#field_legal_identifier) [external_identifier](Contact.md/#field_external_identifier) [sort_name](Contact.md/#field_sort_name) [display_name](Contact.md/#field_display_name) [nick_name](Contact.md/#field_nick_name) [legal_name](Contact.md/#field_legal_name) [image_URL](Contact.md/#field_image_URL) [preferred_communication_method](Contact.md/#field_preferred_communication_method) [preferred_language](Contact.md/#field_preferred_language) [preferred_mail_format](Contact.md/#field_preferred_mail_format) [hash](Contact.md/#field_hash) [api_key](Contact.md/#field_api_key) [source](Contact.md/#field_source) [first_name](Contact.md/#field_first_name) [middle_name](Contact.md/#field_middle_name) [last_name](Contact.md/#field_last_name) [prefix_id](Contact.md/#field_prefix_id) [suffix_id](Contact.md/#field_suffix_id) [formal_title](Contact.md/#field_formal_title) [communication_style_id](Contact.md/#field_communication_style_id) [email_greeting_id](Contact.md/#field_email_greeting_id) [email_greeting_custom](Contact.md/#field_email_greeting_custom) [email_greeting_display](Contact.md/#field_email_greeting_display) [postal_greeting_id](Contact.md/#field_postal_greeting_id) [postal_greeting_custom](Contact.md/#field_postal_greeting_custom) [postal_greeting_display](Contact.md/#field_postal_greeting_display) [addressee_id](Contact.md/#field_addressee_id) [addressee_custom](Contact.md/#field_addressee_custom) [addressee_display](Contact.md/#field_addressee_display) [job_title](Contact.md/#field_job_title) [gender_id](Contact.md/#field_gender_id) [birth_date](Contact.md/#field_birth_date) [is_deceased](Contact.md/#field_is_deceased) [deceased_date](Contact.md/#field_deceased_date) [household_name](Contact.md/#field_household_name) [primary_contact_id](Contact.md/#field_primary_contact_id) [organization_name](Contact.md/#field_organization_name) [sic_code](Contact.md/#field_sic_code) [user_unique_id](Contact.md/#field_user_unique_id) [employer_id](Contact.md/#field_employer_id) [is_deleted](Contact.md/#field_is_deleted) [created_date](Contact.md/#field_created_date) [modified_date](Contact.md/#field_modified_date)
 ##<a name='action_create'></a>Action Contact.create [:house:](index.md)
 
 Base class for all create actions.
@@ -53,7 +53,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1487",
+    "id": "1498",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -72,7 +72,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "d9a444795234cfc0510a32d72d520d0c",
+    "hash": "bbd7cf85f52b874568986e00c31505b7",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -103,8 +103,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 08:36:33",
-    "modified_date": "2017-03-11 08:36:33"
+    "created_date": "2017-03-11 08:40:02",
+    "modified_date": "2017-03-11 08:40:02"
 }
 ```
 
@@ -710,7 +710,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1487"
+        "1498"
     ]
 }
 ```
@@ -719,7 +719,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "1487"
+    "0": "1498"
 }
 ```
 
@@ -761,7 +761,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -804,7 +804,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -931,7 +931,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -974,7 +974,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -1017,7 +1017,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -1144,7 +1144,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -1218,8 +1218,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1487": {
-        "id": "1487",
+    "1498": {
+        "id": "1498",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1228,7 +1228,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "d9a444795234cfc0510a32d72d520d0c",
+        "hash": "bbd7cf85f52b874568986e00c31505b7",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1240,8 +1240,8 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-11 08:36:33",
-        "modified_date": "2017-03-11 08:36:33"
+        "created_date": "2017-03-11 08:40:02",
+        "modified_date": "2017-03-11 08:40:02"
     }
 }
 ```
@@ -1278,7 +1278,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -1321,7 +1321,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [
@@ -1448,7 +1448,7 @@ Params:
         [
             "id",
             "=",
-            "1487"
+            "1498"
         ]
     ],
     "orderBy": [

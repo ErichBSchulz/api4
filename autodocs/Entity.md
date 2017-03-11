@@ -5,7 +5,7 @@ Action | Params | Example
 ------ | ------ | -------
 [get](Entity.md/#action_get) | [Params](Entity.md/#get_params) | 
 [getActions](Entity.md/#action_getActions) | [Params](Entity.md/#getActions_params) | 
-
+**Fields**: 
 ##<a name='action_get'></a>Action Entity.get [:house:](index.md)
 
 Get entities

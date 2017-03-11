@@ -9,7 +9,7 @@ Action | Params | Example
 [getActions](Contribution.md/#action_getActions) | [Params](Contribution.md/#getActions_params) | 
 [getFields](Contribution.md/#action_getFields) | [Params](Contribution.md/#getFields_params) | 
 [update](Contribution.md/#action_update) | [Params](Contribution.md/#update_params) | 
-
+**Fields**:  [id](Contribution.md/#field_id) [contact_id](Contribution.md/#field_contact_id) [financial_type_id](Contribution.md/#field_financial_type_id) [contribution_page_id](Contribution.md/#field_contribution_page_id) [payment_instrument_id](Contribution.md/#field_payment_instrument_id) [receive_date](Contribution.md/#field_receive_date) [non_deductible_amount](Contribution.md/#field_non_deductible_amount) [total_amount](Contribution.md/#field_total_amount) [fee_amount](Contribution.md/#field_fee_amount) [net_amount](Contribution.md/#field_net_amount) [trxn_id](Contribution.md/#field_trxn_id) [invoice_id](Contribution.md/#field_invoice_id) [currency](Contribution.md/#field_currency) [cancel_date](Contribution.md/#field_cancel_date) [cancel_reason](Contribution.md/#field_cancel_reason) [receipt_date](Contribution.md/#field_receipt_date) [thankyou_date](Contribution.md/#field_thankyou_date) [source](Contribution.md/#field_source) [amount_level](Contribution.md/#field_amount_level) [contribution_recur_id](Contribution.md/#field_contribution_recur_id) [is_test](Contribution.md/#field_is_test) [is_pay_later](Contribution.md/#field_is_pay_later) [contribution_status_id](Contribution.md/#field_contribution_status_id) [address_id](Contribution.md/#field_address_id) [check_number](Contribution.md/#field_check_number) [campaign_id](Contribution.md/#field_campaign_id) [creditnote_id](Contribution.md/#field_creditnote_id) [tax_amount](Contribution.md/#field_tax_amount) [revenue_recognition_date](Contribution.md/#field_revenue_recognition_date)
 ##<a name='action_create'></a>Action Contribution.create [:house:](index.md)
 
 Base class for all create actions.
@@ -41,7 +41,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1488",
+        "contact_id": "1499",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -52,8 +52,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 140,
-    "contact_id": "1488",
+    "id": 141,
+    "contact_id": "1499",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -122,7 +122,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1488",
+        "contact_id": "1499",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -211,7 +211,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1488",
+        "contact_id": "1499",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1282,7 +1282,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1488",
+        "contact_id": "1499",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1412,7 +1412,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        140
+        141
     ]
 }
 ```
@@ -1421,7 +1421,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "140"
+    "0": "141"
 }
 ```
 
@@ -1463,7 +1463,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -1506,7 +1506,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -1633,7 +1633,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -1676,7 +1676,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -1719,7 +1719,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -1846,7 +1846,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -1908,7 +1908,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1488",
+        "contact_id": "1499",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -1919,9 +1919,9 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "140": {
-        "id": "140",
-        "contact_id": "1488",
+    "141": {
+        "id": "141",
+        "contact_id": "1499",
         "financial_type_id": "1",
         "payment_instrument_id": "4",
         "non_deductible_amount": "0.00",
@@ -1968,7 +1968,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -2011,7 +2011,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [
@@ -2138,7 +2138,7 @@ Params:
         [
             "id",
             "=",
-            140
+            141
         ]
     ],
     "orderBy": [

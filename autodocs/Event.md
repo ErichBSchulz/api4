@@ -9,7 +9,7 @@ Action | Params | Example
 [getActions](Event.md/#action_getActions) | [Params](Event.md/#getActions_params) | 
 [getFields](Event.md/#action_getFields) | [Params](Event.md/#getFields_params) | 
 [update](Event.md/#action_update) | [Params](Event.md/#update_params) | 
-
+**Fields**:  [id](Event.md/#field_id) [title](Event.md/#field_title) [summary](Event.md/#field_summary) [description](Event.md/#field_description) [event_type_id](Event.md/#field_event_type_id) [participant_listing_id](Event.md/#field_participant_listing_id) [is_public](Event.md/#field_is_public) [start_date](Event.md/#field_start_date) [end_date](Event.md/#field_end_date) [is_online_registration](Event.md/#field_is_online_registration) [registration_link_text](Event.md/#field_registration_link_text) [registration_start_date](Event.md/#field_registration_start_date) [registration_end_date](Event.md/#field_registration_end_date) [max_participants](Event.md/#field_max_participants) [event_full_text](Event.md/#field_event_full_text) [is_monetary](Event.md/#field_is_monetary) [financial_type_id](Event.md/#field_financial_type_id) [payment_processor](Event.md/#field_payment_processor) [is_map](Event.md/#field_is_map) [is_active](Event.md/#field_is_active) [fee_label](Event.md/#field_fee_label) [is_show_location](Event.md/#field_is_show_location) [loc_block_id](Event.md/#field_loc_block_id) [default_role_id](Event.md/#field_default_role_id) [intro_text](Event.md/#field_intro_text) [footer_text](Event.md/#field_footer_text) [confirm_title](Event.md/#field_confirm_title) [confirm_text](Event.md/#field_confirm_text) [confirm_footer_text](Event.md/#field_confirm_footer_text) [is_email_confirm](Event.md/#field_is_email_confirm) [confirm_email_text](Event.md/#field_confirm_email_text) [confirm_from_name](Event.md/#field_confirm_from_name) [confirm_from_email](Event.md/#field_confirm_from_email) [cc_confirm](Event.md/#field_cc_confirm) [bcc_confirm](Event.md/#field_bcc_confirm) [default_fee_id](Event.md/#field_default_fee_id) [default_discount_fee_id](Event.md/#field_default_discount_fee_id) [thankyou_title](Event.md/#field_thankyou_title) [thankyou_text](Event.md/#field_thankyou_text) [thankyou_footer_text](Event.md/#field_thankyou_footer_text) [is_pay_later](Event.md/#field_is_pay_later) [pay_later_text](Event.md/#field_pay_later_text) [pay_later_receipt](Event.md/#field_pay_later_receipt) [is_partial_payment](Event.md/#field_is_partial_payment) [initial_amount_label](Event.md/#field_initial_amount_label) [initial_amount_help_text](Event.md/#field_initial_amount_help_text) [min_initial_amount](Event.md/#field_min_initial_amount) [is_multiple_registrations](Event.md/#field_is_multiple_registrations) [max_additional_participants](Event.md/#field_max_additional_participants) [allow_same_participant_emails](Event.md/#field_allow_same_participant_emails) [has_waitlist](Event.md/#field_has_waitlist) [requires_approval](Event.md/#field_requires_approval) [expiration_time](Event.md/#field_expiration_time) [allow_selfcancelxfer](Event.md/#field_allow_selfcancelxfer) [selfcancelxfer_time](Event.md/#field_selfcancelxfer_time) [waitlist_text](Event.md/#field_waitlist_text) [approval_req_text](Event.md/#field_approval_req_text) [is_template](Event.md/#field_is_template) [template_title](Event.md/#field_template_title) [created_id](Event.md/#field_created_id) [created_date](Event.md/#field_created_date) [currency](Event.md/#field_currency) [campaign_id](Event.md/#field_campaign_id) [is_share](Event.md/#field_is_share) [is_confirm_enabled](Event.md/#field_is_confirm_enabled) [parent_event_id](Event.md/#field_parent_event_id) [slot_label_id](Event.md/#field_slot_label_id) [dedupe_rule_group_id](Event.md/#field_dedupe_rule_group_id) [is_billing_required](Event.md/#field_is_billing_required)
 ##<a name='action_create'></a>Action Event.create [:house:](index.md)
 
 Base class for all create actions.
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 927,
+    "id": 934,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -124,7 +124,7 @@ This is the example derived from the unit tests. A log
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170311083633",
+    "created_date": "20170311084002",
     "currency": null,
     "campaign_id": null,
     "is_share": null,
@@ -598,7 +598,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        927
+        934
     ]
 }
 ```
@@ -607,7 +607,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "927"
+    "0": "934"
 }
 ```
 
@@ -649,7 +649,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -692,7 +692,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -819,7 +819,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -862,7 +862,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -905,7 +905,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -1032,7 +1032,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -1117,8 +1117,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "927": {
-        "id": "927",
+    "934": {
+        "id": "934",
         "title": "Annual CiviCRM meet",
         "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
         "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -1146,7 +1146,7 @@ This is the example derived from the unit tests. A log
         "allow_selfcancelxfer": "0",
         "selfcancelxfer_time": "0",
         "is_template": "0",
-        "created_date": "2017-03-11 08:36:33",
+        "created_date": "2017-03-11 08:40:02",
         "is_share": "1",
         "is_confirm_enabled": "1",
         "is_billing_required": "0"
@@ -1186,7 +1186,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -1229,7 +1229,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [
@@ -1356,7 +1356,7 @@ Params:
         [
             "id",
             "=",
-            927
+            934
         ]
     ],
     "orderBy": [

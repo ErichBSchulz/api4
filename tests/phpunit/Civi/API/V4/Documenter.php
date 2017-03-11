@@ -210,9 +210,11 @@ class Documenter  {
       }
       $index .= ' | ';
       // fields !
+      $entity_index .= "**Fields**: ";
       if (array_key_exists('fields', $entity_blob)) {
         $string .= $this->heading(2, $entity, 'fields');
         foreach ($entity_blob['fields'] as $field => $field_blob) {
+          $entity_index .= ' ' . $this->link($entity, "field_$field", $field);
           $string .= $this->heading(3, $entity, "field_$field", $field);
           $index .= ' ' . $this->link($entity, "field_$field", $field);
           // todo make this beautiful

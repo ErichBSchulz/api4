@@ -149,7 +149,7 @@ class Documenter  {
                 : '';
             $anchor = "${action}_example_events_$n";
             $title = $event->getName() . $api_call;
-            $event_index .= '* ' . $this->link($entity, $anchor, $title);
+            $event_index .= '* ' . $this->link($entity, $anchor, $title) . "\n";
             $event_string .= $this->heading(4, $entity, $anchor, $title);
             $parent = get_parent_class($event);
             $event_methods = get_class_methods($event);

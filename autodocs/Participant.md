@@ -42,8 +42,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "868",
-        "contact_id": "1393",
+        "event_id": "875",
+        "contact_id": "1404",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -59,8 +59,8 @@ This is the example derived from the unit tests. A log
 {
     "21": {
         "id": "21",
-        "contact_id": "1393",
-        "event_id": "868",
+        "contact_id": "1404",
+        "event_id": "875",
         "status_id": "2",
         "role_id": "1",
         "register_date": "2007-02-19 00:00:00",
@@ -73,7 +73,13 @@ This is the example derived from the unit tests. A log
 
 ###<a name='get_example_events'></a>Events [:house:](index.md)
 
-* [api.authorize - Participant::get](Participant.md/#get_example_events_0)* [api.prepare - Participant::get](Participant.md/#get_example_events_1)* [api.authorize - Participant::getFields](Participant.md/#get_example_events_2)* [api.prepare - Participant::getFields](Participant.md/#get_example_events_3)* [api.respond - Participant::getFields](Participant.md/#get_example_events_4)* [api.respond - Participant::get](Participant.md/#get_example_events_5)
+* [api.authorize - Participant::get](Participant.md/#get_example_events_0)
+* [api.prepare - Participant::get](Participant.md/#get_example_events_1)
+* [api.authorize - Participant::getFields](Participant.md/#get_example_events_2)
+* [api.prepare - Participant::getFields](Participant.md/#get_example_events_3)
+* [api.respond - Participant::getFields](Participant.md/#get_example_events_4)
+* [api.respond - Participant::get](Participant.md/#get_example_events_5)
+
 ####<a name='get_example_events_0'></a>api.authorize - Participant::get [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -337,8 +343,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "868",
-        "contact_id": "1393",
+        "event_id": "875",
+        "contact_id": "1404",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -353,8 +359,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "id": 21,
-    "contact_id": "1393",
-    "event_id": "868",
+    "contact_id": "1404",
+    "event_id": "875",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -376,7 +382,10 @@ This is the example derived from the unit tests. A log
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
-* [api.authorize - Participant::create](Participant.md/#create_example_events_0)* [api.prepare - Participant::create](Participant.md/#create_example_events_1)* [api.respond - Participant::create](Participant.md/#create_example_events_2)
+* [api.authorize - Participant::create](Participant.md/#create_example_events_0)
+* [api.prepare - Participant::create](Participant.md/#create_example_events_1)
+* [api.respond - Participant::create](Participant.md/#create_example_events_2)
+
 ####<a name='create_example_events_0'></a>api.authorize - Participant::create [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -394,8 +403,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "868",
-        "contact_id": "1393",
+        "event_id": "875",
+        "contact_id": "1404",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -472,8 +481,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "868",
-        "contact_id": "1393",
+        "event_id": "875",
+        "contact_id": "1404",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -550,8 +559,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "868",
-        "contact_id": "1393",
+        "event_id": "875",
+        "contact_id": "1404",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -680,7 +689,19 @@ This is the example derived from the unit tests. A log
 
 ###<a name='delete_example_events'></a>Events [:house:](index.md)
 
-* [api.authorize - Participant::delete](Participant.md/#delete_example_events_0)* [api.prepare - Participant::delete](Participant.md/#delete_example_events_1)* [api.authorize - Participant::getFields](Participant.md/#delete_example_events_2)* [api.prepare - Participant::getFields](Participant.md/#delete_example_events_3)* [api.respond - Participant::getFields](Participant.md/#delete_example_events_4)* [api.respond - Participant::delete](Participant.md/#delete_example_events_5)* [api.authorize - Participant::get](Participant.md/#delete_example_events_6)* [api.prepare - Participant::get](Participant.md/#delete_example_events_7)* [api.authorize - Participant::getFields](Participant.md/#delete_example_events_8)* [api.prepare - Participant::getFields](Participant.md/#delete_example_events_9)* [api.respond - Participant::getFields](Participant.md/#delete_example_events_10)* [api.respond - Participant::get](Participant.md/#delete_example_events_11)
+* [api.authorize - Participant::delete](Participant.md/#delete_example_events_0)
+* [api.prepare - Participant::delete](Participant.md/#delete_example_events_1)
+* [api.authorize - Participant::getFields](Participant.md/#delete_example_events_2)
+* [api.prepare - Participant::getFields](Participant.md/#delete_example_events_3)
+* [api.respond - Participant::getFields](Participant.md/#delete_example_events_4)
+* [api.respond - Participant::delete](Participant.md/#delete_example_events_5)
+* [api.authorize - Participant::get](Participant.md/#delete_example_events_6)
+* [api.prepare - Participant::get](Participant.md/#delete_example_events_7)
+* [api.authorize - Participant::getFields](Participant.md/#delete_example_events_8)
+* [api.prepare - Participant::getFields](Participant.md/#delete_example_events_9)
+* [api.respond - Participant::getFields](Participant.md/#delete_example_events_10)
+* [api.respond - Participant::get](Participant.md/#delete_example_events_11)
+
 ####<a name='delete_example_events_0'></a>api.authorize - Participant::delete [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)

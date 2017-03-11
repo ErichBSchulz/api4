@@ -33,7 +33,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1392",
+        "contact_id": "1403",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -44,8 +44,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 130,
-    "contact_id": "1392",
+    "id": 131,
+    "contact_id": "1403",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -78,7 +78,25 @@ This is the example derived from the unit tests. A log
 
 ###<a name='create_example_events'></a>Events [:house:](index.md)
 
-* [api.authorize - Contribution::create](Contribution.md/#create_example_events_0)* [api.prepare - Contribution::create](Contribution.md/#create_example_events_1)* [api.authorize](Contribution.md/#create_example_events_2)* [api.authorize](Contribution.md/#create_example_events_3)* [api.prepare](Contribution.md/#create_example_events_4)* [api.respond](Contribution.md/#create_example_events_5)* [api.prepare](Contribution.md/#create_example_events_6)* [api.authorize](Contribution.md/#create_example_events_7)* [api.authorize](Contribution.md/#create_example_events_8)* [api.prepare](Contribution.md/#create_example_events_9)* [api.respond](Contribution.md/#create_example_events_10)* [api.prepare](Contribution.md/#create_example_events_11)* [api.authorize](Contribution.md/#create_example_events_12)* [api.prepare](Contribution.md/#create_example_events_13)* [api.respond](Contribution.md/#create_example_events_14)* [api.respond](Contribution.md/#create_example_events_15)* [api.respond](Contribution.md/#create_example_events_16)* [api.respond - Contribution::create](Contribution.md/#create_example_events_17)
+* [api.authorize - Contribution::create](Contribution.md/#create_example_events_0)
+* [api.prepare - Contribution::create](Contribution.md/#create_example_events_1)
+* [api.authorize](Contribution.md/#create_example_events_2)
+* [api.authorize](Contribution.md/#create_example_events_3)
+* [api.prepare](Contribution.md/#create_example_events_4)
+* [api.respond](Contribution.md/#create_example_events_5)
+* [api.prepare](Contribution.md/#create_example_events_6)
+* [api.authorize](Contribution.md/#create_example_events_7)
+* [api.authorize](Contribution.md/#create_example_events_8)
+* [api.prepare](Contribution.md/#create_example_events_9)
+* [api.respond](Contribution.md/#create_example_events_10)
+* [api.prepare](Contribution.md/#create_example_events_11)
+* [api.authorize](Contribution.md/#create_example_events_12)
+* [api.prepare](Contribution.md/#create_example_events_13)
+* [api.respond](Contribution.md/#create_example_events_14)
+* [api.respond](Contribution.md/#create_example_events_15)
+* [api.respond](Contribution.md/#create_example_events_16)
+* [api.respond - Contribution::create](Contribution.md/#create_example_events_17)
+
 ####<a name='create_example_events_0'></a>api.authorize - Contribution::create [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -96,7 +114,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1392",
+        "contact_id": "1403",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -185,7 +203,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1392",
+        "contact_id": "1403",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1226,7 +1244,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1392",
+        "contact_id": "1403",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1356,7 +1374,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        130
+        131
     ]
 }
 ```
@@ -1371,7 +1389,19 @@ This is the example derived from the unit tests. A log
 
 ###<a name='delete_example_events'></a>Events [:house:](index.md)
 
-* [api.authorize - Contribution::delete](Contribution.md/#delete_example_events_0)* [api.prepare - Contribution::delete](Contribution.md/#delete_example_events_1)* [api.authorize - Contribution::getFields](Contribution.md/#delete_example_events_2)* [api.prepare - Contribution::getFields](Contribution.md/#delete_example_events_3)* [api.respond - Contribution::getFields](Contribution.md/#delete_example_events_4)* [api.respond - Contribution::delete](Contribution.md/#delete_example_events_5)* [api.authorize - Contribution::get](Contribution.md/#delete_example_events_6)* [api.prepare - Contribution::get](Contribution.md/#delete_example_events_7)* [api.authorize - Contribution::getFields](Contribution.md/#delete_example_events_8)* [api.prepare - Contribution::getFields](Contribution.md/#delete_example_events_9)* [api.respond - Contribution::getFields](Contribution.md/#delete_example_events_10)* [api.respond - Contribution::get](Contribution.md/#delete_example_events_11)
+* [api.authorize - Contribution::delete](Contribution.md/#delete_example_events_0)
+* [api.prepare - Contribution::delete](Contribution.md/#delete_example_events_1)
+* [api.authorize - Contribution::getFields](Contribution.md/#delete_example_events_2)
+* [api.prepare - Contribution::getFields](Contribution.md/#delete_example_events_3)
+* [api.respond - Contribution::getFields](Contribution.md/#delete_example_events_4)
+* [api.respond - Contribution::delete](Contribution.md/#delete_example_events_5)
+* [api.authorize - Contribution::get](Contribution.md/#delete_example_events_6)
+* [api.prepare - Contribution::get](Contribution.md/#delete_example_events_7)
+* [api.authorize - Contribution::getFields](Contribution.md/#delete_example_events_8)
+* [api.prepare - Contribution::getFields](Contribution.md/#delete_example_events_9)
+* [api.respond - Contribution::getFields](Contribution.md/#delete_example_events_10)
+* [api.respond - Contribution::get](Contribution.md/#delete_example_events_11)
+
 ####<a name='delete_example_events_0'></a>api.authorize - Contribution::delete [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -1395,7 +1425,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -1438,7 +1468,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -1565,7 +1595,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -1608,7 +1638,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -1651,7 +1681,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -1778,7 +1808,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -1840,7 +1870,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1392",
+        "contact_id": "1403",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -1851,9 +1881,9 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "130": {
-        "id": "130",
-        "contact_id": "1392",
+    "131": {
+        "id": "131",
+        "contact_id": "1403",
         "financial_type_id": "1",
         "payment_instrument_id": "4",
         "non_deductible_amount": "0.00",
@@ -1870,7 +1900,13 @@ This is the example derived from the unit tests. A log
 
 ###<a name='get_example_events'></a>Events [:house:](index.md)
 
-* [api.authorize - Contribution::get](Contribution.md/#get_example_events_0)* [api.prepare - Contribution::get](Contribution.md/#get_example_events_1)* [api.authorize - Contribution::getFields](Contribution.md/#get_example_events_2)* [api.prepare - Contribution::getFields](Contribution.md/#get_example_events_3)* [api.respond - Contribution::getFields](Contribution.md/#get_example_events_4)* [api.respond - Contribution::get](Contribution.md/#get_example_events_5)
+* [api.authorize - Contribution::get](Contribution.md/#get_example_events_0)
+* [api.prepare - Contribution::get](Contribution.md/#get_example_events_1)
+* [api.authorize - Contribution::getFields](Contribution.md/#get_example_events_2)
+* [api.prepare - Contribution::getFields](Contribution.md/#get_example_events_3)
+* [api.respond - Contribution::getFields](Contribution.md/#get_example_events_4)
+* [api.respond - Contribution::get](Contribution.md/#get_example_events_5)
+
 ####<a name='get_example_events_0'></a>api.authorize - Contribution::get [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
@@ -1894,7 +1930,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -1937,7 +1973,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [
@@ -2064,7 +2100,7 @@ Params:
         [
             "id",
             "=",
-            130
+            131
         ]
     ],
     "orderBy": [

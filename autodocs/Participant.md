@@ -9,7 +9,8 @@ Action | Params | Example
 [getActions](Participant.md/#action_getActions) | [Params](Participant.md/#getActions_params) | 
 [getFields](Participant.md/#action_getFields) | [Params](Participant.md/#getFields_params) | 
 [update](Participant.md/#action_update) | [Params](Participant.md/#update_params) | 
-**Fields**:  [id](Participant.md/#field_id) [contact_id](Participant.md/#field_contact_id) [event_id](Participant.md/#field_event_id) [status_id](Participant.md/#field_status_id) [role_id](Participant.md/#field_role_id) [register_date](Participant.md/#field_register_date) [source](Participant.md/#field_source) [fee_level](Participant.md/#field_fee_level) [is_test](Participant.md/#field_is_test) [is_pay_later](Participant.md/#field_is_pay_later) [fee_amount](Participant.md/#field_fee_amount) [registered_by_id](Participant.md/#field_registered_by_id) [discount_id](Participant.md/#field_discount_id) [fee_currency](Participant.md/#field_fee_currency) [campaign_id](Participant.md/#field_campaign_id) [discount_amount](Participant.md/#field_discount_amount) [cart_id](Participant.md/#field_cart_id) [must_wait](Participant.md/#field_must_wait) [transferred_to_contact_id](Participant.md/#field_transferred_to_contact_id)
+**Fields**: [id](Participant.md/#field_id), [contact_id](Participant.md/#field_contact_id), [event_id](Participant.md/#field_event_id), [status_id](Participant.md/#field_status_id), [role_id](Participant.md/#field_role_id), [register_date](Participant.md/#field_register_date), [source](Participant.md/#field_source), [fee_level](Participant.md/#field_fee_level), [is_test](Participant.md/#field_is_test), [is_pay_later](Participant.md/#field_is_pay_later), [fee_amount](Participant.md/#field_fee_amount), [registered_by_id](Participant.md/#field_registered_by_id), [discount_id](Participant.md/#field_discount_id), [fee_currency](Participant.md/#field_fee_currency), [campaign_id](Participant.md/#field_campaign_id), [discount_amount](Participant.md/#field_discount_amount), [cart_id](Participant.md/#field_cart_id), [must_wait](Participant.md/#field_must_wait), [transferred_to_contact_id](Participant.md/#field_transferred_to_contact_id)
+
 ##<a name='action_get'></a>Action Participant.get [:house:](index.md)
 
 Base class for all get actions.
@@ -50,8 +51,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "935",
-        "contact_id": "1500",
+        "event_id": "942",
+        "contact_id": "1511",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -67,8 +68,8 @@ This is the example derived from the unit tests. A log
 {
     "21": {
         "id": "21",
-        "contact_id": "1500",
-        "event_id": "935",
+        "contact_id": "1511",
+        "event_id": "942",
         "status_id": "2",
         "role_id": "1",
         "register_date": "2007-02-19 00:00:00",
@@ -351,8 +352,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "935",
-        "contact_id": "1500",
+        "event_id": "942",
+        "contact_id": "1511",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -367,8 +368,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "id": 21,
-    "contact_id": "1500",
-    "event_id": "935",
+    "contact_id": "1511",
+    "event_id": "942",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -411,8 +412,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "935",
-        "contact_id": "1500",
+        "event_id": "942",
+        "contact_id": "1511",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -489,8 +490,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "935",
-        "contact_id": "1500",
+        "event_id": "942",
+        "contact_id": "1511",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -567,8 +568,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "935",
-        "contact_id": "1500",
+        "event_id": "942",
+        "contact_id": "1511",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,

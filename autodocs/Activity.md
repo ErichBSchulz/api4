@@ -9,7 +9,8 @@ Action | Params | Example
 [getActions](Activity.md/#action_getActions) | [Params](Activity.md/#getActions_params) | 
 [getFields](Activity.md/#action_getFields) | [Params](Activity.md/#getFields_params) | 
 [update](Activity.md/#action_update) | [Params](Activity.md/#update_params) | 
-**Fields**:  [id](Activity.md/#field_id) [source_record_id](Activity.md/#field_source_record_id) [activity_type_id](Activity.md/#field_activity_type_id) [subject](Activity.md/#field_subject) [activity_date_time](Activity.md/#field_activity_date_time) [duration](Activity.md/#field_duration) [location](Activity.md/#field_location) [phone_id](Activity.md/#field_phone_id) [phone_number](Activity.md/#field_phone_number) [details](Activity.md/#field_details) [status_id](Activity.md/#field_status_id) [priority_id](Activity.md/#field_priority_id) [parent_id](Activity.md/#field_parent_id) [is_test](Activity.md/#field_is_test) [medium_id](Activity.md/#field_medium_id) [is_auto](Activity.md/#field_is_auto) [relationship_id](Activity.md/#field_relationship_id) [is_current_revision](Activity.md/#field_is_current_revision) [original_id](Activity.md/#field_original_id) [result](Activity.md/#field_result) [is_deleted](Activity.md/#field_is_deleted) [campaign_id](Activity.md/#field_campaign_id) [engagement_level](Activity.md/#field_engagement_level) [weight](Activity.md/#field_weight) [is_star](Activity.md/#field_is_star)
+**Fields**: [id](Activity.md/#field_id), [source_record_id](Activity.md/#field_source_record_id), [activity_type_id](Activity.md/#field_activity_type_id), [subject](Activity.md/#field_subject), [activity_date_time](Activity.md/#field_activity_date_time), [duration](Activity.md/#field_duration), [location](Activity.md/#field_location), [phone_id](Activity.md/#field_phone_id), [phone_number](Activity.md/#field_phone_number), [details](Activity.md/#field_details), [status_id](Activity.md/#field_status_id), [priority_id](Activity.md/#field_priority_id), [parent_id](Activity.md/#field_parent_id), [is_test](Activity.md/#field_is_test), [medium_id](Activity.md/#field_medium_id), [is_auto](Activity.md/#field_is_auto), [relationship_id](Activity.md/#field_relationship_id), [is_current_revision](Activity.md/#field_is_current_revision), [original_id](Activity.md/#field_original_id), [result](Activity.md/#field_result), [is_deleted](Activity.md/#field_is_deleted), [campaign_id](Activity.md/#field_campaign_id), [engagement_level](Activity.md/#field_engagement_level), [weight](Activity.md/#field_weight), [is_star](Activity.md/#field_is_star)
+
 ##<a name='action_create'></a>Action Activity.create [:house:](index.md)
 
 Base class for all create actions.
@@ -42,7 +43,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1497"
+        "source_contact_id": "1508"
     }
 }
 ```
@@ -51,7 +52,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 3052,
+    "id": 3075,
     "source_record_id": null,
     "activity_type_id": null,
     "subject": "unit testing",
@@ -103,7 +104,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1497"
+        "source_contact_id": "1508"
     },
     "bao": {
         "id": null,
@@ -182,7 +183,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1497"
+        "source_contact_id": "1508"
     },
     "bao": {
         "id": null,
@@ -261,7 +262,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1497"
+        "source_contact_id": "1508"
     },
     "bao": {
         "id": null,
@@ -375,7 +376,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        3052
+        3075
     ]
 }
 ```
@@ -384,7 +385,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "3052"
+    "0": "3075"
 }
 ```
 
@@ -426,7 +427,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -469,7 +470,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -596,7 +597,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -639,7 +640,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -682,7 +683,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -809,7 +810,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -872,7 +873,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1497"
+        "source_contact_id": "1508"
     }
 }
 ```
@@ -881,8 +882,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "3052": {
-        "id": "3052",
+    "3075": {
+        "id": "3075",
         "activity_type_id": "1",
         "subject": "unit testing",
         "status_id": "1",
@@ -928,7 +929,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -971,7 +972,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [
@@ -1098,7 +1099,7 @@ Params:
         [
             "id",
             "=",
-            3052
+            3075
         ]
     ],
     "orderBy": [

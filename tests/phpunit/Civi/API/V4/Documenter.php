@@ -210,11 +210,11 @@ class Documenter  {
       }
       $index .= ' | ';
       // fields !
-      $entity_index .= "**Fields**: ";
       if (array_key_exists('fields', $entity_blob)) {
         $string .= $this->heading(2, $entity, 'fields');
+        $field_index = array();
         foreach ($entity_blob['fields'] as $field => $field_blob) {
-          $entity_index .= ' ' . $this->link($entity, "field_$field", $field);
+          $field_index[] = $this->link($entity, "field_$field", $field);
           $string .= $this->heading(3, $entity, "field_$field", $field);
           $index .= ' ' . $this->link($entity, "field_$field", $field);
           // todo make this beautiful
@@ -222,6 +222,7 @@ class Documenter  {
             . json_encode($field_blob, JSON_PRETTY_PRINT)
             . "\n```\n";
         }
+        $entity_index .= "**Fields**: " . implode(', ', $field_index) . "\n";
       }
       $index .= "\n";
       $this->write($entity . '.md', $entity_title . $entity_index . $string);

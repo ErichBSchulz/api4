@@ -1,11 +1,11 @@
 Action | Params | Example
 ------ | ------ | -------
-[create](Contact.md/#action_create) | create |[Params](Contact.md/#create_params) | [[Params](Contact.md/#create_example_params)] [[Result](Contact.md/#create_example_result)] [[Events](Contact.md/#create_example_events)] [[Hooks](Contact.md/#create_example_hook_calls)]
-[delete](Contact.md/#action_delete) | delete |[Params](Contact.md/#delete_params) | [[Params](Contact.md/#delete_example_params)] [[Result](Contact.md/#delete_example_result)] [[Events](Contact.md/#delete_example_events)] [[Hooks](Contact.md/#delete_example_hook_calls)]
-[get](Contact.md/#action_get) | get |[Params](Contact.md/#get_params) | [[Params](Contact.md/#get_example_params)] [[Result](Contact.md/#get_example_result)] [[Events](Contact.md/#get_example_events)] [[Hooks](Contact.md/#get_example_hook_calls)]
-[getActions](Contact.md/#action_getActions) | getActions |[Params](Contact.md/#getActions_params) | 
-[getFields](Contact.md/#action_getFields) | getFields |[Params](Contact.md/#getFields_params) | 
-[update](Contact.md/#action_update) | update |[Params](Contact.md/#update_params) | 
+[create](Contact.md/#action_create) | [Params](Contact.md/#create_params) | [[Params](Contact.md/#create_example_params)] [[Result](Contact.md/#create_example_result)] [[Events](Contact.md/#create_example_events)] [[Hooks](Contact.md/#create_example_hook_calls)]
+[delete](Contact.md/#action_delete) | [Params](Contact.md/#delete_params) | [[Params](Contact.md/#delete_example_params)] [[Result](Contact.md/#delete_example_result)] [[Events](Contact.md/#delete_example_events)] [[Hooks](Contact.md/#delete_example_hook_calls)]
+[get](Contact.md/#action_get) | [Params](Contact.md/#get_params) | [[Params](Contact.md/#get_example_params)] [[Result](Contact.md/#get_example_result)] [[Events](Contact.md/#get_example_events)] [[Hooks](Contact.md/#get_example_hook_calls)]
+[getActions](Contact.md/#action_getActions) | [Params](Contact.md/#getActions_params) | 
+[getFields](Contact.md/#action_getFields) | [Params](Contact.md/#getFields_params) | 
+[update](Contact.md/#action_update) | [Params](Contact.md/#update_params) | 
 
 #<a name='top'></a>Contact [:house:](index.md)
 
@@ -53,7 +53,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1454",
+    "id": "1465",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -72,7 +72,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "31734fd69e529eed31078983da15dc4a",
+    "hash": "87ff724da3d81050324334be2873b52b",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -103,8 +103,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 08:25:11",
-    "modified_date": "2017-03-11 08:25:11"
+    "created_date": "2017-03-11 08:30:15",
+    "modified_date": "2017-03-11 08:30:15"
 }
 ```
 
@@ -710,7 +710,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1454"
+        "1465"
     ]
 }
 ```
@@ -719,7 +719,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "1454"
+    "0": "1465"
 }
 ```
 
@@ -761,7 +761,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -804,7 +804,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -931,7 +931,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -974,7 +974,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -1017,7 +1017,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -1144,7 +1144,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -1218,8 +1218,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1454": {
-        "id": "1454",
+    "1465": {
+        "id": "1465",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1228,7 +1228,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "31734fd69e529eed31078983da15dc4a",
+        "hash": "87ff724da3d81050324334be2873b52b",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1240,8 +1240,8 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-11 08:25:11",
-        "modified_date": "2017-03-11 08:25:11"
+        "created_date": "2017-03-11 08:30:15",
+        "modified_date": "2017-03-11 08:30:15"
     }
 }
 ```
@@ -1278,7 +1278,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -1321,7 +1321,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [
@@ -1448,7 +1448,7 @@ Params:
         [
             "id",
             "=",
-            "1454"
+            "1465"
         ]
     ],
     "orderBy": [

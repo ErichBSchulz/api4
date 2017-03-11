@@ -106,7 +106,6 @@ class Documenter  {
           . ' | ';
         $string .= $this->heading(2, $entity, "action_$action",
           "Action $entity.$action");
-        $entity_index .= "$action |";
         $index .= ' ' . $this->link($entity, "action_$action", "$action");
         $string .= "$action_blob[description]\n\n";
         $string .= $this->heading(3, $entity, "${action}_params",

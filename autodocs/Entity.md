@@ -1,7 +1,7 @@
 Action | Params | Example
 ------ | ------ | -------
-[get](Entity.md/#action_get) | get |[Params](Entity.md/#get_params) | 
-[getActions](Entity.md/#action_getActions) | getActions |[Params](Entity.md/#getActions_params) | 
+[get](Entity.md/#action_get) | [Params](Entity.md/#get_params) | 
+[getActions](Entity.md/#action_getActions) | [Params](Entity.md/#getActions_params) | 
 
 #<a name='top'></a>Entity [:house:](index.md)
 

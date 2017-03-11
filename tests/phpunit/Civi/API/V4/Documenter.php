@@ -98,15 +98,21 @@ class Documenter  {
     $index .= "------ | ------- | ------\n";
     foreach ($blob['entity'] as $entity => $entity_blob) {
       $string = '';
+      $entity_index = "Action | Params | Example\n";
+      $entity_index .= "------ | ------ | -------\n";
       $string .= $this->heading(1, $entity, 'top', $entity);
-      $index .= $this->link($entity, 'top', $entity) . ' | ';
       foreach ($entity_blob['action'] as $action => $action_blob) {
+        $entity_index .= $this->link($entity, "action_$action", $action)
+          . ' | ';
         $string .= $this->heading(2, $entity, "action_$action",
           "Action $entity.$action");
+        $entity_index .= "$action |";
         $index .= ' ' . $this->link($entity, "action_$action", "$action");
         $string .= "$action_blob[description]\n\n";
-        $string .= $this->heading(3, $entity, "action_${action}_params",
+        $string .= $this->heading(3, $entity, "${action}_params",
           "Params");
+        $entity_index .= $this->link($entity, "${action}_params", "Params")
+          . ' | ';
         foreach ($action_blob['params'] as $param => $param_blob) {
           // add some defaults just in case:
           $param_blob += array(
@@ -125,6 +131,15 @@ class Documenter  {
         }
         // (optional) example
         if (isset($blob['examples']["$entity.$action"])) {
+          $entity_index .= '['
+            . $this->link($entity, "${action}_example_params", "Params")
+            . '] ['
+            . $this->link($entity, "${action}_example_result", "Result")
+            . '] ['
+            . $this->link($entity, "${action}_example_events", "Events")
+            . '] ['
+            . $this->link($entity, "${action}_example_hook_calls", "Hooks")
+            . ']';
           $index .= ' ' . $this->link($entity, "${action}_example", ":art:");
           $example = $blob['examples']["$entity.$action"];
           $string .= $this->heading(2, $entity, "${action}_example",
@@ -192,6 +207,7 @@ class Documenter  {
               . "\n";
           }
         }
+        $entity_index .= "\n";
       }
       $index .= ' | ';
       // fields !
@@ -207,7 +223,7 @@ class Documenter  {
         }
       }
       $index .= "\n";
-      $this->write($entity . '.md', $string);
+      $this->write($entity . '.md', $entity_index . $string);
     }
     $this->write($this->index_file, $index);
   }

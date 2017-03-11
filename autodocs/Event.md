@@ -1,3 +1,11 @@
+Action | Params | Example
+------ | ------ | -------
+[create](Event.md/#action_create) | create |[Params](Event.md/#create_params) | [[Params](Event.md/#create_example_params)] [[Result](Event.md/#create_example_result)] [[Events](Event.md/#create_example_events)] [[Hooks](Event.md/#create_example_hook_calls)]
+[delete](Event.md/#action_delete) | delete |[Params](Event.md/#delete_params) | [[Params](Event.md/#delete_example_params)] [[Result](Event.md/#delete_example_result)] [[Events](Event.md/#delete_example_events)] [[Hooks](Event.md/#delete_example_hook_calls)]
+[get](Event.md/#action_get) | get |[Params](Event.md/#get_params) | [[Params](Event.md/#get_example_params)] [[Result](Event.md/#get_example_result)] [[Events](Event.md/#get_example_events)] [[Hooks](Event.md/#get_example_hook_calls)]
+[getActions](Event.md/#action_getActions) | getActions |[Params](Event.md/#getActions_params) | 
+[getFields](Event.md/#action_getFields) | getFields |[Params](Event.md/#getFields_params) | 
+[update](Event.md/#action_update) | update |[Params](Event.md/#update_params) | 
 
 #<a name='top'></a>Event [:house:](index.md)
 
@@ -7,7 +15,7 @@
 Base class for all create actions.
 
 
-###<a name='action_create_params'></a>Params [:house:](index.md)
+###<a name='create_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -56,7 +64,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 897,
+    "id": 906,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -116,7 +124,7 @@ This is the example derived from the unit tests. A log
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170311080956",
+    "created_date": "20170311082511",
     "currency": null,
     "campaign_id": null,
     "is_share": null,
@@ -555,7 +563,7 @@ Params:
 "delete" inherits all the abilities of "get"
 
 
-###<a name='action_delete_params'></a>Params [:house:](index.md)
+###<a name='delete_params'></a>Params [:house:](index.md)
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -590,7 +598,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        897
+        906
     ]
 }
 ```
@@ -599,7 +607,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "897"
+    "0": "906"
 }
 ```
 
@@ -641,7 +649,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -684,7 +692,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -811,7 +819,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -854,7 +862,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -897,7 +905,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -1024,7 +1032,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -1053,7 +1061,7 @@ Params:
 Base class for all get actions.
 
 
-###<a name='action_get_params'></a>Params [:house:](index.md)
+###<a name='get_params'></a>Params [:house:](index.md)
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -1109,8 +1117,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "897": {
-        "id": "897",
+    "906": {
+        "id": "906",
         "title": "Annual CiviCRM meet",
         "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
         "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -1138,7 +1146,7 @@ This is the example derived from the unit tests. A log
         "allow_selfcancelxfer": "0",
         "selfcancelxfer_time": "0",
         "is_template": "0",
-        "created_date": "2017-03-11 08:09:56",
+        "created_date": "2017-03-11 08:25:11",
         "is_share": "1",
         "is_confirm_enabled": "1",
         "is_billing_required": "0"
@@ -1178,7 +1186,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -1221,7 +1229,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -1348,7 +1356,7 @@ Params:
         [
             "id",
             "=",
-            897
+            906
         ]
     ],
     "orderBy": [
@@ -1377,7 +1385,7 @@ Params:
 Get actions for an entity with a list of accepted params
 
 
-###<a name='action_getActions_params'></a>Params [:house:](index.md)
+###<a name='getActions_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1393,7 +1401,7 @@ Get actions for an entity with a list of accepted params
 Get fields for an entity
 
 
-###<a name='action_getFields_params'></a>Params [:house:](index.md)
+###<a name='getFields_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1409,7 +1417,7 @@ Get fields for an entity
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
 
 
-###<a name='action_update_params'></a>Params [:house:](index.md)
+###<a name='update_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set

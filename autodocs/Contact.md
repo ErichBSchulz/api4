@@ -1,3 +1,11 @@
+Action | Params | Example
+------ | ------ | -------
+[create](Contact.md/#action_create) | create |[Params](Contact.md/#create_params) | [[Params](Contact.md/#create_example_params)] [[Result](Contact.md/#create_example_result)] [[Events](Contact.md/#create_example_events)] [[Hooks](Contact.md/#create_example_hook_calls)]
+[delete](Contact.md/#action_delete) | delete |[Params](Contact.md/#delete_params) | [[Params](Contact.md/#delete_example_params)] [[Result](Contact.md/#delete_example_result)] [[Events](Contact.md/#delete_example_events)] [[Hooks](Contact.md/#delete_example_hook_calls)]
+[get](Contact.md/#action_get) | get |[Params](Contact.md/#get_params) | [[Params](Contact.md/#get_example_params)] [[Result](Contact.md/#get_example_result)] [[Events](Contact.md/#get_example_events)] [[Hooks](Contact.md/#get_example_hook_calls)]
+[getActions](Contact.md/#action_getActions) | getActions |[Params](Contact.md/#getActions_params) | 
+[getFields](Contact.md/#action_getFields) | getFields |[Params](Contact.md/#getFields_params) | 
+[update](Contact.md/#action_update) | update |[Params](Contact.md/#update_params) | 
 
 #<a name='top'></a>Contact [:house:](index.md)
 
@@ -7,7 +15,7 @@
 Base class for all create actions.
 
 
-###<a name='action_create_params'></a>Params [:house:](index.md)
+###<a name='create_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -45,7 +53,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1439",
+    "id": "1454",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +72,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "519d786f8e4036af7804923ec31ae6e0",
+    "hash": "31734fd69e529eed31078983da15dc4a",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +103,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 08:09:56",
-    "modified_date": "2017-03-11 08:09:56"
+    "created_date": "2017-03-11 08:25:11",
+    "modified_date": "2017-03-11 08:25:11"
 }
 ```
 
@@ -667,7 +675,7 @@ Params:
 "delete" inherits all the abilities of "get"
 
 
-###<a name='action_delete_params'></a>Params [:house:](index.md)
+###<a name='delete_params'></a>Params [:house:](index.md)
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -702,7 +710,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1439"
+        "1454"
     ]
 }
 ```
@@ -711,7 +719,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "1439"
+    "0": "1454"
 }
 ```
 
@@ -753,7 +761,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -796,7 +804,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -923,7 +931,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -966,7 +974,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -1009,7 +1017,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -1136,7 +1144,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -1165,7 +1173,7 @@ Params:
 Base class for all get actions.
 
 
-###<a name='action_get_params'></a>Params [:house:](index.md)
+###<a name='get_params'></a>Params [:house:](index.md)
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -1210,8 +1218,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1439": {
-        "id": "1439",
+    "1454": {
+        "id": "1454",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1220,7 +1228,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "519d786f8e4036af7804923ec31ae6e0",
+        "hash": "31734fd69e529eed31078983da15dc4a",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1232,8 +1240,8 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-11 08:09:56",
-        "modified_date": "2017-03-11 08:09:56"
+        "created_date": "2017-03-11 08:25:11",
+        "modified_date": "2017-03-11 08:25:11"
     }
 }
 ```
@@ -1270,7 +1278,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -1313,7 +1321,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -1440,7 +1448,7 @@ Params:
         [
             "id",
             "=",
-            "1439"
+            "1454"
         ]
     ],
     "orderBy": [
@@ -1469,7 +1477,7 @@ Params:
 Get actions for an entity with a list of accepted params
 
 
-###<a name='action_getActions_params'></a>Params [:house:](index.md)
+###<a name='getActions_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1485,7 +1493,7 @@ Get actions for an entity with a list of accepted params
 Get fields for an entity
 
 
-###<a name='action_getFields_params'></a>Params [:house:](index.md)
+###<a name='getFields_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1501,7 +1509,7 @@ Get fields for an entity
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
 
 
-###<a name='action_update_params'></a>Params [:house:](index.md)
+###<a name='update_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set

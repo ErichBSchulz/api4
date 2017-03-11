@@ -1,3 +1,11 @@
+Action | Params | Example
+------ | ------ | -------
+[create](Activity.md/#action_create) | create |[Params](Activity.md/#create_params) | [[Params](Activity.md/#create_example_params)] [[Result](Activity.md/#create_example_result)] [[Events](Activity.md/#create_example_events)] [[Hooks](Activity.md/#create_example_hook_calls)]
+[delete](Activity.md/#action_delete) | delete |[Params](Activity.md/#delete_params) | [[Params](Activity.md/#delete_example_params)] [[Result](Activity.md/#delete_example_result)] [[Events](Activity.md/#delete_example_events)] [[Hooks](Activity.md/#delete_example_hook_calls)]
+[get](Activity.md/#action_get) | get |[Params](Activity.md/#get_params) | [[Params](Activity.md/#get_example_params)] [[Result](Activity.md/#get_example_result)] [[Events](Activity.md/#get_example_events)] [[Hooks](Activity.md/#get_example_hook_calls)]
+[getActions](Activity.md/#action_getActions) | getActions |[Params](Activity.md/#getActions_params) | 
+[getFields](Activity.md/#action_getFields) | getFields |[Params](Activity.md/#getFields_params) | 
+[update](Activity.md/#action_update) | update |[Params](Activity.md/#update_params) | 
 
 #<a name='top'></a>Activity [:house:](index.md)
 
@@ -7,7 +15,7 @@
 Base class for all create actions.
 
 
-###<a name='action_create_params'></a>Params [:house:](index.md)
+###<a name='create_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -34,7 +42,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1438"
+        "source_contact_id": "1453"
     }
 }
 ```
@@ -43,7 +51,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 2934,
+    "id": 2960,
     "source_record_id": null,
     "activity_type_id": null,
     "subject": "unit testing",
@@ -95,7 +103,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1438"
+        "source_contact_id": "1453"
     },
     "bao": {
         "id": null,
@@ -174,7 +182,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1438"
+        "source_contact_id": "1453"
     },
     "bao": {
         "id": null,
@@ -253,7 +261,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1438"
+        "source_contact_id": "1453"
     },
     "bao": {
         "id": null,
@@ -332,7 +340,7 @@ Params:
 "delete" inherits all the abilities of "get"
 
 
-###<a name='action_delete_params'></a>Params [:house:](index.md)
+###<a name='delete_params'></a>Params [:house:](index.md)
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -367,7 +375,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        2934
+        2960
     ]
 }
 ```
@@ -376,7 +384,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "2934"
+    "0": "2960"
 }
 ```
 
@@ -418,7 +426,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -461,7 +469,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -588,7 +596,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -631,7 +639,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -674,7 +682,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -801,7 +809,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -830,7 +838,7 @@ Params:
 Base class for all get actions.
 
 
-###<a name='action_get_params'></a>Params [:house:](index.md)
+###<a name='get_params'></a>Params [:house:](index.md)
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -864,7 +872,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1438"
+        "source_contact_id": "1453"
     }
 }
 ```
@@ -873,8 +881,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "2934": {
-        "id": "2934",
+    "2960": {
+        "id": "2960",
         "activity_type_id": "1",
         "subject": "unit testing",
         "status_id": "1",
@@ -920,7 +928,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -963,7 +971,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -1090,7 +1098,7 @@ Params:
         [
             "id",
             "=",
-            2934
+            2960
         ]
     ],
     "orderBy": [
@@ -1119,7 +1127,7 @@ Params:
 Get actions for an entity with a list of accepted params
 
 
-###<a name='action_getActions_params'></a>Params [:house:](index.md)
+###<a name='getActions_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1135,7 +1143,7 @@ Get actions for an entity with a list of accepted params
 Get fields for an entity
 
 
-###<a name='action_getFields_params'></a>Params [:house:](index.md)
+###<a name='getFields_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -1151,7 +1159,7 @@ Get fields for an entity
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
 
 
-###<a name='action_update_params'></a>Params [:house:](index.md)
+###<a name='update_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set

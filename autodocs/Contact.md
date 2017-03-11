@@ -44,7 +44,7 @@ This is the example derived from the unit tests.
 
 ```
 {
-    "id": "1001",
+    "id": "1023",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -63,7 +63,7 @@ This is the example derived from the unit tests.
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "9db77567556682778ab9801f2ca7c938",
+    "hash": "98e5c18e6b2d6a293a32211d7fea4722",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -94,8 +94,8 @@ This is the example derived from the unit tests.
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-10 23:52:21",
-    "modified_date": "2017-03-10 23:52:21"
+    "created_date": "2017-03-11 00:02:59",
+    "modified_date": "2017-03-11 00:02:59"
 }
 ```
 
@@ -105,194 +105,62 @@ This is the example derived from the unit tests.
 ####<a name='create_example_events_0'></a>api.authorize - Civi\API\Event\AuthorizeEvent [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "authorize",
-    "isAuthorized",
-    "__construct",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `authorize()`, `isAuthorized()`, `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_1'></a>api.prepare - Civi\API\Event\PrepareEvent [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "setApiRequest",
-    "__construct",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `setApiRequest()`, `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_2'></a>api.authorize - Civi\API\Event\AuthorizeEvent [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "authorize",
-    "isAuthorized",
-    "__construct",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `authorize()`, `isAuthorized()`, `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_3'></a>api.authorize - Civi\API\Event\AuthorizeEvent [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "authorize",
-    "isAuthorized",
-    "__construct",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `authorize()`, `isAuthorized()`, `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_4'></a>api.prepare - Civi\API\Event\PrepareEvent [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "setApiRequest",
-    "__construct",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `setApiRequest()`, `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_5'></a>api.respond - Civi\API\Event\RespondEvent [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "__construct",
-    "getResponse",
-    "setResponse",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `__construct()`, `getResponse()`, `setResponse()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_6'></a>api.prepare - Civi\API\Event\PrepareEvent [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "setApiRequest",
-    "__construct",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `setApiRequest()`, `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_7'></a>api.respond - Civi\API\Event\RespondEvent [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "__construct",
-    "getResponse",
-    "setResponse",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `__construct()`, `getResponse()`, `setResponse()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ####<a name='create_example_events_8'></a>api.respond - Civi\API\Event\RespondEvent [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-Methods:
-```
-[
-    "__construct",
-    "getResponse",
-    "setResponse",
-    "getApiKernel",
-    "getApiProvider",
-    "getApiRequest",
-    "isPropagationStopped",
-    "stopPropagation",
-    "setDispatcher",
-    "getDispatcher",
-    "getName",
-    "setName"
-]
-```
+
+Methods: `__construct()`, `getResponse()`, `setResponse()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
 
-* [pre](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_/pre) 1
-* [post](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_/post) 1
-* [apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_/apiWrappers) 1
+* [pre](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_pre/) 1
+* [post](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_post/) 1
+* [apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_apiWrappers/) 1
 
 ##<a name='action_delete'></a>Action Contact.delete [:house:](index.md)
 

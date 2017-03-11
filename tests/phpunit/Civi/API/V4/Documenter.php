@@ -6,7 +6,7 @@ namespace Civi\API\V4;
  */
 class Documenter  {
 
-  public $preamble = '# We should put something profound here.';
+  public $preamble = '# CiviCRM API V4';
 
   public $footer = '###### This file was automatically generated. Do not edit directly.';
 
@@ -144,6 +144,7 @@ class Documenter  {
               $event->getName());
             $parent = get_parent_class($event);
             $event_methods = get_class_methods($event);
+            $request = $event->getApiRequest();
             if ($parent) {
               $parent_methods = get_class_methods($parent);
               // subtract parent methods:
@@ -152,11 +153,15 @@ class Documenter  {
             $string .= "> " . $this->classLink(get_class($event))
               . ($parent ? ' extends ' . $this->classLink($parent) : '')
               . "\n\n";
-            $string .= "**Methods:** "
+            $string .= "*Methods:* "
               . $this->methodList($event_methods)
               . ($parent
-                ? "\n\n**Inherits:** " . $this->methodList($parent_methods)
+                ? "\n\n*Inherits:* " . $this->methodList($parent_methods)
                 : '')
+              . "\n\n";
+            $string .= "*Api Request:* "
+              . json_encode($request,JSON_PRETTY_PRINT)
+//              . $this->methodList(get_class_methods($request))
               . "\n\n";
           }
           $string .= $this->heading(3, $entity, "${action}_example_hook_calls",

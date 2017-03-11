@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1177",
+    "id": "1203",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "e077c7bb557f2e9920d4c00f7ffcb8db",
+    "hash": "3435638cbb198adadcd8482c8641e21d",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 02:51:14",
-    "modified_date": "2017-03-11 02:51:14"
+    "created_date": "2017-03-11 03:12:14",
+    "modified_date": "2017-03-11 03:12:14"
 }
 ```
 
@@ -107,81 +107,222 @@ This is the example derived from the unit tests. A log
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+
+}
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+
+}
 
 
 ####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 18,
+    "version": 3,
+    "params": {
+        "name": "lcMessages",
+        "group": "Localization Preferences",
+        "version": 3
+    },
+    "extra": null,
+    "fields": null,
+    "entity": "Setting",
+    "action": "getvalue",
+    "function": "civicrm_api3_setting_getvalue",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 19,
+    "version": 3,
+    "params": {
+        "action": "getvalue",
+        "version": 3
+    },
+    "extra": null,
+    "fields": null,
+    "entity": "Setting",
+    "action": "getfields",
+    "function": "civicrm_api3_setting_getfields",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 19,
+    "version": 3,
+    "params": {
+        "action": "getvalue",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "Setting",
+    "action": "getfields",
+    "function": "civicrm_api3_setting_getfields",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 19,
+    "version": 3,
+    "params": {
+        "action": "getvalue",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "Setting",
+    "action": "getfields",
+    "function": "civicrm_api3_setting_getfields",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 18,
+    "version": 3,
+    "params": {
+        "name": "lcMessages",
+        "group": "Localization Preferences",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "name": {
+            "title": "name of setting field",
+            "api.required": 1,
+            "type": 2
+        },
+        "group": {
+            "api.required": 0,
+            "title": "Setting Group",
+            "description": "Settings Group. This is required if the setting is not stored in config",
+            "type": 2
+        }
+    },
+    "entity": "Setting",
+    "action": "getvalue",
+    "function": "civicrm_api3_setting_getvalue",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_7'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 18,
+    "version": 3,
+    "params": {
+        "name": "lcMessages",
+        "group": "Localization Preferences",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "name": {
+            "title": "name of setting field",
+            "api.required": 1,
+            "type": 2
+        },
+        "group": {
+            "api.required": 0,
+            "title": "Setting Group",
+            "description": "Settings Group. This is required if the setting is not stored in config",
+            "type": 2
+        }
+    },
+    "entity": "Setting",
+    "action": "getvalue",
+    "function": "civicrm_api3_setting_getvalue",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_8'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+
+}
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

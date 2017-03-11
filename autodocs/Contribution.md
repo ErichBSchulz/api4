@@ -33,7 +33,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1178",
+        "contact_id": "1204",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -44,8 +44,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 110,
-    "contact_id": "1178",
+    "id": 113,
+    "contact_id": "1204",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -83,162 +83,946 @@ This is the example derived from the unit tests. A log
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+
+}
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+
+}
 
 
 ####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 37,
+    "version": 3,
+    "params": {
+        "sequential": 1,
+        "option_group_id": "account_relationship",
+        "name": "Sales Tax Account is",
+        "version": 3
+    },
+    "extra": null,
+    "fields": null,
+    "entity": "OptionValue",
+    "action": "get",
+    "function": "civicrm_api3_option_value_get",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 38,
+    "version": 3,
+    "params": {
+        "action": "get",
+        "version": 3
+    },
+    "extra": null,
+    "fields": null,
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 38,
+    "version": 3,
+    "params": {
+        "action": "get",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 38,
+    "version": 3,
+    "params": {
+        "action": "get",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 37,
+    "version": 3,
+    "params": {
+        "sequential": 1,
+        "option_group_id": 62,
+        "name": "Sales Tax Account is",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "id": {
+            "name": "id",
+            "type": 1,
+            "title": "Option Value ID",
+            "description": "Option ID",
+            "required": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "api.aliases": [
+                "option_value_id"
+            ]
+        },
+        "option_group_id": {
+            "name": "option_group_id",
+            "type": 1,
+            "title": "Option Group ID",
+            "description": "Group which this option belongs to.",
+            "required": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "FKClassName": "CRM_Core_DAO_OptionGroup",
+            "html": {
+                "type": "Select",
+                "size": 6,
+                "maxlength": 14
+            },
+            "pseudoconstant": {
+                "table": "civicrm_option_group",
+                "keyColumn": "id",
+                "labelColumn": "name"
+            },
+            "FKApiName": "OptionGroup",
+            "api.aliases": [
+                "option_group_name"
+            ]
+        },
+        "label": {
+            "name": "label",
+            "type": 2,
+            "title": "Option Label",
+            "description": "Option string as displayed to users - e.g. the label in an HTML OPTION tag.",
+            "required": true,
+            "maxlength": 512,
+            "size": 45,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "value": {
+            "name": "value",
+            "type": 2,
+            "title": "Option Value",
+            "description": "The actual value stored (as a foreign key) in the data record. Functions which need lookup option_value.title should use civicrm_option_value.option_group_id plus civicrm_option_value.value as the key.",
+            "required": true,
+            "maxlength": 512,
+            "size": 45,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "name": {
+            "name": "name",
+            "type": 2,
+            "title": "Option Name",
+            "description": "Stores a fixed (non-translated) name for this option value. Lookup functions should use the name as the key for the option value row.",
+            "maxlength": 255,
+            "size": 45,
+            "import": true,
+            "where": "civicrm_option_value.name",
+            "headerPattern": "",
+            "dataPattern": "",
+            "export": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "grouping": {
+            "name": "grouping",
+            "type": 2,
+            "title": "Option Grouping Name",
+            "description": "Use to sort and\/or set display properties for sub-set(s) of options within an option group. EXAMPLE: Use for college_interest field, to differentiate partners from non-partners.",
+            "maxlength": 255,
+            "size": 45,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "filter": {
+            "name": "filter",
+            "type": 1,
+            "title": "Filter",
+            "description": "Bitwise logic can be used to create subsets of options within an option_group for different uses.",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "is_default": {
+            "name": "is_default",
+            "type": 16,
+            "title": "Option is Default?",
+            "description": "Is this the default option for the group?",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "weight": {
+            "name": "weight",
+            "type": 1,
+            "title": "Order",
+            "description": "Controls display sort order.",
+            "required": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "description": {
+            "name": "description",
+            "type": 32,
+            "title": "Option Description",
+            "description": "Optional description.",
+            "rows": 8,
+            "cols": 60,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "html": {
+                "type": "TextArea",
+                "rows": 8,
+                "cols": 60
+            }
+        },
+        "is_optgroup": {
+            "name": "is_optgroup",
+            "type": 16,
+            "title": "Option is Header?",
+            "description": "Is this row simply a display header? Expected usage is to render these as OPTGROUP tags within a SELECT field list of options?",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "is_reserved": {
+            "name": "is_reserved",
+            "type": 16,
+            "title": "Option Is Reserved?",
+            "description": "Is this a predefined system object?",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "is_active": {
+            "name": "is_active",
+            "type": 16,
+            "title": "Option Is Active",
+            "description": "Is this option active?",
+            "default": "1",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "component_id": {
+            "name": "component_id",
+            "type": 1,
+            "title": "Option Component",
+            "description": "Component that this option value belongs\/caters to.",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "FKClassName": "CRM_Core_DAO_Component",
+            "html": {
+                "type": "Select",
+                "size": 6,
+                "maxlength": 14
+            },
+            "pseudoconstant": {
+                "table": "civicrm_component",
+                "keyColumn": "id",
+                "labelColumn": "name"
+            }
+        },
+        "domain_id": {
+            "name": "domain_id",
+            "type": 1,
+            "title": "Option Domain",
+            "description": "Which Domain is this option value for",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "FKClassName": "CRM_Core_DAO_Domain",
+            "pseudoconstant": {
+                "table": "civicrm_domain",
+                "keyColumn": "id",
+                "labelColumn": "name"
+            },
+            "FKApiName": "Domain"
+        },
+        "visibility_id": {
+            "name": "visibility_id",
+            "type": 1,
+            "title": "Option Visibility",
+            "default": "NULL",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "icon": {
+            "name": "icon",
+            "type": 2,
+            "title": "Icon",
+            "description": "crm-i icon class",
+            "maxlength": 255,
+            "size": 45,
+            "default": "NULL",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "color": {
+            "name": "color",
+            "type": 2,
+            "title": "Color",
+            "description": "Hex color value e.g. #ffffff",
+            "maxlength": 255,
+            "size": 45,
+            "default": "NULL",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        }
+    },
+    "entity": "OptionValue",
+    "action": "get",
+    "function": "civicrm_api3_option_value_get",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_7'></a>api.authorize [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 39,
+    "version": 3,
+    "params": {
+        "version": 3,
+        "field": "option_group_id",
+        "context": "validate"
+    },
+    "extra": null,
+    "fields": null,
+    "entity": "OptionValue",
+    "action": "getoptions",
+    "function": "civicrm_api3_generic_getoptions",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_8'></a>api.authorize [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 40,
+    "version": 3,
+    "params": {
+        "action": "getoptions",
+        "version": 3
+    },
+    "extra": null,
+    "fields": null,
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_9'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 40,
+    "version": 3,
+    "params": {
+        "action": "getoptions",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_10'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 40,
+    "version": 3,
+    "params": {
+        "action": "getoptions",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_11'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 39,
+    "version": 3,
+    "params": {
+        "version": 3,
+        "field": "option_group_id",
+        "context": "validate"
+    },
+    "extra": null,
+    "fields": {
+        "field": {
+            "title": "Field name",
+            "api.required": 1,
+            "type": 2,
+            "name": "field"
+        },
+        "context": {
+            "title": "Context",
+            "type": 2,
+            "options": {
+                "get": "get: all options are returned, even if they are disabled; labels are translated.",
+                "create": "create: options are filtered appropriately for the object being created\/updated; labels are translated.",
+                "search": "search: searchable options are returned; labels are translated.",
+                "validate": "validate: all options are returned, even if they are disabled; machine names are used in place of labels.",
+                "abbreviate": "abbreviate: enabled options are returned; labels are replaced with abbreviations.",
+                "match": "match: enabled options are returned using machine names as keys; labels are translated."
+            },
+            "name": "context"
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getoptions",
+    "function": "civicrm_api3_generic_getoptions",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_12'></a>api.authorize [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `authorize()`, `isAuthorized()`
+*Methods:* `authorize()`, `isAuthorized()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 41,
+    "version": 3,
+    "params": {
+        "version": 3,
+        "action": "create"
+    },
+    "extra": null,
+    "fields": null,
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_13'></a>api.prepare [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `setApiRequest()`
+*Methods:* `setApiRequest()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 41,
+    "version": 3,
+    "params": {
+        "version": 3,
+        "action": "create"
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_14'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 41,
+    "version": 3,
+    "params": {
+        "version": 3,
+        "action": "create"
+    },
+    "extra": null,
+    "fields": {
+        "action": {
+            "api.aliases": [
+                "api_action"
+            ]
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getfields",
+    "function": "civicrm_api3_generic_getfields",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_15'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 39,
+    "version": 3,
+    "params": {
+        "version": 3,
+        "field": "option_group_id",
+        "context": "validate"
+    },
+    "extra": null,
+    "fields": {
+        "field": {
+            "title": "Field name",
+            "api.required": 1,
+            "type": 2,
+            "name": "field"
+        },
+        "context": {
+            "title": "Context",
+            "type": 2,
+            "options": {
+                "get": "get: all options are returned, even if they are disabled; labels are translated.",
+                "create": "create: options are filtered appropriately for the object being created\/updated; labels are translated.",
+                "search": "search: searchable options are returned; labels are translated.",
+                "validate": "validate: all options are returned, even if they are disabled; machine names are used in place of labels.",
+                "abbreviate": "abbreviate: enabled options are returned; labels are replaced with abbreviations.",
+                "match": "match: enabled options are returned using machine names as keys; labels are translated."
+            },
+            "name": "context"
+        }
+    },
+    "entity": "OptionValue",
+    "action": "getoptions",
+    "function": "civicrm_api3_generic_getoptions",
+    "is_generic": true
+}
 
 
 ####<a name='create_example_events_16'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+    "id": 37,
+    "version": 3,
+    "params": {
+        "sequential": 1,
+        "option_group_id": 62,
+        "name": "Sales Tax Account is",
+        "version": 3
+    },
+    "extra": null,
+    "fields": {
+        "id": {
+            "name": "id",
+            "type": 1,
+            "title": "Option Value ID",
+            "description": "Option ID",
+            "required": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "api.aliases": [
+                "option_value_id"
+            ]
+        },
+        "option_group_id": {
+            "name": "option_group_id",
+            "type": 1,
+            "title": "Option Group ID",
+            "description": "Group which this option belongs to.",
+            "required": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "FKClassName": "CRM_Core_DAO_OptionGroup",
+            "html": {
+                "type": "Select",
+                "size": 6,
+                "maxlength": 14
+            },
+            "pseudoconstant": {
+                "table": "civicrm_option_group",
+                "keyColumn": "id",
+                "labelColumn": "name"
+            },
+            "FKApiName": "OptionGroup",
+            "api.aliases": [
+                "option_group_name"
+            ]
+        },
+        "label": {
+            "name": "label",
+            "type": 2,
+            "title": "Option Label",
+            "description": "Option string as displayed to users - e.g. the label in an HTML OPTION tag.",
+            "required": true,
+            "maxlength": 512,
+            "size": 45,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "value": {
+            "name": "value",
+            "type": 2,
+            "title": "Option Value",
+            "description": "The actual value stored (as a foreign key) in the data record. Functions which need lookup option_value.title should use civicrm_option_value.option_group_id plus civicrm_option_value.value as the key.",
+            "required": true,
+            "maxlength": 512,
+            "size": 45,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "name": {
+            "name": "name",
+            "type": 2,
+            "title": "Option Name",
+            "description": "Stores a fixed (non-translated) name for this option value. Lookup functions should use the name as the key for the option value row.",
+            "maxlength": 255,
+            "size": 45,
+            "import": true,
+            "where": "civicrm_option_value.name",
+            "headerPattern": "",
+            "dataPattern": "",
+            "export": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "grouping": {
+            "name": "grouping",
+            "type": 2,
+            "title": "Option Grouping Name",
+            "description": "Use to sort and\/or set display properties for sub-set(s) of options within an option group. EXAMPLE: Use for college_interest field, to differentiate partners from non-partners.",
+            "maxlength": 255,
+            "size": 45,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "filter": {
+            "name": "filter",
+            "type": 1,
+            "title": "Filter",
+            "description": "Bitwise logic can be used to create subsets of options within an option_group for different uses.",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "is_default": {
+            "name": "is_default",
+            "type": 16,
+            "title": "Option is Default?",
+            "description": "Is this the default option for the group?",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "weight": {
+            "name": "weight",
+            "type": 1,
+            "title": "Order",
+            "description": "Controls display sort order.",
+            "required": true,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "description": {
+            "name": "description",
+            "type": 32,
+            "title": "Option Description",
+            "description": "Optional description.",
+            "rows": 8,
+            "cols": 60,
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "html": {
+                "type": "TextArea",
+                "rows": 8,
+                "cols": 60
+            }
+        },
+        "is_optgroup": {
+            "name": "is_optgroup",
+            "type": 16,
+            "title": "Option is Header?",
+            "description": "Is this row simply a display header? Expected usage is to render these as OPTGROUP tags within a SELECT field list of options?",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "is_reserved": {
+            "name": "is_reserved",
+            "type": 16,
+            "title": "Option Is Reserved?",
+            "description": "Is this a predefined system object?",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "is_active": {
+            "name": "is_active",
+            "type": 16,
+            "title": "Option Is Active",
+            "description": "Is this option active?",
+            "default": "1",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "component_id": {
+            "name": "component_id",
+            "type": 1,
+            "title": "Option Component",
+            "description": "Component that this option value belongs\/caters to.",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "FKClassName": "CRM_Core_DAO_Component",
+            "html": {
+                "type": "Select",
+                "size": 6,
+                "maxlength": 14
+            },
+            "pseudoconstant": {
+                "table": "civicrm_component",
+                "keyColumn": "id",
+                "labelColumn": "name"
+            }
+        },
+        "domain_id": {
+            "name": "domain_id",
+            "type": 1,
+            "title": "Option Domain",
+            "description": "Which Domain is this option value for",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue",
+            "FKClassName": "CRM_Core_DAO_Domain",
+            "pseudoconstant": {
+                "table": "civicrm_domain",
+                "keyColumn": "id",
+                "labelColumn": "name"
+            },
+            "FKApiName": "Domain"
+        },
+        "visibility_id": {
+            "name": "visibility_id",
+            "type": 1,
+            "title": "Option Visibility",
+            "default": "NULL",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "icon": {
+            "name": "icon",
+            "type": 2,
+            "title": "Icon",
+            "description": "crm-i icon class",
+            "maxlength": 255,
+            "size": 45,
+            "default": "NULL",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        },
+        "color": {
+            "name": "color",
+            "type": 2,
+            "title": "Color",
+            "description": "Hex color value e.g. #ffffff",
+            "maxlength": 255,
+            "size": 45,
+            "default": "NULL",
+            "table_name": "civicrm_option_value",
+            "entity": "OptionValue",
+            "bao": "CRM_Core_BAO_OptionValue"
+        }
+    },
+    "entity": "OptionValue",
+    "action": "get",
+    "function": "civicrm_api3_option_value_get",
+    "is_generic": false
+}
 
 
 ####<a name='create_example_events_17'></a>api.respond [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
-**Methods:** `getResponse()`, `setResponse()`
+*Methods:* `getResponse()`, `setResponse()`
 
-**Inherits:** `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
+
+*Api Request:* {
+
+}
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

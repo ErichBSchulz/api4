@@ -33,7 +33,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1226",
+        "contact_id": "1248",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -44,8 +44,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 115,
-    "contact_id": "1226",
+    "id": 117,
+    "contact_id": "1248",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -89,7 +89,77 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "contact_id": "1248",
+        "financial_type_id": 1,
+        "total_amount": 7.3
+    },
+    "bao": {
+        "_relatedObjects": [
+
+        ],
+        "_component": null,
+        "trxn_result_code": null,
+        "id": null,
+        "contact_id": null,
+        "financial_type_id": null,
+        "contribution_page_id": null,
+        "payment_instrument_id": null,
+        "receive_date": null,
+        "non_deductible_amount": null,
+        "total_amount": null,
+        "fee_amount": null,
+        "net_amount": null,
+        "trxn_id": null,
+        "invoice_id": null,
+        "currency": null,
+        "cancel_date": null,
+        "cancel_reason": null,
+        "receipt_date": null,
+        "thankyou_date": null,
+        "source": null,
+        "amount_level": null,
+        "contribution_recur_id": null,
+        "is_test": null,
+        "is_pay_later": null,
+        "contribution_status_id": null,
+        "address_id": null,
+        "check_number": null,
+        "campaign_id": null,
+        "creditnote_id": null,
+        "tax_amount": null,
+        "revenue_recognition_date": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_contribution",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -102,7 +172,77 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "contact_id": "1248",
+        "financial_type_id": 1,
+        "total_amount": 7.3
+    },
+    "bao": {
+        "_relatedObjects": [
+
+        ],
+        "_component": null,
+        "trxn_result_code": null,
+        "id": null,
+        "contact_id": null,
+        "financial_type_id": null,
+        "contribution_page_id": null,
+        "payment_instrument_id": null,
+        "receive_date": null,
+        "non_deductible_amount": null,
+        "total_amount": null,
+        "fee_amount": null,
+        "net_amount": null,
+        "trxn_id": null,
+        "invoice_id": null,
+        "currency": null,
+        "cancel_date": null,
+        "cancel_reason": null,
+        "receipt_date": null,
+        "thankyou_date": null,
+        "source": null,
+        "amount_level": null,
+        "contribution_recur_id": null,
+        "is_test": null,
+        "is_pay_later": null,
+        "contribution_status_id": null,
+        "address_id": null,
+        "check_number": null,
+        "campaign_id": null,
+        "creditnote_id": null,
+        "tax_amount": null,
+        "revenue_recognition_date": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_contribution",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
@@ -1022,7 +1162,77 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "contact_id": "1248",
+        "financial_type_id": 1,
+        "total_amount": 7.3
+    },
+    "bao": {
+        "_relatedObjects": [
+
+        ],
+        "_component": null,
+        "trxn_result_code": null,
+        "id": null,
+        "contact_id": null,
+        "financial_type_id": null,
+        "contribution_page_id": null,
+        "payment_instrument_id": null,
+        "receive_date": null,
+        "non_deductible_amount": null,
+        "total_amount": null,
+        "fee_amount": null,
+        "net_amount": null,
+        "trxn_id": null,
+        "invoice_id": null,
+        "currency": null,
+        "cancel_date": null,
+        "cancel_reason": null,
+        "receipt_date": null,
+        "thankyou_date": null,
+        "source": null,
+        "amount_level": null,
+        "contribution_recur_id": null,
+        "is_test": null,
+        "is_pay_later": null,
+        "contribution_status_id": null,
+        "address_id": null,
+        "check_number": null,
+        "campaign_id": null,
+        "creditnote_id": null,
+        "tax_amount": null,
+        "revenue_recognition_date": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_contribution",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

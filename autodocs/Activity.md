@@ -34,7 +34,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1224"
+        "source_contact_id": "1246"
     }
 }
 ```
@@ -43,7 +43,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 2493,
+    "id": 2539,
     "source_record_id": null,
     "activity_type_id": null,
     "subject": "unit testing",
@@ -84,7 +84,67 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "subject": "unit testing",
+        "source_contact_id": "1246"
+    },
+    "bao": {
+        "id": null,
+        "source_record_id": null,
+        "activity_type_id": null,
+        "subject": null,
+        "activity_date_time": null,
+        "duration": null,
+        "location": null,
+        "phone_id": null,
+        "phone_number": null,
+        "details": null,
+        "status_id": null,
+        "priority_id": null,
+        "parent_id": null,
+        "is_test": null,
+        "medium_id": null,
+        "is_auto": null,
+        "relationship_id": null,
+        "is_current_revision": null,
+        "original_id": null,
+        "result": null,
+        "is_deleted": null,
+        "campaign_id": null,
+        "engagement_level": null,
+        "weight": null,
+        "is_star": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_activity",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -97,7 +157,67 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "subject": "unit testing",
+        "source_contact_id": "1246"
+    },
+    "bao": {
+        "id": null,
+        "source_record_id": null,
+        "activity_type_id": null,
+        "subject": null,
+        "activity_date_time": null,
+        "duration": null,
+        "location": null,
+        "phone_id": null,
+        "phone_number": null,
+        "details": null,
+        "status_id": null,
+        "priority_id": null,
+        "parent_id": null,
+        "is_test": null,
+        "medium_id": null,
+        "is_auto": null,
+        "relationship_id": null,
+        "is_current_revision": null,
+        "original_id": null,
+        "result": null,
+        "is_deleted": null,
+        "campaign_id": null,
+        "engagement_level": null,
+        "weight": null,
+        "is_star": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_activity",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
@@ -110,7 +230,67 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "subject": "unit testing",
+        "source_contact_id": "1246"
+    },
+    "bao": {
+        "id": null,
+        "source_record_id": null,
+        "activity_type_id": null,
+        "subject": null,
+        "activity_date_time": null,
+        "duration": null,
+        "location": null,
+        "phone_id": null,
+        "phone_number": null,
+        "details": null,
+        "status_id": null,
+        "priority_id": null,
+        "parent_id": null,
+        "is_test": null,
+        "medium_id": null,
+        "is_auto": null,
+        "relationship_id": null,
+        "is_current_revision": null,
+        "original_id": null,
+        "result": null,
+        "is_deleted": null,
+        "campaign_id": null,
+        "engagement_level": null,
+        "weight": null,
+        "is_star": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_activity",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

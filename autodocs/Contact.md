@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1225",
+    "id": "1247",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "a9a5711b5b0c8c6dbd06c10b2b6a0b3c",
+    "hash": "facff7a8ffbce2e856ae03d6a125bbe0",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 03:21:28",
-    "modified_date": "2017-03-11 03:21:28"
+    "created_date": "2017-03-11 03:29:01",
+    "modified_date": "2017-03-11 03:29:01"
 }
 ```
 
@@ -113,7 +113,96 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "first_name": "Anthony",
+        "middle_name": "J.",
+        "last_name": "Anderson",
+        "contact_type": "Individual"
+    },
+    "bao": {
+        "id": null,
+        "contact_type": null,
+        "contact_sub_type": null,
+        "do_not_email": null,
+        "do_not_phone": null,
+        "do_not_mail": null,
+        "do_not_sms": null,
+        "do_not_trade": null,
+        "is_opt_out": null,
+        "legal_identifier": null,
+        "external_identifier": null,
+        "sort_name": null,
+        "display_name": null,
+        "nick_name": null,
+        "legal_name": null,
+        "image_URL": null,
+        "preferred_communication_method": null,
+        "preferred_language": null,
+        "preferred_mail_format": null,
+        "hash": null,
+        "api_key": null,
+        "source": null,
+        "first_name": null,
+        "middle_name": null,
+        "last_name": null,
+        "prefix_id": null,
+        "suffix_id": null,
+        "formal_title": null,
+        "communication_style_id": null,
+        "email_greeting_id": null,
+        "email_greeting_custom": null,
+        "email_greeting_display": null,
+        "postal_greeting_id": null,
+        "postal_greeting_custom": null,
+        "postal_greeting_display": null,
+        "addressee_id": null,
+        "addressee_custom": null,
+        "addressee_display": null,
+        "job_title": null,
+        "gender_id": null,
+        "birth_date": null,
+        "is_deceased": null,
+        "deceased_date": null,
+        "household_name": null,
+        "primary_contact_id": null,
+        "organization_name": null,
+        "sic_code": null,
+        "user_unique_id": null,
+        "employer_id": null,
+        "is_deleted": null,
+        "created_date": null,
+        "modified_date": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_contact",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -126,7 +215,96 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "first_name": "Anthony",
+        "middle_name": "J.",
+        "last_name": "Anderson",
+        "contact_type": "Individual"
+    },
+    "bao": {
+        "id": null,
+        "contact_type": null,
+        "contact_sub_type": null,
+        "do_not_email": null,
+        "do_not_phone": null,
+        "do_not_mail": null,
+        "do_not_sms": null,
+        "do_not_trade": null,
+        "is_opt_out": null,
+        "legal_identifier": null,
+        "external_identifier": null,
+        "sort_name": null,
+        "display_name": null,
+        "nick_name": null,
+        "legal_name": null,
+        "image_URL": null,
+        "preferred_communication_method": null,
+        "preferred_language": null,
+        "preferred_mail_format": null,
+        "hash": null,
+        "api_key": null,
+        "source": null,
+        "first_name": null,
+        "middle_name": null,
+        "last_name": null,
+        "prefix_id": null,
+        "suffix_id": null,
+        "formal_title": null,
+        "communication_style_id": null,
+        "email_greeting_id": null,
+        "email_greeting_custom": null,
+        "email_greeting_display": null,
+        "postal_greeting_id": null,
+        "postal_greeting_custom": null,
+        "postal_greeting_display": null,
+        "addressee_id": null,
+        "addressee_custom": null,
+        "addressee_display": null,
+        "job_title": null,
+        "gender_id": null,
+        "birth_date": null,
+        "is_deceased": null,
+        "deceased_date": null,
+        "household_name": null,
+        "primary_contact_id": null,
+        "organization_name": null,
+        "sic_code": null,
+        "user_unique_id": null,
+        "employer_id": null,
+        "is_deleted": null,
+        "created_date": null,
+        "modified_date": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_contact",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
@@ -322,7 +500,96 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "first_name": "Anthony",
+        "middle_name": "J.",
+        "last_name": "Anderson",
+        "contact_type": "Individual"
+    },
+    "bao": {
+        "id": null,
+        "contact_type": null,
+        "contact_sub_type": null,
+        "do_not_email": null,
+        "do_not_phone": null,
+        "do_not_mail": null,
+        "do_not_sms": null,
+        "do_not_trade": null,
+        "is_opt_out": null,
+        "legal_identifier": null,
+        "external_identifier": null,
+        "sort_name": null,
+        "display_name": null,
+        "nick_name": null,
+        "legal_name": null,
+        "image_URL": null,
+        "preferred_communication_method": null,
+        "preferred_language": null,
+        "preferred_mail_format": null,
+        "hash": null,
+        "api_key": null,
+        "source": null,
+        "first_name": null,
+        "middle_name": null,
+        "last_name": null,
+        "prefix_id": null,
+        "suffix_id": null,
+        "formal_title": null,
+        "communication_style_id": null,
+        "email_greeting_id": null,
+        "email_greeting_custom": null,
+        "email_greeting_display": null,
+        "postal_greeting_id": null,
+        "postal_greeting_custom": null,
+        "postal_greeting_display": null,
+        "addressee_id": null,
+        "addressee_custom": null,
+        "addressee_display": null,
+        "job_title": null,
+        "gender_id": null,
+        "birth_date": null,
+        "is_deceased": null,
+        "deceased_date": null,
+        "household_name": null,
+        "primary_contact_id": null,
+        "organization_name": null,
+        "sic_code": null,
+        "user_unique_id": null,
+        "employer_id": null,
+        "is_deleted": null,
+        "created_date": null,
+        "modified_date": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_contact",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

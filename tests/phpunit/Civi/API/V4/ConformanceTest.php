@@ -64,13 +64,6 @@ class ConformanceTest extends UnitTestCase {
   protected function reportEvents($subscriber) {
     return;
     foreach ($subscriber->getEventLog() as $event) {
-      echo '$event->getName(): '.json_encode($event->getName(),JSON_PRETTY_PRINT)."\n";
-      $request = $event->getApiRequest();
-      echo '$request: '.json_encode($request,JSON_PRETTY_PRINT)."\n";
-      $params = $request->getParams();
-      echo '$apiRequest methods: '
-        .json_encode(get_class_methods($event->getApiRequest()),JSON_PRETTY_PRINT)."\n";
-      echo '$params: '.json_encode($params,JSON_PRETTY_PRINT)."\n";
     }
   }
 

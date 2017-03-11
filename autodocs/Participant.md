@@ -63,8 +63,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "763",
-        "contact_id": "1227",
+        "event_id": "777",
+        "contact_id": "1249",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -79,8 +79,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "id": 21,
-    "contact_id": "1227",
-    "event_id": "763",
+    "contact_id": "1249",
+    "event_id": "777",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -113,7 +113,66 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "event_id": "777",
+        "contact_id": "1249",
+        "status_id": 2,
+        "role_id": 1,
+        "register_date": 20070219,
+        "source": "Wimbeldon",
+        "event_level": "Payment"
+    },
+    "bao": {
+        "id": null,
+        "contact_id": null,
+        "event_id": null,
+        "status_id": null,
+        "role_id": null,
+        "register_date": null,
+        "source": null,
+        "fee_level": null,
+        "is_test": null,
+        "is_pay_later": null,
+        "fee_amount": null,
+        "registered_by_id": null,
+        "discount_id": null,
+        "fee_currency": null,
+        "campaign_id": null,
+        "discount_amount": null,
+        "cart_id": null,
+        "must_wait": null,
+        "transferred_to_contact_id": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_participant",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -126,7 +185,66 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "event_id": "777",
+        "contact_id": "1249",
+        "status_id": 2,
+        "role_id": 1,
+        "register_date": 20070219,
+        "source": "Wimbeldon",
+        "event_level": "Payment"
+    },
+    "bao": {
+        "id": null,
+        "contact_id": null,
+        "event_id": null,
+        "status_id": null,
+        "role_id": null,
+        "register_date": null,
+        "source": null,
+        "fee_level": null,
+        "is_test": null,
+        "is_pay_later": null,
+        "fee_amount": null,
+        "registered_by_id": null,
+        "discount_id": null,
+        "fee_currency": null,
+        "campaign_id": null,
+        "discount_amount": null,
+        "cart_id": null,
+        "must_wait": null,
+        "transferred_to_contact_id": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_participant",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
@@ -139,7 +257,66 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
+    "values": {
+        "event_id": "777",
+        "contact_id": "1249",
+        "status_id": 2,
+        "role_id": 1,
+        "register_date": 20070219,
+        "source": "Wimbeldon",
+        "event_level": "Payment"
+    },
+    "bao": {
+        "id": null,
+        "contact_id": null,
+        "event_id": null,
+        "status_id": null,
+        "role_id": null,
+        "register_date": null,
+        "source": null,
+        "fee_level": null,
+        "is_test": null,
+        "is_pay_later": null,
+        "fee_amount": null,
+        "registered_by_id": null,
+        "discount_id": null,
+        "fee_currency": null,
+        "campaign_id": null,
+        "discount_amount": null,
+        "cart_id": null,
+        "must_wait": null,
+        "transferred_to_contact_id": null,
+        "_DB_DataObject_version": "1.8.12",
+        "__table": "civicrm_participant",
+        "N": 0,
+        "_database_dsn": "",
+        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
+        "_database": "dmastertes_migqg",
+        "_query": {
+            "condition": "",
+            "group_by": "",
+            "order_by": "",
+            "having": "",
+            "limit_start": "",
+            "limit_count": "",
+            "data_select": "*"
+        },
+        "_DB_resultid": null,
+        "_resultFields": false,
+        "_link_loaded": false,
+        "_join": "",
+        "_lastError": false
+    },
+    "version": 4,
+    "chain": [
+
+    ],
+    "checkPermissions": false,
+    "options": [
+
+    ]
+}
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

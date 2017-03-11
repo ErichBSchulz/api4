@@ -98,9 +98,9 @@ class Documenter  {
     $index .= "------ | ------- | ------\n";
     foreach ($blob['entity'] as $entity => $entity_blob) {
       $string = '';
+      $entity_title = $this->heading(1, $entity, 'top', $entity);
       $entity_index = "Action | Params | Example\n";
       $entity_index .= "------ | ------ | -------\n";
-      $string .= $this->heading(1, $entity, 'top', $entity);
       foreach ($entity_blob['action'] as $action => $action_blob) {
         $entity_index .= $this->link($entity, "action_$action", $action)
           . ' | ';
@@ -222,7 +222,7 @@ class Documenter  {
         }
       }
       $index .= "\n";
-      $this->write($entity . '.md', $entity_index . $string);
+      $this->write($entity . '.md', $entity_title . $entity_index . $string);
     }
     $this->write($this->index_file, $index);
   }

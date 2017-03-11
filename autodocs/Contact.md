@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1269",
+    "id": "1280",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "c62dbfb5f0e35e941b40bd684af65644",
+    "hash": "cef7885d3c9f97cf93db05edfc4ed7b4",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 03:40:41",
-    "modified_date": "2017-03-11 03:40:41"
+    "created_date": "2017-03-11 03:41:16",
+    "modified_date": "2017-03-11 03:41:16"
 }
 ```
 
@@ -116,7 +116,8 @@ This is the example derived from the unit tests. A log
 
 {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: ```
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+```
 {
     "values": {
         "first_name": "Anthony",
@@ -222,7 +223,8 @@ This is the example derived from the unit tests. A log
 
 {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: ```
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+```
 {
     "values": {
         "first_name": "Anthony",
@@ -529,7 +531,8 @@ This is the example derived from the unit tests. A log
 
 {
 
-}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: ```
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+```
 {
     "values": {
         "first_name": "Anthony",

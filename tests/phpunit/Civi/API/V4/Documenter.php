@@ -164,7 +164,7 @@ class Documenter  {
               . json_encode($request, JSON_PRETTY_PRINT)
               . (is_object($request)
                 ? '*Methods*:' . $this->methodList(get_class_methods($request))
-                  . "Params: ```\n"
+                  . "Params: \n```\n"
                   . json_encode($request->getParams(), JSON_PRETTY_PRINT)
                   . '```'
                 : '')

@@ -159,7 +159,8 @@ class Documenter  {
                 : '')
               . "\n\n";
             $request = $event->getApiRequest();
-            $string .= "*Api Request:* "
+            $string .= $this->heading(5, $entity,
+              "${action}_example_event_params_$n", "API Request params")
               . json_encode($request,JSON_PRETTY_PRINT)
               . (is_object($request)
                 ? '*Methods*:' . $this->methodList(get_class_methods($request))

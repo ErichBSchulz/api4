@@ -63,8 +63,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "777",
-        "contact_id": "1249",
+        "event_id": "784",
+        "contact_id": "1260",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -79,8 +79,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "id": 21,
-    "contact_id": "1249",
-    "event_id": "777",
+    "contact_id": "1260",
+    "event_id": "784",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -111,12 +111,15 @@ This is the example derived from the unit tests. A log
 
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
-*Api Request:* {
+
+#####<a name='create_example_event_params_0'></a>API Request params [:house:](index.md)
+
+{
 
 }*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
     "values": {
-        "event_id": "777",
-        "contact_id": "1249",
+        "event_id": "784",
+        "contact_id": "1260",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -183,12 +186,15 @@ This is the example derived from the unit tests. A log
 
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
-*Api Request:* {
+
+#####<a name='create_example_event_params_1'></a>API Request params [:house:](index.md)
+
+{
 
 }*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
     "values": {
-        "event_id": "777",
-        "contact_id": "1249",
+        "event_id": "784",
+        "contact_id": "1260",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -255,12 +261,15 @@ This is the example derived from the unit tests. A log
 
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
-*Api Request:* {
+
+#####<a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
+
+{
 
 }*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
     "values": {
-        "event_id": "777",
-        "contact_id": "1249",
+        "event_id": "784",
+        "contact_id": "1260",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,

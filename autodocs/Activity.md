@@ -34,7 +34,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1246"
+        "source_contact_id": "1257"
     }
 }
 ```
@@ -43,7 +43,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 2539,
+    "id": 2562,
     "source_record_id": null,
     "activity_type_id": null,
     "subject": "unit testing",
@@ -82,12 +82,15 @@ This is the example derived from the unit tests. A log
 
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
-*Api Request:* {
+
+#####<a name='create_example_event_params_0'></a>API Request params [:house:](index.md)
+
+{
 
 }*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1246"
+        "source_contact_id": "1257"
     },
     "bao": {
         "id": null,
@@ -155,12 +158,15 @@ This is the example derived from the unit tests. A log
 
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
-*Api Request:* {
+
+#####<a name='create_example_event_params_1'></a>API Request params [:house:](index.md)
+
+{
 
 }*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1246"
+        "source_contact_id": "1257"
     },
     "bao": {
         "id": null,
@@ -228,12 +234,15 @@ This is the example derived from the unit tests. A log
 
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
-*Api Request:* {
+
+#####<a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
+
+{
 
 }*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`$params: {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1246"
+        "source_contact_id": "1257"
     },
     "bao": {
         "id": null,

@@ -174,7 +174,7 @@ class Documenter  {
                   . "\n\nParams: \n```\n"
                   . json_encode($request->getParams(), JSON_PRETTY_PRINT)
                   . "\n```"
-                : json_encode($request, JSON_PRETTY_PRINT))
+                : "```\n" . json_encode($request, JSON_PRETTY_PRINT) . "\n```")
               . "\n\n";
           }
           $string .= $event_index . $event_string;

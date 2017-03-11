@@ -33,7 +33,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1403",
+        "contact_id": "1414",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -44,8 +44,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 131,
-    "contact_id": "1403",
+    "id": 132,
+    "contact_id": "1414",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -114,7 +114,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1403",
+        "contact_id": "1414",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -203,7 +203,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1403",
+        "contact_id": "1414",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -286,6 +286,7 @@ Params:
 
 #####<a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 37,
     "version": 3,
@@ -302,6 +303,7 @@ Params:
     "function": "civicrm_api3_option_value_get",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
@@ -315,6 +317,7 @@ Params:
 
 #####<a name='create_example_event_params_3'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 38,
     "version": 3,
@@ -329,6 +332,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
@@ -342,6 +346,7 @@ Params:
 
 #####<a name='create_example_event_params_4'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 38,
     "version": 3,
@@ -362,6 +367,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
@@ -375,6 +381,7 @@ Params:
 
 #####<a name='create_example_event_params_5'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 38,
     "version": 3,
@@ -395,6 +402,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
@@ -408,6 +416,7 @@ Params:
 
 #####<a name='create_example_event_params_6'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 37,
     "version": 3,
@@ -655,6 +664,7 @@ Params:
     "function": "civicrm_api3_option_value_get",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_7'></a>api.authorize [:house:](index.md)
@@ -668,6 +678,7 @@ Params:
 
 #####<a name='create_example_event_params_7'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 39,
     "version": 3,
@@ -683,6 +694,7 @@ Params:
     "function": "civicrm_api3_generic_getoptions",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_8'></a>api.authorize [:house:](index.md)
@@ -696,6 +708,7 @@ Params:
 
 #####<a name='create_example_event_params_8'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 40,
     "version": 3,
@@ -710,6 +723,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_9'></a>api.prepare [:house:](index.md)
@@ -723,6 +737,7 @@ Params:
 
 #####<a name='create_example_event_params_9'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 40,
     "version": 3,
@@ -743,6 +758,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_10'></a>api.respond [:house:](index.md)
@@ -756,6 +772,7 @@ Params:
 
 #####<a name='create_example_event_params_10'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 40,
     "version": 3,
@@ -776,6 +793,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_11'></a>api.prepare [:house:](index.md)
@@ -789,6 +807,7 @@ Params:
 
 #####<a name='create_example_event_params_11'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 39,
     "version": 3,
@@ -824,6 +843,7 @@ Params:
     "function": "civicrm_api3_generic_getoptions",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_12'></a>api.authorize [:house:](index.md)
@@ -837,6 +857,7 @@ Params:
 
 #####<a name='create_example_event_params_12'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 41,
     "version": 3,
@@ -851,6 +872,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_13'></a>api.prepare [:house:](index.md)
@@ -864,6 +886,7 @@ Params:
 
 #####<a name='create_example_event_params_13'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 41,
     "version": 3,
@@ -884,6 +907,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_14'></a>api.respond [:house:](index.md)
@@ -897,6 +921,7 @@ Params:
 
 #####<a name='create_example_event_params_14'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 41,
     "version": 3,
@@ -917,6 +942,7 @@ Params:
     "function": "civicrm_api3_generic_getfields",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_15'></a>api.respond [:house:](index.md)
@@ -930,6 +956,7 @@ Params:
 
 #####<a name='create_example_event_params_15'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 39,
     "version": 3,
@@ -965,6 +992,7 @@ Params:
     "function": "civicrm_api3_generic_getoptions",
     "is_generic": true
 }
+```
 
 
 ####<a name='create_example_events_16'></a>api.respond [:house:](index.md)
@@ -978,6 +1006,7 @@ Params:
 
 #####<a name='create_example_event_params_16'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 37,
     "version": 3,
@@ -1225,6 +1254,7 @@ Params:
     "function": "civicrm_api3_option_value_get",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_17'></a>api.respond - Contribution::create [:house:](index.md)
@@ -1244,7 +1274,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1403",
+        "contact_id": "1414",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1374,7 +1404,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        131
+        132
     ]
 }
 ```
@@ -1425,7 +1455,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -1468,7 +1498,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -1595,7 +1625,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -1638,7 +1668,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -1681,7 +1711,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -1808,7 +1838,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -1870,7 +1900,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1403",
+        "contact_id": "1414",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -1881,9 +1911,9 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "131": {
-        "id": "131",
-        "contact_id": "1403",
+    "132": {
+        "id": "132",
+        "contact_id": "1414",
         "financial_type_id": "1",
         "payment_instrument_id": "4",
         "non_deductible_amount": "0.00",
@@ -1930,7 +1960,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -1973,7 +2003,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [
@@ -2100,7 +2130,7 @@ Params:
         [
             "id",
             "=",
-            131
+            132
         ]
     ],
     "orderBy": [

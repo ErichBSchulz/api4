@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1402",
+    "id": "1413",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "6e92d131072e8d82b65d33ace52fdad1",
+    "hash": "76d5c727039ab9132adefe27c131b1f1",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 07:47:42",
-    "modified_date": "2017-03-11 07:47:42"
+    "created_date": "2017-03-11 07:52:00",
+    "modified_date": "2017-03-11 07:52:00"
 }
 ```
 
@@ -339,6 +339,7 @@ Params:
 
 #####<a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 18,
     "version": 3,
@@ -354,6 +355,7 @@ Params:
     "function": "civicrm_api3_setting_getvalue",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_3'></a>api.authorize [:house:](index.md)
@@ -367,6 +369,7 @@ Params:
 
 #####<a name='create_example_event_params_3'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 19,
     "version": 3,
@@ -381,6 +384,7 @@ Params:
     "function": "civicrm_api3_setting_getfields",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_4'></a>api.prepare [:house:](index.md)
@@ -394,6 +398,7 @@ Params:
 
 #####<a name='create_example_event_params_4'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 19,
     "version": 3,
@@ -414,6 +419,7 @@ Params:
     "function": "civicrm_api3_setting_getfields",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_5'></a>api.respond [:house:](index.md)
@@ -427,6 +433,7 @@ Params:
 
 #####<a name='create_example_event_params_5'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 19,
     "version": 3,
@@ -447,6 +454,7 @@ Params:
     "function": "civicrm_api3_setting_getfields",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_6'></a>api.prepare [:house:](index.md)
@@ -460,6 +468,7 @@ Params:
 
 #####<a name='create_example_event_params_6'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 18,
     "version": 3,
@@ -487,6 +496,7 @@ Params:
     "function": "civicrm_api3_setting_getvalue",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_7'></a>api.respond [:house:](index.md)
@@ -500,6 +510,7 @@ Params:
 
 #####<a name='create_example_event_params_7'></a>API Request params [:house:](index.md)
 
+```
 {
     "id": 18,
     "version": 3,
@@ -527,6 +538,7 @@ Params:
     "function": "civicrm_api3_setting_getvalue",
     "is_generic": false
 }
+```
 
 
 ####<a name='create_example_events_8'></a>api.respond - Contact::create [:house:](index.md)
@@ -690,7 +702,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1402"
+        "1413"
     ]
 }
 ```
@@ -741,7 +753,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -784,7 +796,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -911,7 +923,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -954,7 +966,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -997,7 +1009,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -1124,7 +1136,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -1198,8 +1210,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1402": {
-        "id": "1402",
+    "1413": {
+        "id": "1413",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1208,7 +1220,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "6e92d131072e8d82b65d33ace52fdad1",
+        "hash": "76d5c727039ab9132adefe27c131b1f1",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1220,8 +1232,8 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-11 07:47:42",
-        "modified_date": "2017-03-11 07:47:42"
+        "created_date": "2017-03-11 07:52:00",
+        "modified_date": "2017-03-11 07:52:00"
     }
 }
 ```
@@ -1258,7 +1270,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -1301,7 +1313,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [
@@ -1428,7 +1440,7 @@ Params:
         [
             "id",
             "=",
-            "1402"
+            "1413"
         ]
     ],
     "orderBy": [

@@ -141,8 +141,12 @@ class Documenter  {
           $string .= $this->heading(3, $entity, "${action}_example_events",
             "Events");
           foreach ($example['events'] as $n => $event) {
+            $request = $event->getApiRequest();
+            $api_call = (is_object($request)
+                ? ' - ' . $request->getEntity() . '::' .  $request->getAction()
+                : '';
             $string .= $this->heading(4, $entity, "${action}_example_events_$n",
-              $event->getName());
+              $event->getName() . $api_call);
             $parent = get_parent_class($event);
             $event_methods = get_class_methods($event);
             if ($parent) {
@@ -159,7 +163,6 @@ class Documenter  {
                 ? "\n\n*Inherits:* " . $this->methodList($parent_methods)
                 : '')
               . "\n\n";
-            $request = $event->getApiRequest();
             $string .= $this->heading(5, $entity,
               "${action}_example_event_params_$n", "API Request params")
               . (is_object($request)

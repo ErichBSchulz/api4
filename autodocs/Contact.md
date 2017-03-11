@@ -45,7 +45,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1203",
+    "id": "1225",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -64,7 +64,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "3435638cbb198adadcd8482c8641e21d",
+    "hash": "a9a5711b5b0c8c6dbd06c10b2b6a0b3c",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -95,8 +95,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 03:12:14",
-    "modified_date": "2017-03-11 03:12:14"
+    "created_date": "2017-03-11 03:21:28",
+    "modified_date": "2017-03-11 03:21:28"
 }
 ```
 
@@ -113,7 +113,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -126,7 +126,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
@@ -322,7 +322,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

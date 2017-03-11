@@ -56,7 +56,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 748,
+    "id": 762,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -116,7 +116,7 @@ This is the example derived from the unit tests. A log
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170311031214",
+    "created_date": "20170311032128",
     "currency": null,
     "campaign_id": null,
     "is_share": null,
@@ -141,7 +141,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -154,7 +154,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
@@ -167,7 +167,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

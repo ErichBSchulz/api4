@@ -34,7 +34,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1202"
+        "source_contact_id": "1224"
     }
 }
 ```
@@ -43,7 +43,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 2447,
+    "id": 2493,
     "source_record_id": null,
     "activity_type_id": null,
     "subject": "unit testing",
@@ -84,7 +84,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -97,7 +97,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_2'></a>api.respond [:house:](index.md)
@@ -110,7 +110,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

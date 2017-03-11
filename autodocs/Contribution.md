@@ -33,7 +33,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1204",
+        "contact_id": "1226",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -44,8 +44,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 113,
-    "contact_id": "1204",
+    "id": 115,
+    "contact_id": "1226",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -89,7 +89,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_1'></a>api.prepare [:house:](index.md)
@@ -102,7 +102,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ####<a name='create_example_events_2'></a>api.authorize [:house:](index.md)
@@ -1022,7 +1022,7 @@ This is the example derived from the unit tests. A log
 
 *Api Request:* {
 
-}
+}*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
 
 ###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)

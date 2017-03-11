@@ -144,7 +144,6 @@ class Documenter  {
               $event->getName());
             $parent = get_parent_class($event);
             $event_methods = get_class_methods($event);
-            $request = $event->getApiRequest();
             if ($parent) {
               $parent_methods = get_class_methods($parent);
               // subtract parent methods:
@@ -159,9 +158,12 @@ class Documenter  {
                 ? "\n\n*Inherits:* " . $this->methodList($parent_methods)
                 : '')
               . "\n\n";
+            $request = $event->getApiRequest();
             $string .= "*Api Request:* "
               . json_encode($request,JSON_PRETTY_PRINT)
-//              . $this->methodList(get_class_methods($request))
+              . (is_object($request)
+                ? '*Methods*:' . $this->methodList(get_class_methods($request))
+                : '')
               . "\n\n";
           }
           $string .= $this->heading(3, $entity, "${action}_example_hook_calls",

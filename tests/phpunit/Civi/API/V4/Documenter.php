@@ -161,13 +161,12 @@ class Documenter  {
             $request = $event->getApiRequest();
             $string .= $this->heading(5, $entity,
               "${action}_example_event_params_$n", "API Request params")
-//              . json_encode($request, JSON_PRETTY_PRINT) . "\n"
               . (is_object($request)
                 ? '*Methods*:' . $this->methodList(get_class_methods($request))
-                  . "Params: \n```\n"
+                  . "\n\nParams: \n```\n"
                   . json_encode($request->getParams(), JSON_PRETTY_PRINT)
                   . "\n```"
-                : '')
+                : json_encode($request, JSON_PRETTY_PRINT))
               . "\n\n";
           }
           $string .= $this->heading(3, $entity, "${action}_example_hook_calls",
@@ -197,7 +196,6 @@ class Documenter  {
       $this->write($entity . '.md', $string);
     }
     $this->write($this->index_file, $index);
-    echo json_encode($blob, JSON_PRETTY_PRINT);
   }
 
 }

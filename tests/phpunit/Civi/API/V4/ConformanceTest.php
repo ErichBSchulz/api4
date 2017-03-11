@@ -39,14 +39,6 @@ class ConformanceTest extends UnitTestCase {
   }
 
   /**
-   * Temporary bodge to help with debugging
-   * @param string $string to report
-   */
-  protected function report($string) {
-    echo $string . "\n";
-  }
-
-  /**
    * Check that a number of hook calls have taken place
    * @param array $calls to hooks since last reset
    */
@@ -104,7 +96,6 @@ class ConformanceTest extends UnitTestCase {
     foreach ($entities as $entity) {
       $entity_blob = array('core_action' => array());
       $entity_class = 'Civi\Api4\\' . $entity;
-      $this->report("## Testing $entity");
       $actions = $entity_class::getActions()
         ->setCheckPermissions(FALSE)
         ->execute()

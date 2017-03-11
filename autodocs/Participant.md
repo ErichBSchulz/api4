@@ -42,8 +42,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "826",
-        "contact_id": "1327",
+        "event_id": "847",
+        "contact_id": "1360",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -59,8 +59,8 @@ This is the example derived from the unit tests. A log
 {
     "21": {
         "id": "21",
-        "contact_id": "1327",
-        "event_id": "826",
+        "contact_id": "1360",
+        "event_id": "847",
         "status_id": "2",
         "role_id": "1",
         "register_date": "2007-02-19 00:00:00",
@@ -85,7 +85,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='get_example_event_params_0'></a>API Request params [:house:](index.md)
 
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "where": [
@@ -131,7 +133,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='get_example_event_params_1'></a>API Request params [:house:](index.md)
 
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "where": [
@@ -177,7 +181,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='get_example_event_params_2'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -203,7 +209,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='get_example_event_params_3'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -229,7 +237,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='get_example_event_params_4'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -255,7 +265,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='get_example_event_params_5'></a>API Request params [:house:](index.md)
 
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "where": [
@@ -325,8 +337,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "826",
-        "contact_id": "1327",
+        "event_id": "847",
+        "contact_id": "1360",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -341,8 +353,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "id": 21,
-    "contact_id": "1327",
-    "event_id": "826",
+    "contact_id": "1360",
+    "event_id": "847",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -376,12 +388,14 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_0'></a>API Request params [:house:](index.md)
 
-*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "values": {
-        "event_id": "826",
-        "contact_id": "1327",
+        "event_id": "847",
+        "contact_id": "1360",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -452,12 +466,14 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_1'></a>API Request params [:house:](index.md)
 
-*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "values": {
-        "event_id": "826",
-        "contact_id": "1327",
+        "event_id": "847",
+        "contact_id": "1360",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -528,12 +544,14 @@ This is the example derived from the unit tests. A log
 
 #####<a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
 
-*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "values": {
-        "event_id": "826",
-        "contact_id": "1327",
+        "event_id": "847",
+        "contact_id": "1360",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -674,7 +692,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_0'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "select": [
@@ -715,7 +735,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_1'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "select": [
@@ -756,7 +778,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_2'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -782,7 +806,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_3'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -808,7 +834,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_4'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -834,7 +862,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_5'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "select": [
@@ -875,7 +905,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_6'></a>API Request params [:house:](index.md)
 
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "where": [
@@ -921,7 +953,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_7'></a>API Request params [:house:](index.md)
 
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "where": [
@@ -967,7 +1001,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_8'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -993,7 +1029,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_9'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -1019,7 +1057,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_10'></a>API Request params [:house:](index.md)
 
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "checkPermissions": false,
@@ -1045,7 +1085,9 @@ This is the example derived from the unit tests. A log
 
 #####<a name='delete_example_event_params_11'></a>API Request params [:house:](index.md)
 
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`Params: 
+*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
+
+Params: 
 ```
 {
     "where": [

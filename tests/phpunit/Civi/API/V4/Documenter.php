@@ -33,25 +33,55 @@ class Documenter  {
    * @param array html anchor name
    * @see link()
    */
-  public function title($level, $entity, $name, $title='') {
-    if (!$title) {
-      $title = ucwords("$entity $name");
+  public function heading($level, $entity, $name, $text='') {
+    if (!$text) {
+      $text = ucwords("$entity $name");
     }
     return "\n"
       . str_repeat('#', $level)
-      . "<a name='$name'></a>$title [:house:](index.md)\n\n";
+      . "<a name='$name'></a>$text [:house:](index.md)\n\n";
   }
 
   /**
    * Markdown link text
    * @param
-   * @see title()
+   * @see heading()
    */
-  public function link($entity, $name, $title='') {
-    if (!$title) {
-      $title = ucwords("$entity $name");
+  public function link($entity, $name, $label='') {
+    if (!$label) {
+      $label = ucwords("$entity $name");
     }
-    return "[$title](${entity}.md/#$name)";
+    return "[$label](${entity}.md/#$name)";
+  }
+
+  /**
+   * Link to source code of a CiviCRM class
+   * (Only tested for Civi\* classes)
+   * @param string $class
+   */
+  public function classLink($class) {
+    $base = 'https://github.com/civicrm/civicrm-core/blob/master';
+    // reverse slash direction and link to line 28 below copyright notice
+    $link = str_replace('\\', '/', $class) . '.php#L28';
+    return "[$class]($base/$link)";
+  }
+
+  /**
+   * Link to developer documentation for a CiviCRM hook
+   * @param string $hook - short hook name
+   */
+  public function hookLink($hook) {
+    $base = 'https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_';
+    return "[$hook]($base$hook/)";
+  }
+
+  /**
+   * Express an array of method names as markdown
+   * @param string $methods
+   * @return string
+   */
+  public function methodList($methods) {
+    return '`' . implode('()`, `', $methods) . "()`";
   }
 
   /**
@@ -65,14 +95,14 @@ class Documenter  {
     $index .= "------ | ------- | ------\n";
     foreach ($blob['entity'] as $entity => $entity_blob) {
       $string = '';
-      $string .= $this->title(1, $entity, 'top', $entity);
+      $string .= $this->heading(1, $entity, 'top', $entity);
       $index .= $this->link($entity, 'top', $entity) . ' | ';
       foreach ($entity_blob['action'] as $action => $action_blob) {
-        $string .= $this->title(2, $entity, "action_$action",
+        $string .= $this->heading(2, $entity, "action_$action",
           "Action $entity.$action");
         $index .= ' ' . $this->link($entity, "action_$action", "$action");
         $string .= "$action_blob[description]\n\n";
-        $string .= $this->title(3, $entity, "action_${action}_params",
+        $string .= $this->heading(3, $entity, "action_${action}_params",
           "Params");
         foreach ($action_blob['params'] as $param => $param_blob) {
           // add some defaults just in case:
@@ -90,46 +120,65 @@ class Documenter  {
             . ($param_blob['comment'] ? "  " . $param_blob['comment'] : '')
             . "\n";
         }
-      }
-      $index .= ' | ';
-      // fields !
-      if (array_key_exists('fields', $entity_blob)) {
-        $string .= $this->title(2, $entity, 'fields');
-        foreach ($entity_blob['fields'] as $field => $field_blob) {
-          $string .= $this->title(3, $entity, "field_$field", $field);
-          $index .= ' ' . $this->link($entity, "field_$field", $field);
-          // todo make this beautiful
-          $string .= "```\n"
-            . json_encode($field_blob, JSON_PRETTY_PRINT)
-            . "\n```\n";
-        }
+        // (optional) example
         if (isset($blob['examples']["$entity.$action"])) {
           $example = $blob['examples']["$entity.$action"];
-          $string .= $this->title(2, $entity, "${action}_example",
+          $string .= $this->heading(2, $entity, "${action}_example",
             "Example");
-          $string .= $this->title(3, $entity, "${action}_example_params",
+          $string .= "This is the example derived from the unit tests. A log
+            of hook calls and events is below the API request and response.\n";
+          $string .= $this->heading(3, $entity, "${action}_example_params",
             "Params");
           $string .= "```\n"
             . json_encode($example['params'], JSON_PRETTY_PRINT)
             . "\n```\n";
-          $string .= $this->title(3, $entity, "${action}_example_result",
+          $string .= $this->heading(3, $entity, "${action}_example_result",
             "Result");
           $string .= "```\n"
             . json_encode($example['result'], JSON_PRETTY_PRINT)
             . "\n```\n";
-          $string .= $this->title(3, $entity, "${action}_example_events",
+          $string .= $this->heading(3, $entity, "${action}_example_events",
             "Events");
           foreach ($example['events'] as $n => $event) {
-            $string .= $this->title(4, $entity, "${action}_example_events_$n",
+            $string .= $this->heading(4, $entity, "${action}_example_events_$n",
               $event->getName());
-            $string .= "Methods:\n```\n"
-              . json_encode(get_class_methods($event), JSON_PRETTY_PRINT)
-              . "\n```\n";
+            $parent = get_parent_class($event);
+            $event_methods = get_class_methods($event);
+            if ($parent) {
+              $parent_methods = get_class_methods($parent);
+              // subtract parent methods:
+              $event_methods = array_diff($event_methods, $parent_methods);
+            }
+            $string .= "> " . $this->classLink(get_class($event))
+              . ($parent ? ' extends ' . $this->classLink($parent) : '')
+              . "\n\n";
+            $string .= "Methods: "
+              . $this->methodList($event_methods)
+              . ($parent
+                ? ' inherits: ' . $this->methodList($parent_methods)
+                : '')
+              . "\n\n";
           }
-          $string .= $this->title(3, $entity, "${action}_example_hook_calls",
+          $string .= $this->heading(3, $entity, "${action}_example_hook_calls",
             "Hook calls");
+          foreach ($example['hook_calls'] as $hook => $hook_call) {
+            $string .= "* "
+              . $this->hookLink($hook) . ' '
+              . json_encode($hook_call)
+              . "\n";
+          }
+        }
+      }
+      $index .= ' | ';
+      // fields !
+      if (array_key_exists('fields', $entity_blob)) {
+        $string .= $this->heading(2, $entity, 'fields');
+        foreach ($entity_blob['fields'] as $field => $field_blob) {
+          $string .= $this->heading(3, $entity, "field_$field", $field);
+          $index .= ' ' . $this->link($entity, "field_$field", $field);
+          // todo make this beautiful
           $string .= "```\n"
-            . json_encode($example['hook_calls'], JSON_PRETTY_PRINT)
+            . json_encode($field_blob, JSON_PRETTY_PRINT)
             . "\n```\n";
         }
       }

@@ -55,15 +55,16 @@ In REST/javascript this cannot be disabled.
 
 ##<a name='create_example'></a>Example [:house:](index.md)
 
-This is the example derived from the unit tests.
+This is the example derived from the unit tests. A log
+            of hook calls and events is below the API request and response.
 
 ###<a name='create_example_params'></a>Params [:house:](index.md)
 
 ```
 {
     "Values": {
-        "event_id": "635",
-        "contact_id": "1025",
+        "event_id": "642",
+        "contact_id": "1036",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -78,8 +79,8 @@ This is the example derived from the unit tests.
 ```
 {
     "id": 21,
-    "contact_id": "1025",
-    "event_id": "635",
+    "contact_id": "1036",
+    "event_id": "642",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",

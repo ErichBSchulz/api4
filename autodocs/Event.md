@@ -25,7 +25,8 @@ In REST/javascript this cannot be disabled.
 
 ##<a name='create_example'></a>Example [:house:](index.md)
 
-This is the example derived from the unit tests.
+This is the example derived from the unit tests. A log
+            of hook calls and events is below the API request and response.
 
 ###<a name='create_example_params'></a>Params [:house:](index.md)
 
@@ -55,7 +56,7 @@ This is the example derived from the unit tests.
 
 ```
 {
-    "id": 634,
+    "id": 641,
     "title": "Annual CiviCRM meet",
     "summary": "If you have any CiviCRM related issues or want to track where CiviCRM is heading, Sign up now",
     "description": "This event is intended to give brief idea about progess of CiviCRM and giving solutions to common user issues",
@@ -115,7 +116,7 @@ This is the example derived from the unit tests.
     "is_template": 0,
     "template_title": null,
     "created_id": null,
-    "created_date": "20170311000300",
+    "created_date": "20170311000503",
     "currency": null,
     "campaign_id": null,
     "is_share": null,

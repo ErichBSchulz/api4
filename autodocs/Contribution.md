@@ -25,14 +25,15 @@ In REST/javascript this cannot be disabled.
 
 ##<a name='create_example'></a>Example [:house:](index.md)
 
-This is the example derived from the unit tests.
+This is the example derived from the unit tests. A log
+            of hook calls and events is below the API request and response.
 
 ###<a name='create_example_params'></a>Params [:house:](index.md)
 
 ```
 {
     "Values": {
-        "contact_id": "1024",
+        "contact_id": "1035",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -43,8 +44,8 @@ This is the example derived from the unit tests.
 
 ```
 {
-    "id": 96,
-    "contact_id": "1024",
+    "id": 97,
+    "contact_id": "1035",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,

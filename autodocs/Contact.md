@@ -25,7 +25,8 @@ In REST/javascript this cannot be disabled.
 
 ##<a name='create_example'></a>Example [:house:](index.md)
 
-This is the example derived from the unit tests.
+This is the example derived from the unit tests. A log
+            of hook calls and events is below the API request and response.
 
 ###<a name='create_example_params'></a>Params [:house:](index.md)
 
@@ -44,7 +45,7 @@ This is the example derived from the unit tests.
 
 ```
 {
-    "id": "1023",
+    "id": "1034",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -63,7 +64,7 @@ This is the example derived from the unit tests.
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "98e5c18e6b2d6a293a32211d7fea4722",
+    "hash": "d00c5729d6c529dca145f1570a343da2",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -94,8 +95,8 @@ This is the example derived from the unit tests.
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-11 00:02:59",
-    "modified_date": "2017-03-11 00:02:59"
+    "created_date": "2017-03-11 00:05:03",
+    "modified_date": "2017-03-11 00:05:03"
 }
 ```
 

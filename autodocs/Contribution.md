@@ -42,7 +42,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1510",
+        "contact_id": "1548",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -53,8 +53,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 142,
-    "contact_id": "1510",
+    "id": 145,
+    "contact_id": "1548",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -123,7 +123,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1510",
+        "contact_id": "1548",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -212,7 +212,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1510",
+        "contact_id": "1548",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1283,7 +1283,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1510",
+        "contact_id": "1548",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1413,7 +1413,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        142
+        145
     ]
 }
 ```
@@ -1422,7 +1422,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "142"
+    "0": "145"
 }
 ```
 
@@ -1434,12 +1434,6 @@ This is the example derived from the unit tests. A log
 * [api.prepare - Contribution::getFields](Contribution.md/#delete_example_events_3)
 * [api.respond - Contribution::getFields](Contribution.md/#delete_example_events_4)
 * [api.respond - Contribution::delete](Contribution.md/#delete_example_events_5)
-* [api.authorize - Contribution::get](Contribution.md/#delete_example_events_6)
-* [api.prepare - Contribution::get](Contribution.md/#delete_example_events_7)
-* [api.authorize - Contribution::getFields](Contribution.md/#delete_example_events_8)
-* [api.prepare - Contribution::getFields](Contribution.md/#delete_example_events_9)
-* [api.respond - Contribution::getFields](Contribution.md/#delete_example_events_10)
-* [api.respond - Contribution::get](Contribution.md/#delete_example_events_11)
 
 ####<a name='delete_example_events_0'></a>api.authorize - Contribution::delete [:house:](index.md)
 
@@ -1464,7 +1458,7 @@ Params:
         [
             "id",
             "=",
-            142
+            145
         ]
     ],
     "orderBy": [
@@ -1507,7 +1501,7 @@ Params:
         [
             "id",
             "=",
-            142
+            145
         ]
     ],
     "orderBy": [
@@ -1634,220 +1628,7 @@ Params:
         [
             "id",
             "=",
-            142
-        ]
-    ],
-    "orderBy": [
-
-    ],
-    "limit": 0,
-    "offset": 0,
-    "version": 4,
-    "chain": [
-
-    ],
-    "checkPermissions": false,
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_6'></a>api.authorize - Contribution::get [:house:](index.md)
-
-> [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `authorize()`, `isAuthorized()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_6'></a>API Request params [:house:](index.md)
-
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "select": [
-
-    ],
-    "where": [
-        [
-            "id",
-            "=",
-            142
-        ]
-    ],
-    "orderBy": [
-
-    ],
-    "limit": 0,
-    "offset": 0,
-    "version": 4,
-    "chain": [
-
-    ],
-    "checkPermissions": false,
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_7'></a>api.prepare - Contribution::get [:house:](index.md)
-
-> [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `setApiRequest()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_7'></a>API Request params [:house:](index.md)
-
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "select": [
-
-    ],
-    "where": [
-        [
-            "id",
-            "=",
-            142
-        ]
-    ],
-    "orderBy": [
-
-    ],
-    "limit": 0,
-    "offset": 0,
-    "version": 4,
-    "chain": [
-
-    ],
-    "checkPermissions": false,
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_8'></a>api.authorize - Contribution::getFields [:house:](index.md)
-
-> [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `authorize()`, `isAuthorized()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_8'></a>API Request params [:house:](index.md)
-
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "checkPermissions": false,
-    "version": 4,
-    "chain": [
-
-    ],
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_9'></a>api.prepare - Contribution::getFields [:house:](index.md)
-
-> [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `setApiRequest()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_9'></a>API Request params [:house:](index.md)
-
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "checkPermissions": false,
-    "version": 4,
-    "chain": [
-
-    ],
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_10'></a>api.respond - Contribution::getFields [:house:](index.md)
-
-> [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `getResponse()`, `setResponse()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_10'></a>API Request params [:house:](index.md)
-
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "checkPermissions": false,
-    "version": 4,
-    "chain": [
-
-    ],
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_11'></a>api.respond - Contribution::get [:house:](index.md)
-
-> [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `getResponse()`, `setResponse()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_11'></a>API Request params [:house:](index.md)
-
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "select": [
-
-    ],
-    "where": [
-        [
-            "id",
-            "=",
-            142
+            145
         ]
     ],
     "orderBy": [
@@ -1869,7 +1650,7 @@ Params:
 
 ###<a name='delete_example_hook_calls'></a>Hook calls [:house:](index.md)
 
-* [civicrm_apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_apiWrappers/) 4
+* [civicrm_apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_apiWrappers/) 2
 
 ##<a name='action_get'></a>Action Contribution.get [:house:](index.md)
 
@@ -1908,11 +1689,11 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "Values": {
-        "contact_id": "1510",
-        "financial_type_id": 1,
-        "total_amount": 7.3
-    }
+    "Clause": [
+        "id",
+        "=",
+        145
+    ]
 }
 ```
 
@@ -1920,9 +1701,9 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "142": {
-        "id": "142",
-        "contact_id": "1510",
+    "145": {
+        "id": "145",
+        "contact_id": "1548",
         "financial_type_id": "1",
         "payment_instrument_id": "4",
         "non_deductible_amount": "0.00",
@@ -1969,7 +1750,7 @@ Params:
         [
             "id",
             "=",
-            142
+            145
         ]
     ],
     "orderBy": [
@@ -2012,7 +1793,7 @@ Params:
         [
             "id",
             "=",
-            142
+            145
         ]
     ],
     "orderBy": [
@@ -2139,7 +1920,7 @@ Params:
         [
             "id",
             "=",
-            142
+            145
         ]
     ],
     "orderBy": [

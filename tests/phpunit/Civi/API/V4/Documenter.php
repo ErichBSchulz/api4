@@ -7,6 +7,7 @@ namespace Civi\API\V4;
 class Documenter  {
 
   public $preamble = '# CiviCRM API V4';
+  public $event_file = 'event_listeners';
 
   public $footer = '###### This file was automatically generated. Do not edit directly.';
 
@@ -17,6 +18,33 @@ class Documenter  {
   public function __construct($path) {
     $this->path = $path;
     $this->index_file = 'index.md';
+  }
+
+  /**
+   * Create an index of event handlers
+   * @returns string
+   */
+  public function eventListeners() {
+    $kernel = \Civi::service('civi_api_kernel');
+    $this->dispatcher = $kernel->getDispatcher();
+    $listeners = $this->dispatcher->getListeners();
+    $entity = $this->event_file;
+    $string = $this->heading(1, $entity, "Listeners");
+    foreach ($listeners as $event => $event_listeners) {
+      $string .= $this->heading(2, $entity, $event);
+      foreach ($event_listeners as $n => $listener) {
+        $reflection = new \ReflectionClass($listener[0]);
+        $method = $reflection->getName() . "::" . ($listener[1]);
+        $string .= $this->heading(3, $entity, $event . $method);
+        $string .= "\nsource: " . $reflection->getFileName()
+          . " lines: " . $reflection->getStartLine()
+          . "-" . $reflection->getEndLine();
+        $string .= "\n Methods:\n```\n"
+          . json_encode(get_class_methods($listener[0]), JSON_PRETTY_PRINT)
+          . "\n```\n";
+      }
+    }
+    return $string;
   }
 
   /**
@@ -94,6 +122,8 @@ class Documenter  {
    */
   public function blobToMarkDown($blob) {
     $index = $this->preamble . "\n\n";
+    $index = $this->eventListeners() . "\n\n";
+    $index .= $this->link($this->event_file, "Listeners");
     $index .= "Entity | Actions | Fields\n";
     $index .= "------ | ------- | ------\n";
     foreach ($blob['entity'] as $entity => $entity_blob) {
@@ -226,6 +256,8 @@ class Documenter  {
       }
       $index .= "\n";
       $this->write($entity . '.md', $entity_title . $entity_index . $string);
+      // write event listeners file:
+      $this->write($this->event_file . '.md', $this->eventListeners());
     }
     $this->write($this->index_file, $index);
   }

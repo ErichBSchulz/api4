@@ -50,15 +50,11 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "Values": {
-        "event_id": "942",
-        "contact_id": "1511",
-        "status_id": 2,
-        "role_id": 1,
-        "register_date": 20070219,
-        "source": "Wimbeldon",
-        "event_level": "Payment"
-    }
+    "Clause": [
+        "id",
+        "=",
+        21
+    ]
 }
 ```
 
@@ -68,8 +64,8 @@ This is the example derived from the unit tests. A log
 {
     "21": {
         "id": "21",
-        "contact_id": "1511",
-        "event_id": "942",
+        "contact_id": "1549",
+        "event_id": "963",
         "status_id": "2",
         "role_id": "1",
         "register_date": "2007-02-19 00:00:00",
@@ -352,8 +348,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "event_id": "942",
-        "contact_id": "1511",
+        "event_id": "963",
+        "contact_id": "1549",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -368,8 +364,8 @@ This is the example derived from the unit tests. A log
 ```
 {
     "id": 21,
-    "contact_id": "1511",
-    "event_id": "942",
+    "contact_id": "1549",
+    "event_id": "963",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -412,8 +408,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "942",
-        "contact_id": "1511",
+        "event_id": "963",
+        "contact_id": "1549",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -490,8 +486,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "942",
-        "contact_id": "1511",
+        "event_id": "963",
+        "contact_id": "1549",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -568,8 +564,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "942",
-        "contact_id": "1511",
+        "event_id": "963",
+        "contact_id": "1549",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -704,12 +700,6 @@ This is the example derived from the unit tests. A log
 * [api.prepare - Participant::getFields](Participant.md/#delete_example_events_3)
 * [api.respond - Participant::getFields](Participant.md/#delete_example_events_4)
 * [api.respond - Participant::delete](Participant.md/#delete_example_events_5)
-* [api.authorize - Participant::get](Participant.md/#delete_example_events_6)
-* [api.prepare - Participant::get](Participant.md/#delete_example_events_7)
-* [api.authorize - Participant::getFields](Participant.md/#delete_example_events_8)
-* [api.prepare - Participant::getFields](Participant.md/#delete_example_events_9)
-* [api.respond - Participant::getFields](Participant.md/#delete_example_events_10)
-* [api.respond - Participant::get](Participant.md/#delete_example_events_11)
 
 ####<a name='delete_example_events_0'></a>api.authorize - Participant::delete [:house:](index.md)
 
@@ -924,237 +914,9 @@ Params:
 ```
 
 
-####<a name='delete_example_events_6'></a>api.authorize - Participant::get [:house:](index.md)
-
-> [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `authorize()`, `isAuthorized()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_6'></a>API Request params [:house:](index.md)
-
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "where": [
-        [
-            "is_test",
-            "=",
-            0
-        ],
-        [
-            "id",
-            "=",
-            21
-        ]
-    ],
-    "select": [
-
-    ],
-    "orderBy": [
-
-    ],
-    "limit": 0,
-    "offset": 0,
-    "version": 4,
-    "chain": [
-
-    ],
-    "checkPermissions": false,
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_7'></a>api.prepare - Participant::get [:house:](index.md)
-
-> [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `setApiRequest()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_7'></a>API Request params [:house:](index.md)
-
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "where": [
-        [
-            "is_test",
-            "=",
-            0
-        ],
-        [
-            "id",
-            "=",
-            21
-        ]
-    ],
-    "select": [
-
-    ],
-    "orderBy": [
-
-    ],
-    "limit": 0,
-    "offset": 0,
-    "version": 4,
-    "chain": [
-
-    ],
-    "checkPermissions": false,
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_8'></a>api.authorize - Participant::getFields [:house:](index.md)
-
-> [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `authorize()`, `isAuthorized()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_8'></a>API Request params [:house:](index.md)
-
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "checkPermissions": false,
-    "version": 4,
-    "chain": [
-
-    ],
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_9'></a>api.prepare - Participant::getFields [:house:](index.md)
-
-> [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `setApiRequest()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_9'></a>API Request params [:house:](index.md)
-
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "checkPermissions": false,
-    "version": 4,
-    "chain": [
-
-    ],
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_10'></a>api.respond - Participant::getFields [:house:](index.md)
-
-> [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `getResponse()`, `setResponse()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_10'></a>API Request params [:house:](index.md)
-
-*Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "checkPermissions": false,
-    "version": 4,
-    "chain": [
-
-    ],
-    "options": [
-
-    ]
-}
-```
-
-
-####<a name='delete_example_events_11'></a>api.respond - Participant::get [:house:](index.md)
-
-> [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
-
-*Methods:* `getResponse()`, `setResponse()`
-
-*Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
-
-
-#####<a name='delete_example_event_params_11'></a>API Request params [:house:](index.md)
-
-*Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
-
-Params: 
-```
-{
-    "where": [
-        [
-            "is_test",
-            "=",
-            0
-        ],
-        [
-            "id",
-            "=",
-            21
-        ]
-    ],
-    "select": [
-
-    ],
-    "orderBy": [
-
-    ],
-    "limit": 0,
-    "offset": 0,
-    "version": 4,
-    "chain": [
-
-    ],
-    "checkPermissions": false,
-    "options": [
-
-    ]
-}
-```
-
-
 ###<a name='delete_example_hook_calls'></a>Hook calls [:house:](index.md)
 
-* [civicrm_apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_apiWrappers/) 4
+* [civicrm_apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_apiWrappers/) 2
 
 ##<a name='action_getActions'></a>Action Participant.getActions [:house:](index.md)
 

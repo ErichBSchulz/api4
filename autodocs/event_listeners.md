@@ -1,11 +1,11 @@
 
-#<a name='Listeners'></a>Event_listeners Listeners [:house:](index.md)
+# <a name='Listeners'></a>Event_listeners Listeners [:house:](index.md)
 
 
-##<a name='api.resolve'></a>Event_listeners Api.resolve [:house:](index.md)
+## <a name='api.resolve'></a>Event_listeners Api.resolve [:house:](index.md)
 
 
-###<a name='api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve [:house:](index.md)
+### <a name='api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/Civi/API/Provider/ActionObjectProvider.php lines: 37-99
@@ -20,7 +20,7 @@ source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/Civi/AP
 ]
 ```
 
-###<a name='api.resolveCivi\API\Provider\ReflectionProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\ReflectionProvider::onApiResolve [:house:](index.md)
+### <a name='api.resolveCivi\API\Provider\ReflectionProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\ReflectionProvider::onApiResolve [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Provider/ReflectionProvider.php lines: 36-150
@@ -37,7 +37,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Provider/
 ]
 ```
 
-###<a name='api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve [:house:](index.md)
+### <a name='api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\ActionObjectProvider::onApiResolve [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/Civi/API/Provider/ActionObjectProvider.php lines: 37-99
@@ -52,7 +52,7 @@ source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/Civi/AP
 ]
 ```
 
-###<a name='api.resolveCivi\API\Provider\MagicFunctionProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\MagicFunctionProvider::onApiResolve [:house:](index.md)
+### <a name='api.resolveCivi\API\Provider\MagicFunctionProvider::onApiResolve'></a>Event_listeners Api.resolveCivi\API\Provider\MagicFunctionProvider::onApiResolve [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Provider/MagicFunctionProvider.php lines: 37-304
@@ -68,7 +68,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Provider/
 ]
 ```
 
-###<a name='api.resolveCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.resolveCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
+### <a name='api.resolveCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.resolveCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/phpunit/Civi/API/V4/MockSubscriber.php lines: 8-40
@@ -82,10 +82,10 @@ source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/p
 ]
 ```
 
-##<a name='api.authorize'></a>Event_listeners Api.authorize [:house:](index.md)
+## <a name='api.authorize'></a>Event_listeners Api.authorize [:house:](index.md)
 
 
-###<a name='api.authorizeCivi\API\Provider\ReflectionProvider::onApiAuthorize'></a>Event_listeners Api.authorizeCivi\API\Provider\ReflectionProvider::onApiAuthorize [:house:](index.md)
+### <a name='api.authorizeCivi\API\Provider\ReflectionProvider::onApiAuthorize'></a>Event_listeners Api.authorizeCivi\API\Provider\ReflectionProvider::onApiAuthorize [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Provider/ReflectionProvider.php lines: 36-150
@@ -102,7 +102,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Provider/
 ]
 ```
 
-###<a name='api.authorizeCivi\API\Subscriber\DynamicFKAuthorization::onApiAuthorize'></a>Event_listeners Api.authorizeCivi\API\Subscriber\DynamicFKAuthorization::onApiAuthorize [:house:](index.md)
+### <a name='api.authorizeCivi\API\Subscriber\DynamicFKAuthorization::onApiAuthorize'></a>Event_listeners Api.authorizeCivi\API\Subscriber\DynamicFKAuthorization::onApiAuthorize [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/DynamicFKAuthorization.php lines: 48-375
@@ -122,7 +122,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.authorizeCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.authorizeCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
+### <a name='api.authorizeCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.authorizeCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/phpunit/Civi/API/V4/MockSubscriber.php lines: 8-40
@@ -136,7 +136,7 @@ source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/p
 ]
 ```
 
-###<a name='api.authorizeCivi\API\Subscriber\PermissionCheck::onApiAuthorize'></a>Event_listeners Api.authorizeCivi\API\Subscriber\PermissionCheck::onApiAuthorize [:house:](index.md)
+### <a name='api.authorizeCivi\API\Subscriber\PermissionCheck::onApiAuthorize'></a>Event_listeners Api.authorizeCivi\API\Subscriber\PermissionCheck::onApiAuthorize [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/PermissionCheck.php lines: 38-136
@@ -149,10 +149,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-##<a name='api.prepare'></a>Event_listeners Api.prepare [:house:](index.md)
+## <a name='api.prepare'></a>Event_listeners Api.prepare [:house:](index.md)
 
 
-###<a name='api.prepareCivi\API\Subscriber\TransactionSubscriber::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\TransactionSubscriber::onApiPrepare [:house:](index.md)
+### <a name='api.prepareCivi\API\Subscriber\TransactionSubscriber::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\TransactionSubscriber::onApiPrepare [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/TransactionSubscriber.php lines: 46-176
@@ -169,7 +169,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.prepareCivi\API\Subscriber\I18nSubscriber::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\I18nSubscriber::onApiPrepare [:house:](index.md)
+### <a name='api.prepareCivi\API\Subscriber\I18nSubscriber::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\I18nSubscriber::onApiPrepare [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/I18nSubscriber.php lines: 37-108
@@ -182,7 +182,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare [:house:](index.md)
+### <a name='api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/APIv3SchemaAdapter.php lines: 37-125
@@ -197,7 +197,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.prepareCivi\API\Subscriber\WrapperAdapter::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\WrapperAdapter::onApiPrepare [:house:](index.md)
+### <a name='api.prepareCivi\API\Subscriber\WrapperAdapter::onApiPrepare'></a>Event_listeners Api.prepareCivi\API\Subscriber\WrapperAdapter::onApiPrepare [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/WrapperAdapter.php lines: 38-107
@@ -212,7 +212,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.prepareCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.prepareCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
+### <a name='api.prepareCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.prepareCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/phpunit/Civi/API/V4/MockSubscriber.php lines: 8-40
@@ -226,7 +226,7 @@ source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/p
 ]
 ```
 
-###<a name='api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare_validate'></a>Event_listeners Api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare_validate [:house:](index.md)
+### <a name='api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare_validate'></a>Event_listeners Api.prepareCivi\API\Subscriber\APIv3SchemaAdapter::onApiPrepare_validate [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/APIv3SchemaAdapter.php lines: 37-125
@@ -241,10 +241,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-##<a name='api.respond'></a>Event_listeners Api.respond [:house:](index.md)
+## <a name='api.respond'></a>Event_listeners Api.respond [:house:](index.md)
 
 
-###<a name='api.respondCivi\API\Subscriber\WrapperAdapter::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\WrapperAdapter::onApiRespond [:house:](index.md)
+### <a name='api.respondCivi\API\Subscriber\WrapperAdapter::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\WrapperAdapter::onApiRespond [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/WrapperAdapter.php lines: 38-107
@@ -259,7 +259,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.respondCivi\API\Subscriber\ChainSubscriber::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\ChainSubscriber::onApiRespond [:house:](index.md)
+### <a name='api.respondCivi\API\Subscriber\ChainSubscriber::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\ChainSubscriber::onApiRespond [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/ChainSubscriber.php lines: 52-213
@@ -271,7 +271,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.respondCivi\API\Subscriber\TransactionSubscriber::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\TransactionSubscriber::onApiRespond [:house:](index.md)
+### <a name='api.respondCivi\API\Subscriber\TransactionSubscriber::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\TransactionSubscriber::onApiRespond [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/TransactionSubscriber.php lines: 46-176
@@ -288,7 +288,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.respondCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.respondCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
+### <a name='api.respondCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.respondCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/phpunit/Civi/API/V4/MockSubscriber.php lines: 8-40
@@ -302,7 +302,7 @@ source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/p
 ]
 ```
 
-###<a name='api.respondCivi\API\Subscriber\XDebugSubscriber::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\XDebugSubscriber::onApiRespond [:house:](index.md)
+### <a name='api.respondCivi\API\Subscriber\XDebugSubscriber::onApiRespond'></a>Event_listeners Api.respondCivi\API\Subscriber\XDebugSubscriber::onApiRespond [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/XDebugSubscriber.php lines: 37-66
@@ -314,10 +314,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-##<a name='DAO::post-insert'></a>Event_listeners DAO::post-insert [:house:](index.md)
+## <a name='DAO::post-insert'></a>Event_listeners DAO::post-insert [:house:](index.md)
 
 
-###<a name='DAO::post-insertCRM_Core_BAO_RecurringEntity::triggerInsert'></a>Event_listeners DAO::post-insertCRM_Core_BAO_RecurringEntity::triggerInsert [:house:](index.md)
+### <a name='DAO::post-insertCRM_Core_BAO_RecurringEntity::triggerInsert'></a>Event_listeners DAO::post-insertCRM_Core_BAO_RecurringEntity::triggerInsert [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/BAO/RecurringEntity.php lines: 39-1177
@@ -490,10 +490,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/BAO/Recur
 ]
 ```
 
-##<a name='hook_civicrm_post::Activity'></a>Event_listeners Hook_civicrm_post::Activity [:house:](index.md)
+## <a name='hook_civicrm_post::Activity'></a>Event_listeners Hook_civicrm_post::Activity [:house:](index.md)
 
 
-###<a name='hook_civicrm_post::ActivityCivi\CCase\Events::fireCaseChange'></a>Event_listeners Hook_civicrm_post::ActivityCivi\CCase\Events::fireCaseChange [:house:](index.md)
+### <a name='hook_civicrm_post::ActivityCivi\CCase\Events::fireCaseChange'></a>Event_listeners Hook_civicrm_post::ActivityCivi\CCase\Events::fireCaseChange [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/Events.php lines: 34-110
@@ -506,10 +506,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/Events.
 ]
 ```
 
-##<a name='DAO::post-delete'></a>Event_listeners DAO::post-delete [:house:](index.md)
+## <a name='DAO::post-delete'></a>Event_listeners DAO::post-delete [:house:](index.md)
 
 
-###<a name='DAO::post-deleteCRM_Core_BAO_RecurringEntity::triggerDelete'></a>Event_listeners DAO::post-deleteCRM_Core_BAO_RecurringEntity::triggerDelete [:house:](index.md)
+### <a name='DAO::post-deleteCRM_Core_BAO_RecurringEntity::triggerDelete'></a>Event_listeners DAO::post-deleteCRM_Core_BAO_RecurringEntity::triggerDelete [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/BAO/RecurringEntity.php lines: 39-1177
@@ -682,10 +682,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/BAO/Recur
 ]
 ```
 
-##<a name='civi.core.install'></a>Event_listeners Civi.core.install [:house:](index.md)
+## <a name='civi.core.install'></a>Event_listeners Civi.core.install [:house:](index.md)
 
 
-###<a name='civi.core.installCivi\Core\InstallationCanary::check'></a>Event_listeners Civi.core.installCivi\Core\InstallationCanary::check [:house:](index.md)
+### <a name='civi.core.installCivi\Core\InstallationCanary::check'></a>Event_listeners Civi.core.installCivi\Core\InstallationCanary::check [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Core/InstallationCanary.php lines: 36-59
@@ -696,7 +696,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Core/Installa
 ]
 ```
 
-###<a name='civi.core.installCivi\Core\DatabaseInitializer::initialize'></a>Event_listeners Civi.core.installCivi\Core\DatabaseInitializer::initialize [:house:](index.md)
+### <a name='civi.core.installCivi\Core\DatabaseInitializer::initialize'></a>Event_listeners Civi.core.installCivi\Core\DatabaseInitializer::initialize [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Core/DatabaseInitializer.php lines: 36-53
@@ -707,26 +707,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Core/Database
 ]
 ```
 
-##<a name='hook_civicrm_post::Case'></a>Event_listeners Hook_civicrm_post::Case [:house:](index.md)
+## <a name='hook_civicrm_post::Case'></a>Event_listeners Hook_civicrm_post::Case [:house:](index.md)
 
 
-###<a name='hook_civicrm_post::CaseCivi\CCase\Events::fireCaseChange'></a>Event_listeners Hook_civicrm_post::CaseCivi\CCase\Events::fireCaseChange [:house:](index.md)
-
-
-source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/Events.php lines: 34-110
- Methods:
-```
-[
-    "fireCaseChange",
-    "fireCaseChangeForRealz",
-    "delegateToXmlListeners"
-]
-```
-
-##<a name='hook_civicrm_caseChange'></a>Event_listeners Hook_civicrm_caseChange [:house:](index.md)
-
-
-###<a name='hook_civicrm_caseChangeCivi\CCase\Events::delegateToXmlListeners'></a>Event_listeners Hook_civicrm_caseChangeCivi\CCase\Events::delegateToXmlListeners [:house:](index.md)
+### <a name='hook_civicrm_post::CaseCivi\CCase\Events::fireCaseChange'></a>Event_listeners Hook_civicrm_post::CaseCivi\CCase\Events::fireCaseChange [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/Events.php lines: 34-110
@@ -739,7 +723,23 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/Events.
 ]
 ```
 
-###<a name='hook_civicrm_caseChangeCivi\CCase\SequenceListener::onCaseChange_static'></a>Event_listeners Hook_civicrm_caseChangeCivi\CCase\SequenceListener::onCaseChange_static [:house:](index.md)
+## <a name='hook_civicrm_caseChange'></a>Event_listeners Hook_civicrm_caseChange [:house:](index.md)
+
+
+### <a name='hook_civicrm_caseChangeCivi\CCase\Events::delegateToXmlListeners'></a>Event_listeners Hook_civicrm_caseChangeCivi\CCase\Events::delegateToXmlListeners [:house:](index.md)
+
+
+source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/Events.php lines: 34-110
+ Methods:
+```
+[
+    "fireCaseChange",
+    "fireCaseChangeForRealz",
+    "delegateToXmlListeners"
+]
+```
+
+### <a name='hook_civicrm_caseChangeCivi\CCase\SequenceListener::onCaseChange_static'></a>Event_listeners Hook_civicrm_caseChangeCivi\CCase\SequenceListener::onCaseChange_static [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/SequenceListener.php lines: 9-123
@@ -754,10 +754,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/CCase/Sequenc
 ]
 ```
 
-##<a name='DAO::post-update'></a>Event_listeners DAO::post-update [:house:](index.md)
+## <a name='DAO::post-update'></a>Event_listeners DAO::post-update [:house:](index.md)
 
 
-###<a name='DAO::post-updateCRM_Core_BAO_RecurringEntity::triggerUpdate'></a>Event_listeners DAO::post-updateCRM_Core_BAO_RecurringEntity::triggerUpdate [:house:](index.md)
+### <a name='DAO::post-updateCRM_Core_BAO_RecurringEntity::triggerUpdate'></a>Event_listeners DAO::post-updateCRM_Core_BAO_RecurringEntity::triggerUpdate [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/BAO/RecurringEntity.php lines: 39-1177
@@ -930,10 +930,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/BAO/Recur
 ]
 ```
 
-##<a name='hook_civicrm_unhandled_exception'></a>Event_listeners Hook_civicrm_unhandled_exception [:house:](index.md)
+## <a name='hook_civicrm_unhandled_exception'></a>Event_listeners Hook_civicrm_unhandled_exception [:house:](index.md)
 
 
-###<a name='hook_civicrm_unhandled_exceptionCRM_Core_LegacyErrorHandler::handleException'></a>Event_listeners Hook_civicrm_unhandled_exceptionCRM_Core_LegacyErrorHandler::handleException [:house:](index.md)
+### <a name='hook_civicrm_unhandled_exceptionCRM_Core_LegacyErrorHandler::handleException'></a>Event_listeners Hook_civicrm_unhandled_exceptionCRM_Core_LegacyErrorHandler::handleException [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/LegacyErrorHandler.php lines: 6-37
@@ -944,10 +944,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Core/LegacyErr
 ]
 ```
 
-##<a name='actionSchedule.getMappings'></a>Event_listeners ActionSchedule.getMappings [:house:](index.md)
+## <a name='actionSchedule.getMappings'></a>Event_listeners ActionSchedule.getMappings [:house:](index.md)
 
 
-###<a name='actionSchedule.getMappingsCRM_Activity_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Activity_ActionMapping::onRegisterActionMappings [:house:](index.md)
+### <a name='actionSchedule.getMappingsCRM_Activity_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Activity_ActionMapping::onRegisterActionMappings [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/ActionMapping.php lines: 43-138
@@ -972,7 +972,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/Actio
 ]
 ```
 
-###<a name='actionSchedule.getMappingsCRM_Contact_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Contact_ActionMapping::onRegisterActionMappings [:house:](index.md)
+### <a name='actionSchedule.getMappingsCRM_Contact_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Contact_ActionMapping::onRegisterActionMappings [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contact/ActionMapping.php lines: 38-158
@@ -997,7 +997,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contact/Action
 ]
 ```
 
-###<a name='actionSchedule.getMappingsCRM_Contribute_ActionMapping_ByPage::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Contribute_ActionMapping_ByPage::onRegisterActionMappings [:house:](index.md)
+### <a name='actionSchedule.getMappingsCRM_Contribute_ActionMapping_ByPage::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Contribute_ActionMapping_ByPage::onRegisterActionMappings [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/ActionMapping/ByPage.php lines: 38-224
@@ -1020,7 +1020,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Act
 ]
 ```
 
-###<a name='actionSchedule.getMappingsCRM_Contribute_ActionMapping_ByType::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Contribute_ActionMapping_ByType::onRegisterActionMappings [:house:](index.md)
+### <a name='actionSchedule.getMappingsCRM_Contribute_ActionMapping_ByType::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Contribute_ActionMapping_ByType::onRegisterActionMappings [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/ActionMapping/ByType.php lines: 38-243
@@ -1043,7 +1043,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Act
 ]
 ```
 
-###<a name='actionSchedule.getMappingsCRM_Event_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Event_ActionMapping::onRegisterActionMappings [:house:](index.md)
+### <a name='actionSchedule.getMappingsCRM_Event_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Event_ActionMapping::onRegisterActionMappings [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/ActionMapping.php lines: 38-193
@@ -1068,7 +1068,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/ActionMa
 ]
 ```
 
-###<a name='actionSchedule.getMappingsCRM_Member_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Member_ActionMapping::onRegisterActionMappings [:house:](index.md)
+### <a name='actionSchedule.getMappingsCRM_Member_ActionMapping::onRegisterActionMappings'></a>Event_listeners ActionSchedule.getMappingsCRM_Member_ActionMapping::onRegisterActionMappings [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Member/ActionMapping.php lines: 37-156
@@ -1093,10 +1093,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Member/ActionM
 ]
 ```
 
-##<a name='api.exception'></a>Event_listeners Api.exception [:house:](index.md)
+## <a name='api.exception'></a>Event_listeners Api.exception [:house:](index.md)
 
 
-###<a name='api.exceptionCivi\API\Subscriber\TransactionSubscriber::onApiException'></a>Event_listeners Api.exceptionCivi\API\Subscriber\TransactionSubscriber::onApiException [:house:](index.md)
+### <a name='api.exceptionCivi\API\Subscriber\TransactionSubscriber::onApiException'></a>Event_listeners Api.exceptionCivi\API\Subscriber\TransactionSubscriber::onApiException [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscriber/TransactionSubscriber.php lines: 46-176
@@ -1113,7 +1113,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/API/Subscribe
 ]
 ```
 
-###<a name='api.exceptionCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.exceptionCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
+### <a name='api.exceptionCivi\API\V4\MockSubscriber::snoop'></a>Event_listeners Api.exceptionCivi\API\V4\MockSubscriber::snoop [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/phpunit/Civi/API/V4/MockSubscriber.php lines: 8-40
@@ -1127,10 +1127,10 @@ source: /opt/buildkit/build/dmaster/sites/default/files/civicrm/ext/api4/tests/p
 ]
 ```
 
-##<a name='civi.token.eval'></a>Event_listeners Civi.token.eval [:house:](index.md)
+## <a name='civi.token.eval'></a>Event_listeners Civi.token.eval [:house:](index.md)
 
 
-###<a name='civi.token.evalCivi\Token\TokenCompatSubscriber::onEvaluate'></a>Event_listeners Civi.token.evalCivi\Token\TokenCompatSubscriber::onEvaluate [:house:](index.md)
+### <a name='civi.token.evalCivi\Token\TokenCompatSubscriber::onEvaluate'></a>Event_listeners Civi.token.evalCivi\Token\TokenCompatSubscriber::onEvaluate [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Token/TokenCompatSubscriber.php lines: 21-132
@@ -1143,7 +1143,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Token/TokenCo
 ]
 ```
 
-###<a name='civi.token.evalCRM_Mailing_ActionTokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Mailing_ActionTokens::evaluateTokens [:house:](index.md)
+### <a name='civi.token.evalCRM_Mailing_ActionTokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Mailing_ActionTokens::evaluateTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/ActionTokens.php lines: 43-105
@@ -1162,7 +1162,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Action
 ]
 ```
 
-###<a name='civi.token.evalCRM_Activity_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Activity_Tokens::evaluateTokens [:house:](index.md)
+### <a name='civi.token.evalCRM_Activity_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Activity_Tokens::evaluateTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/Tokens.php lines: 46-121
@@ -1181,7 +1181,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/Token
 ]
 ```
 
-###<a name='civi.token.evalCRM_Contribute_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Contribute_Tokens::evaluateTokens [:house:](index.md)
+### <a name='civi.token.evalCRM_Contribute_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Contribute_Tokens::evaluateTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Tokens.php lines: 37-147
@@ -1200,7 +1200,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Tok
 ]
 ```
 
-###<a name='civi.token.evalCRM_Event_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Event_Tokens::evaluateTokens [:house:](index.md)
+### <a name='civi.token.evalCRM_Event_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Event_Tokens::evaluateTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/Tokens.php lines: 41-153
@@ -1219,7 +1219,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/Tokens.p
 ]
 ```
 
-###<a name='civi.token.evalCRM_Mailing_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Mailing_Tokens::evaluateTokens [:house:](index.md)
+### <a name='civi.token.evalCRM_Mailing_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Mailing_Tokens::evaluateTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Tokens.php lines: 37-94
@@ -1238,7 +1238,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Tokens
 ]
 ```
 
-###<a name='civi.token.evalCRM_Member_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Member_Tokens::evaluateTokens [:house:](index.md)
+### <a name='civi.token.evalCRM_Member_Tokens::evaluateTokens'></a>Event_listeners Civi.token.evalCRM_Member_Tokens::evaluateTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Member/Tokens.php lines: 41-109
@@ -1257,10 +1257,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Member/Tokens.
 ]
 ```
 
-##<a name='civi.token.render'></a>Event_listeners Civi.token.render [:house:](index.md)
+## <a name='civi.token.render'></a>Event_listeners Civi.token.render [:house:](index.md)
 
 
-###<a name='civi.token.renderCivi\Token\TokenCompatSubscriber::onRender'></a>Event_listeners Civi.token.renderCivi\Token\TokenCompatSubscriber::onRender [:house:](index.md)
+### <a name='civi.token.renderCivi\Token\TokenCompatSubscriber::onRender'></a>Event_listeners Civi.token.renderCivi\Token\TokenCompatSubscriber::onRender [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Token/TokenCompatSubscriber.php lines: 21-132
@@ -1273,10 +1273,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/Civi/Token/TokenCo
 ]
 ```
 
-##<a name='civi.token.list'></a>Event_listeners Civi.token.list [:house:](index.md)
+## <a name='civi.token.list'></a>Event_listeners Civi.token.list [:house:](index.md)
 
 
-###<a name='civi.token.listCRM_Mailing_ActionTokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Mailing_ActionTokens::registerTokens [:house:](index.md)
+### <a name='civi.token.listCRM_Mailing_ActionTokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Mailing_ActionTokens::registerTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/ActionTokens.php lines: 43-105
@@ -1295,7 +1295,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Action
 ]
 ```
 
-###<a name='civi.token.listCRM_Activity_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Activity_Tokens::registerTokens [:house:](index.md)
+### <a name='civi.token.listCRM_Activity_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Activity_Tokens::registerTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/Tokens.php lines: 46-121
@@ -1314,7 +1314,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/Token
 ]
 ```
 
-###<a name='civi.token.listCRM_Contribute_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Contribute_Tokens::registerTokens [:house:](index.md)
+### <a name='civi.token.listCRM_Contribute_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Contribute_Tokens::registerTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Tokens.php lines: 37-147
@@ -1333,7 +1333,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Tok
 ]
 ```
 
-###<a name='civi.token.listCRM_Event_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Event_Tokens::registerTokens [:house:](index.md)
+### <a name='civi.token.listCRM_Event_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Event_Tokens::registerTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/Tokens.php lines: 41-153
@@ -1352,7 +1352,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/Tokens.p
 ]
 ```
 
-###<a name='civi.token.listCRM_Mailing_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Mailing_Tokens::registerTokens [:house:](index.md)
+### <a name='civi.token.listCRM_Mailing_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Mailing_Tokens::registerTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Tokens.php lines: 37-94
@@ -1371,7 +1371,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Tokens
 ]
 ```
 
-###<a name='civi.token.listCRM_Member_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Member_Tokens::registerTokens [:house:](index.md)
+### <a name='civi.token.listCRM_Member_Tokens::registerTokens'></a>Event_listeners Civi.token.listCRM_Member_Tokens::registerTokens [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Member/Tokens.php lines: 41-109
@@ -1390,10 +1390,10 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Member/Tokens.
 ]
 ```
 
-##<a name='actionSchedule.prepareMailingQuery'></a>Event_listeners ActionSchedule.prepareMailingQuery [:house:](index.md)
+## <a name='actionSchedule.prepareMailingQuery'></a>Event_listeners ActionSchedule.prepareMailingQuery [:house:](index.md)
 
 
-###<a name='actionSchedule.prepareMailingQueryCRM_Mailing_ActionTokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Mailing_ActionTokens::alterActionScheduleQuery [:house:](index.md)
+### <a name='actionSchedule.prepareMailingQueryCRM_Mailing_ActionTokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Mailing_ActionTokens::alterActionScheduleQuery [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/ActionTokens.php lines: 43-105
@@ -1412,7 +1412,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Action
 ]
 ```
 
-###<a name='actionSchedule.prepareMailingQueryCRM_Activity_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Activity_Tokens::alterActionScheduleQuery [:house:](index.md)
+### <a name='actionSchedule.prepareMailingQueryCRM_Activity_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Activity_Tokens::alterActionScheduleQuery [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/Tokens.php lines: 46-121
@@ -1431,7 +1431,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Activity/Token
 ]
 ```
 
-###<a name='actionSchedule.prepareMailingQueryCRM_Contribute_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Contribute_Tokens::alterActionScheduleQuery [:house:](index.md)
+### <a name='actionSchedule.prepareMailingQueryCRM_Contribute_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Contribute_Tokens::alterActionScheduleQuery [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Tokens.php lines: 37-147
@@ -1450,7 +1450,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Contribute/Tok
 ]
 ```
 
-###<a name='actionSchedule.prepareMailingQueryCRM_Event_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Event_Tokens::alterActionScheduleQuery [:house:](index.md)
+### <a name='actionSchedule.prepareMailingQueryCRM_Event_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Event_Tokens::alterActionScheduleQuery [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/Tokens.php lines: 41-153
@@ -1469,7 +1469,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Event/Tokens.p
 ]
 ```
 
-###<a name='actionSchedule.prepareMailingQueryCRM_Mailing_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Mailing_Tokens::alterActionScheduleQuery [:house:](index.md)
+### <a name='actionSchedule.prepareMailingQueryCRM_Mailing_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Mailing_Tokens::alterActionScheduleQuery [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Tokens.php lines: 37-94
@@ -1488,7 +1488,7 @@ source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Mailing/Tokens
 ]
 ```
 
-###<a name='actionSchedule.prepareMailingQueryCRM_Member_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Member_Tokens::alterActionScheduleQuery [:house:](index.md)
+### <a name='actionSchedule.prepareMailingQueryCRM_Member_Tokens::alterActionScheduleQuery'></a>Event_listeners ActionSchedule.prepareMailingQueryCRM_Member_Tokens::alterActionScheduleQuery [:house:](index.md)
 
 
 source: /opt/buildkit/build/dmaster/sites/all/modules/civicrm/CRM/Member/Tokens.php lines: 41-109

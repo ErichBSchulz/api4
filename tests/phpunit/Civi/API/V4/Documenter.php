@@ -67,7 +67,7 @@ class Documenter  {
     }
     return "\n"
       . str_repeat('#', $level)
-      . "<a name='$name'></a>$text [:house:](index.md)\n\n";
+      . " <a name='$name'></a>$text [:house:](index.md)\n\n";
   }
 
   /**
@@ -122,7 +122,6 @@ class Documenter  {
    */
   public function blobToMarkDown($blob) {
     $index = $this->preamble . "\n\n";
-    $index = $this->eventListeners() . "\n\n";
     $index .= $this->link($this->event_file, "Listeners");
     $index .= "Entity | Actions | Fields\n";
     $index .= "------ | ------- | ------\n";
@@ -257,9 +256,9 @@ class Documenter  {
       $index .= "\n";
       $this->write($entity . '.md', $entity_title . $entity_index . $string);
       // write event listeners file:
-      $this->write($this->event_file . '.md', $this->eventListeners());
     }
     $this->write($this->index_file, $index);
+    $this->write($this->event_file . '.md', $this->eventListeners());
   }
 
 }

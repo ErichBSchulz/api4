@@ -1,5 +1,5 @@
 
-#<a name='top'></a>Participant [:house:](index.md)
+# <a name='top'></a>Participant [:house:](index.md)
 
 Action | Params | Example
 ------ | ------ | -------
@@ -11,12 +11,12 @@ Action | Params | Example
 [update](Participant.md/#action_update) | [Params](Participant.md/#update_params) | 
 **Fields**: [id](Participant.md/#field_id), [contact_id](Participant.md/#field_contact_id), [event_id](Participant.md/#field_event_id), [status_id](Participant.md/#field_status_id), [role_id](Participant.md/#field_role_id), [register_date](Participant.md/#field_register_date), [source](Participant.md/#field_source), [fee_level](Participant.md/#field_fee_level), [is_test](Participant.md/#field_is_test), [is_pay_later](Participant.md/#field_is_pay_later), [fee_amount](Participant.md/#field_fee_amount), [registered_by_id](Participant.md/#field_registered_by_id), [discount_id](Participant.md/#field_discount_id), [fee_currency](Participant.md/#field_fee_currency), [campaign_id](Participant.md/#field_campaign_id), [discount_amount](Participant.md/#field_discount_amount), [cart_id](Participant.md/#field_cart_id), [must_wait](Participant.md/#field_must_wait), [transferred_to_contact_id](Participant.md/#field_transferred_to_contact_id)
 
-##<a name='action_get'></a>Action Participant.get [:house:](index.md)
+## <a name='action_get'></a>Action Participant.get [:house:](index.md)
 
 Base class for all get actions.
 
 
-###<a name='get_params'></a>Params [:house:](index.md)
+### <a name='get_params'></a>Params [:house:](index.md)
 
 * **where** (`array`: `[["is_test","=",0]]`)
   Array of conditions keyed by field.  $example->addWhere('contact_id.contact_type', 'IN', array('Individual', 'Household'))
@@ -41,12 +41,12 @@ In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
 
-##<a name='get_example'></a>Example [:house:](index.md)
+## <a name='get_example'></a>Example [:house:](index.md)
 
 This is the example derived from the unit tests. A log
             of hook calls and events is below the API request and response.
 
-###<a name='get_example_params'></a>Params [:house:](index.md)
+### <a name='get_example_params'></a>Params [:house:](index.md)
 
 ```
 {
@@ -58,14 +58,14 @@ This is the example derived from the unit tests. A log
 }
 ```
 
-###<a name='get_example_result'></a>Result [:house:](index.md)
+### <a name='get_example_result'></a>Result [:house:](index.md)
 
 ```
 {
     "21": {
         "id": "21",
-        "contact_id": "1549",
-        "event_id": "963",
+        "contact_id": "1560",
+        "event_id": "970",
         "status_id": "2",
         "role_id": "1",
         "register_date": "2007-02-19 00:00:00",
@@ -76,7 +76,7 @@ This is the example derived from the unit tests. A log
 }
 ```
 
-###<a name='get_example_events'></a>Events [:house:](index.md)
+### <a name='get_example_events'></a>Events [:house:](index.md)
 
 * [api.authorize - Participant::get](Participant.md/#get_example_events_0)
 * [api.prepare - Participant::get](Participant.md/#get_example_events_1)
@@ -85,7 +85,7 @@ This is the example derived from the unit tests. A log
 * [api.respond - Participant::getFields](Participant.md/#get_example_events_4)
 * [api.respond - Participant::get](Participant.md/#get_example_events_5)
 
-####<a name='get_example_events_0'></a>api.authorize - Participant::get [:house:](index.md)
+#### <a name='get_example_events_0'></a>api.authorize - Participant::get [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -94,7 +94,7 @@ This is the example derived from the unit tests. A log
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='get_example_event_params_0'></a>API Request params [:house:](index.md)
+##### <a name='get_example_event_params_0'></a>API Request params [:house:](index.md)
 
 *Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -133,7 +133,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_1'></a>api.prepare - Participant::get [:house:](index.md)
+#### <a name='get_example_events_1'></a>api.prepare - Participant::get [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -142,7 +142,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='get_example_event_params_1'></a>API Request params [:house:](index.md)
+##### <a name='get_example_event_params_1'></a>API Request params [:house:](index.md)
 
 *Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -181,7 +181,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_2'></a>api.authorize - Participant::getFields [:house:](index.md)
+#### <a name='get_example_events_2'></a>api.authorize - Participant::getFields [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -190,7 +190,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='get_example_event_params_2'></a>API Request params [:house:](index.md)
+##### <a name='get_example_event_params_2'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -209,7 +209,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_3'></a>api.prepare - Participant::getFields [:house:](index.md)
+#### <a name='get_example_events_3'></a>api.prepare - Participant::getFields [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -218,7 +218,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='get_example_event_params_3'></a>API Request params [:house:](index.md)
+##### <a name='get_example_event_params_3'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -237,7 +237,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_4'></a>api.respond - Participant::getFields [:house:](index.md)
+#### <a name='get_example_events_4'></a>api.respond - Participant::getFields [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -246,7 +246,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='get_example_event_params_4'></a>API Request params [:house:](index.md)
+##### <a name='get_example_event_params_4'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -265,7 +265,7 @@ Params:
 ```
 
 
-####<a name='get_example_events_5'></a>api.respond - Participant::get [:house:](index.md)
+#### <a name='get_example_events_5'></a>api.respond - Participant::get [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -274,7 +274,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='get_example_event_params_5'></a>API Request params [:house:](index.md)
+##### <a name='get_example_event_params_5'></a>API Request params [:house:](index.md)
 
 *Methods*:`addWhere()`, `addClause()`, `addOrderBy()`, `_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -313,16 +313,16 @@ Params:
 ```
 
 
-###<a name='get_example_hook_calls'></a>Hook calls [:house:](index.md)
+### <a name='get_example_hook_calls'></a>Hook calls [:house:](index.md)
 
 * [civicrm_apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_apiWrappers/) 2
 
-##<a name='action_create'></a>Action Participant.create [:house:](index.md)
+## <a name='action_create'></a>Action Participant.create [:house:](index.md)
 
 Base class for all create actions.
 
 
-###<a name='create_params'></a>Params [:house:](index.md)
+### <a name='create_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -338,18 +338,18 @@ In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
 
-##<a name='create_example'></a>Example [:house:](index.md)
+## <a name='create_example'></a>Example [:house:](index.md)
 
 This is the example derived from the unit tests. A log
             of hook calls and events is below the API request and response.
 
-###<a name='create_example_params'></a>Params [:house:](index.md)
+### <a name='create_example_params'></a>Params [:house:](index.md)
 
 ```
 {
     "Values": {
-        "event_id": "963",
-        "contact_id": "1549",
+        "event_id": "970",
+        "contact_id": "1560",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -359,13 +359,13 @@ This is the example derived from the unit tests. A log
 }
 ```
 
-###<a name='create_example_result'></a>Result [:house:](index.md)
+### <a name='create_example_result'></a>Result [:house:](index.md)
 
 ```
 {
     "id": 21,
-    "contact_id": "1549",
-    "event_id": "963",
+    "contact_id": "1560",
+    "event_id": "970",
     "status_id": 2,
     "role_id": 1,
     "register_date": "20070219",
@@ -385,13 +385,13 @@ This is the example derived from the unit tests. A log
 }
 ```
 
-###<a name='create_example_events'></a>Events [:house:](index.md)
+### <a name='create_example_events'></a>Events [:house:](index.md)
 
 * [api.authorize - Participant::create](Participant.md/#create_example_events_0)
 * [api.prepare - Participant::create](Participant.md/#create_example_events_1)
 * [api.respond - Participant::create](Participant.md/#create_example_events_2)
 
-####<a name='create_example_events_0'></a>api.authorize - Participant::create [:house:](index.md)
+#### <a name='create_example_events_0'></a>api.authorize - Participant::create [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -400,7 +400,7 @@ This is the example derived from the unit tests. A log
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='create_example_event_params_0'></a>API Request params [:house:](index.md)
+##### <a name='create_example_event_params_0'></a>API Request params [:house:](index.md)
 
 *Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -408,8 +408,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "963",
-        "contact_id": "1549",
+        "event_id": "970",
+        "contact_id": "1560",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -469,7 +469,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_1'></a>api.prepare - Participant::create [:house:](index.md)
+#### <a name='create_example_events_1'></a>api.prepare - Participant::create [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -478,7 +478,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='create_example_event_params_1'></a>API Request params [:house:](index.md)
+##### <a name='create_example_event_params_1'></a>API Request params [:house:](index.md)
 
 *Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -486,8 +486,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "963",
-        "contact_id": "1549",
+        "event_id": "970",
+        "contact_id": "1560",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -547,7 +547,7 @@ Params:
 ```
 
 
-####<a name='create_example_events_2'></a>api.respond - Participant::create [:house:](index.md)
+#### <a name='create_example_events_2'></a>api.respond - Participant::create [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -556,7 +556,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
+##### <a name='create_example_event_params_2'></a>API Request params [:house:](index.md)
 
 *Methods*:`__construct()`, `setValue()`, `_run()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -564,8 +564,8 @@ Params:
 ```
 {
     "values": {
-        "event_id": "963",
-        "contact_id": "1549",
+        "event_id": "970",
+        "contact_id": "1560",
         "status_id": 2,
         "role_id": 1,
         "register_date": 20070219,
@@ -625,7 +625,7 @@ Params:
 ```
 
 
-###<a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
+### <a name='create_example_hook_calls'></a>Hook calls [:house:](index.md)
 
 * [civicrm_apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_apiWrappers/) 1
 * [civicrm_pre](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_pre/) 2
@@ -639,12 +639,12 @@ Params:
 * [civicrm_permission_check](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_permission_check/) 2
 * [civicrm_recent](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_recent/) 1
 
-##<a name='action_delete'></a>Action Participant.delete [:house:](index.md)
+## <a name='action_delete'></a>Action Participant.delete [:house:](index.md)
 
 "delete" inherits all the abilities of "get"
 
 
-###<a name='delete_params'></a>Params [:house:](index.md)
+### <a name='delete_params'></a>Params [:house:](index.md)
 
 * **select** (`array`: `[]`)
   Fields to return. Defaults to all non-custom fields.
@@ -667,12 +667,12 @@ In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
 
-##<a name='delete_example'></a>Example [:house:](index.md)
+## <a name='delete_example'></a>Example [:house:](index.md)
 
 This is the example derived from the unit tests. A log
             of hook calls and events is below the API request and response.
 
-###<a name='delete_example_params'></a>Params [:house:](index.md)
+### <a name='delete_example_params'></a>Params [:house:](index.md)
 
 ```
 {
@@ -684,7 +684,7 @@ This is the example derived from the unit tests. A log
 }
 ```
 
-###<a name='delete_example_result'></a>Result [:house:](index.md)
+### <a name='delete_example_result'></a>Result [:house:](index.md)
 
 ```
 {
@@ -692,7 +692,7 @@ This is the example derived from the unit tests. A log
 }
 ```
 
-###<a name='delete_example_events'></a>Events [:house:](index.md)
+### <a name='delete_example_events'></a>Events [:house:](index.md)
 
 * [api.authorize - Participant::delete](Participant.md/#delete_example_events_0)
 * [api.prepare - Participant::delete](Participant.md/#delete_example_events_1)
@@ -701,7 +701,7 @@ This is the example derived from the unit tests. A log
 * [api.respond - Participant::getFields](Participant.md/#delete_example_events_4)
 * [api.respond - Participant::delete](Participant.md/#delete_example_events_5)
 
-####<a name='delete_example_events_0'></a>api.authorize - Participant::delete [:house:](index.md)
+#### <a name='delete_example_events_0'></a>api.authorize - Participant::delete [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -710,7 +710,7 @@ This is the example derived from the unit tests. A log
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='delete_example_event_params_0'></a>API Request params [:house:](index.md)
+##### <a name='delete_example_event_params_0'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -744,7 +744,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_1'></a>api.prepare - Participant::delete [:house:](index.md)
+#### <a name='delete_example_events_1'></a>api.prepare - Participant::delete [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -753,7 +753,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='delete_example_event_params_1'></a>API Request params [:house:](index.md)
+##### <a name='delete_example_event_params_1'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -787,7 +787,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_2'></a>api.authorize - Participant::getFields [:house:](index.md)
+#### <a name='delete_example_events_2'></a>api.authorize - Participant::getFields [:house:](index.md)
 
 > [Civi\API\Event\AuthorizeEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/AuthorizeEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -796,7 +796,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='delete_example_event_params_2'></a>API Request params [:house:](index.md)
+##### <a name='delete_example_event_params_2'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -815,7 +815,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_3'></a>api.prepare - Participant::getFields [:house:](index.md)
+#### <a name='delete_example_events_3'></a>api.prepare - Participant::getFields [:house:](index.md)
 
 > [Civi\API\Event\PrepareEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/PrepareEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -824,7 +824,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='delete_example_event_params_3'></a>API Request params [:house:](index.md)
+##### <a name='delete_example_event_params_3'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -843,7 +843,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_4'></a>api.respond - Participant::getFields [:house:](index.md)
+#### <a name='delete_example_events_4'></a>api.respond - Participant::getFields [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -852,7 +852,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='delete_example_event_params_4'></a>API Request params [:house:](index.md)
+##### <a name='delete_example_event_params_4'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -871,7 +871,7 @@ Params:
 ```
 
 
-####<a name='delete_example_events_5'></a>api.respond - Participant::delete [:house:](index.md)
+#### <a name='delete_example_events_5'></a>api.respond - Participant::delete [:house:](index.md)
 
 > [Civi\API\Event\RespondEvent](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/RespondEvent.php#L28) extends [Civi\API\Event\Event](https://github.com/civicrm/civicrm-core/blob/master/Civi/API/Event/Event.php#L28)
 
@@ -880,7 +880,7 @@ Params:
 *Inherits:* `__construct()`, `getApiKernel()`, `getApiProvider()`, `getApiRequest()`, `isPropagationStopped()`, `stopPropagation()`, `setDispatcher()`, `getDispatcher()`, `getName()`, `setName()`
 
 
-#####<a name='delete_example_event_params_5'></a>API Request params [:house:](index.md)
+##### <a name='delete_example_event_params_5'></a>API Request params [:house:](index.md)
 
 *Methods*:`_run()`, `addWhere()`, `addClause()`, `addOrderBy()`, `__construct()`, `__set()`, `setVersion()`, `__call()`, `execute()`, `getParams()`, `getParamInfo()`, `getEntity()`, `getAction()`, `offsetExists()`, `offsetGet()`, `offsetSet()`, `offsetUnset()`, `baoToArray()`
 
@@ -914,16 +914,16 @@ Params:
 ```
 
 
-###<a name='delete_example_hook_calls'></a>Hook calls [:house:](index.md)
+### <a name='delete_example_hook_calls'></a>Hook calls [:house:](index.md)
 
 * [civicrm_apiWrappers](https://docs.civicrm.org/dev/en/master/hooks/hook_civicrm_civicrm_apiWrappers/) 2
 
-##<a name='action_getActions'></a>Action Participant.getActions [:house:](index.md)
+## <a name='action_getActions'></a>Action Participant.getActions [:house:](index.md)
 
 Get actions for an entity with a list of accepted params
 
 
-###<a name='getActions_params'></a>Params [:house:](index.md)
+### <a name='getActions_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -934,12 +934,12 @@ Get actions for an entity with a list of accepted params
 * **options** (`array`: `[]`)
   Rarely used options.
 
-##<a name='action_getFields'></a>Action Participant.getFields [:house:](index.md)
+## <a name='action_getFields'></a>Action Participant.getFields [:house:](index.md)
 
 Get fields for an entity
 
 
-###<a name='getFields_params'></a>Params [:house:](index.md)
+### <a name='getFields_params'></a>Params [:house:](index.md)
 
 * **checkPermissions** (`??`: `false`)
   ??
@@ -950,12 +950,12 @@ Get fields for an entity
 * **options** (`array`: `[]`)
   Rarely used options.
 
-##<a name='action_update'></a>Action Participant.update [:house:](index.md)
+## <a name='action_update'></a>Action Participant.update [:house:](index.md)
 
 Here's an idea... if we use one action to extend another, "update" inherits all the abilities of "get"
 
 
-###<a name='update_params'></a>Params [:house:](index.md)
+### <a name='update_params'></a>Params [:house:](index.md)
 
 * **values** (`array`: `[]`)
   Field values to set
@@ -980,10 +980,10 @@ In REST/javascript this cannot be disabled.
 * **options** (`array`: `[]`)
   Rarely used options.
 
-##<a name='fields'></a>Participant Fields [:house:](index.md)
+## <a name='fields'></a>Participant Fields [:house:](index.md)
 
 
-###<a name='field_id'></a>id [:house:](index.md)
+### <a name='field_id'></a>id [:house:](index.md)
 
 ```
 {
@@ -1003,7 +1003,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_contact_id'></a>contact_id [:house:](index.md)
+### <a name='field_contact_id'></a>contact_id [:house:](index.md)
 
 ```
 {
@@ -1024,7 +1024,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_event_id'></a>event_id [:house:](index.md)
+### <a name='field_event_id'></a>event_id [:house:](index.md)
 
 ```
 {
@@ -1045,7 +1045,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_status_id'></a>status_id [:house:](index.md)
+### <a name='field_status_id'></a>status_id [:house:](index.md)
 
 ```
 {
@@ -1075,7 +1075,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_role_id'></a>role_id [:house:](index.md)
+### <a name='field_role_id'></a>role_id [:house:](index.md)
 
 ```
 {
@@ -1104,7 +1104,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_register_date'></a>register_date [:house:](index.md)
+### <a name='field_register_date'></a>register_date [:house:](index.md)
 
 ```
 {
@@ -1127,7 +1127,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_source'></a>source [:house:](index.md)
+### <a name='field_source'></a>source [:house:](index.md)
 
 ```
 {
@@ -1148,7 +1148,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_fee_level'></a>fee_level [:house:](index.md)
+### <a name='field_fee_level'></a>fee_level [:house:](index.md)
 
 ```
 {
@@ -1167,7 +1167,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_is_test'></a>is_test [:house:](index.md)
+### <a name='field_is_test'></a>is_test [:house:](index.md)
 
 ```
 {
@@ -1185,7 +1185,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_is_pay_later'></a>is_pay_later [:house:](index.md)
+### <a name='field_is_pay_later'></a>is_pay_later [:house:](index.md)
 
 ```
 {
@@ -1203,7 +1203,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_fee_amount'></a>fee_amount [:house:](index.md)
+### <a name='field_fee_amount'></a>fee_amount [:house:](index.md)
 
 ```
 {
@@ -1226,7 +1226,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_registered_by_id'></a>registered_by_id [:house:](index.md)
+### <a name='field_registered_by_id'></a>registered_by_id [:house:](index.md)
 
 ```
 {
@@ -1247,7 +1247,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_discount_id'></a>discount_id [:house:](index.md)
+### <a name='field_discount_id'></a>discount_id [:house:](index.md)
 
 ```
 {
@@ -1263,7 +1263,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_fee_currency'></a>fee_currency [:house:](index.md)
+### <a name='field_fee_currency'></a>fee_currency [:house:](index.md)
 
 ```
 {
@@ -1294,7 +1294,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_campaign_id'></a>campaign_id [:house:](index.md)
+### <a name='field_campaign_id'></a>campaign_id [:house:](index.md)
 
 ```
 {
@@ -1319,7 +1319,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_discount_amount'></a>discount_amount [:house:](index.md)
+### <a name='field_discount_amount'></a>discount_amount [:house:](index.md)
 
 ```
 {
@@ -1333,7 +1333,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_cart_id'></a>cart_id [:house:](index.md)
+### <a name='field_cart_id'></a>cart_id [:house:](index.md)
 
 ```
 {
@@ -1348,7 +1348,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_must_wait'></a>must_wait [:house:](index.md)
+### <a name='field_must_wait'></a>must_wait [:house:](index.md)
 
 ```
 {
@@ -1362,7 +1362,7 @@ In REST/javascript this cannot be disabled.
 }
 ```
 
-###<a name='field_transferred_to_contact_id'></a>transferred_to_contact_id [:house:](index.md)
+### <a name='field_transferred_to_contact_id'></a>transferred_to_contact_id [:house:](index.md)
 
 ```
 {

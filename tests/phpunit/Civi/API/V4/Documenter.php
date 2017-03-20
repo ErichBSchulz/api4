@@ -31,7 +31,7 @@ class Documenter  {
     // check we're on updated branch:
     $permissions =
       method_exists('CRM_Core_Permission', 'getEntityActionPermissions')
-      ? CRM_Core_Permission::getEntityActionPermissions()
+      ? \CRM_Core_Permission::getEntityActionPermissions()
       : array();
     $key_perms = array('create', 'get', 'update', 'delete', 'default');
     $string .= "Entity | " . implode(' | ', $key_perms) . " | Default\n";

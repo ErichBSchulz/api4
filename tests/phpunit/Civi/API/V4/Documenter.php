@@ -26,6 +26,30 @@ class Documenter  {
    * @returns string
    */
   public function permissions() {
+    // make pretty display of permission array
+    $format = function($p) {
+      if (count($p)) {
+        $res = array();
+        if (count($p) > 1) {
+          // need brackets if more than one permission
+          $ob = "(";
+          $cb = ")";
+        }
+        else {
+          $ob = "";
+          $cb = "";
+        }
+        foreach ($p as $perm) {
+          $res[] = is_array($perm)
+            ? $ob . '"' . implode('" OR "', $perm) . '"' . $cb
+            : '"' . $perm . '"';
+        }
+        return implode(' AND ', $res);
+      }
+      else {
+        return '-';
+      }
+    };
     $file = $this->permission_file;
     $string = $this->heading(1, $file, "Permissions");
     // check we're on updated branch:
@@ -33,21 +57,26 @@ class Documenter  {
       method_exists('CRM_Core_Permission', 'getEntityActionPermissions')
       ? \CRM_Core_Permission::getEntityActionPermissions()
       : array();
-    $key_perms = array('create', 'get', 'update', 'delete', 'default');
-    $string .= "Entity | " . implode(' | ', $key_perms) . " | Default\n";
+    $key_perms = array('create', 'get', 'update', 'delete', 'meta', 'default');
+    $string .= "Entity | " . implode(' | ', $key_perms) . " | Others\n";
     $string .= "------ " . str_repeat(' | -----', count($key_perms)+ 1) . "\n";
     foreach ($permissions as $entity => $perm) {
       $string .= $entity;
       $perm += $permissions['default'];
       foreach ($key_perms as $action) {
         $string .= " | "
-          . json_encode(isset($perm[$action])
+          . $format(isset($perm[$action])
             ? $perm[$action]
             : $perm['default']);
         unset($perm[$action]);
       }
       // add in the left-overs:
-      $string .= " | " . (count($perm ? json_encode($perm) : '')) . "\n";
+      $string .= " | ";
+      foreach ($perm as $action => $action_perm) {
+        $string .= "[$action: "
+        . $format($action_perm) . "] ";
+      }
+      $string .= "\n";
     }
     return $string;
   }

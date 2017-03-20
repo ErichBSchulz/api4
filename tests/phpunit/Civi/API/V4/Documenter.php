@@ -8,6 +8,7 @@ class Documenter  {
 
   public $preamble = '# CiviCRM API V4';
   public $event_file = 'event_listeners';
+  public $permission_file = 'permissions';
 
   public $footer = '###### This file was automatically generated. Do not edit directly.';
 
@@ -18,6 +19,37 @@ class Documenter  {
   public function __construct($path) {
     $this->path = $path;
     $this->index_file = 'index.md';
+  }
+
+  /**
+   * Create an index of event handlers
+   * @returns string
+   */
+  public function permissions() {
+    $file = $this->permission_file;
+    $string = $this->heading(1, $file, "Permissions");
+    // check we're on updated branch:
+    $permissions =
+      method_exists('CRM_Core_Permission', 'getEntityActionPermissions')
+      ? CRM_Core_Permission::getEntityActionPermissions()
+      : array();
+    $key_perms = array('create', 'get', 'update', 'delete', 'default');
+    $string .= "Entity | " . implode(' | ', $key_perms) . " | Default\n";
+    $string .= "------ " . str_repeat(' | -----', count($key_perms)+ 1) . "\n";
+    foreach ($permissions as $entity => $perm) {
+      $string .= $entity;
+      $perm += $permissions['default'];
+      foreach ($key_perms as $action) {
+        $string .= " | "
+          . json_encode(isset($perm[$action])
+            ? $perm[$action]
+            : $perm['default']);
+        unset($perm[$action]);
+      }
+      // add in the left-overs:
+      $string .= " | " . (count($perm ? json_encode($perm) : '')) . "\n";
+    }
+    return $string;
   }
 
   /**
@@ -122,7 +154,9 @@ class Documenter  {
    */
   public function blobToMarkDown($blob) {
     $index = $this->preamble . "\n\n";
-    $index .= $this->link($this->event_file, "Listeners");
+    $index .= $this->link($this->event_file, "Listeners")
+      .  " | "
+      . $this->link($this->permission_file, "Permissions") . "\n\n";
     $index .= "Entity | Actions | Fields\n";
     $index .= "------ | ------- | ------\n";
     foreach ($blob['entity'] as $entity => $entity_blob) {
@@ -259,6 +293,7 @@ class Documenter  {
     }
     $this->write($this->index_file, $index);
     $this->write($this->event_file . '.md', $this->eventListeners());
+    $this->write($this->permission_file . '.md', $this->permissions());
   }
 
 }

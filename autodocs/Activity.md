@@ -43,7 +43,7 @@ This is the example derived from the unit tests. A log
 {
     "Values": {
         "subject": "unit testing",
-        "source_contact_id": "1557"
+        "source_contact_id": "25"
     }
 }
 ```
@@ -52,7 +52,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 3169,
+    "id": 47,
     "source_record_id": null,
     "activity_type_id": null,
     "subject": "unit testing",
@@ -104,7 +104,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1557"
+        "source_contact_id": "25"
     },
     "bao": {
         "id": null,
@@ -136,8 +136,8 @@ Params:
         "__table": "civicrm_activity",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -183,7 +183,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1557"
+        "source_contact_id": "25"
     },
     "bao": {
         "id": null,
@@ -215,8 +215,8 @@ Params:
         "__table": "civicrm_activity",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -262,7 +262,7 @@ Params:
 {
     "values": {
         "subject": "unit testing",
-        "source_contact_id": "1557"
+        "source_contact_id": "25"
     },
     "bao": {
         "id": null,
@@ -294,8 +294,8 @@ Params:
         "__table": "civicrm_activity",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -376,7 +376,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        3169
+        47
     ]
 }
 ```
@@ -385,7 +385,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "3169"
+    "0": "47"
 }
 ```
 
@@ -421,7 +421,7 @@ Params:
         [
             "id",
             "=",
-            3169
+            47
         ]
     ],
     "orderBy": [
@@ -464,7 +464,7 @@ Params:
         [
             "id",
             "=",
-            3169
+            47
         ]
     ],
     "orderBy": [
@@ -591,7 +591,7 @@ Params:
         [
             "id",
             "=",
-            3169
+            47
         ]
     ],
     "orderBy": [
@@ -655,7 +655,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        3169
+        47
     ]
 }
 ```
@@ -664,8 +664,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "3169": {
-        "id": "3169",
+    "47": {
+        "id": "47",
         "activity_type_id": "1",
         "subject": "unit testing",
         "status_id": "1",
@@ -711,7 +711,7 @@ Params:
         [
             "id",
             "=",
-            3169
+            47
         ]
     ],
     "orderBy": [
@@ -754,7 +754,7 @@ Params:
         [
             "id",
             "=",
-            3169
+            47
         ]
     ],
     "orderBy": [
@@ -881,7 +881,7 @@ Params:
         [
             "id",
             "=",
-            3169
+            47
         ]
     ],
     "orderBy": [

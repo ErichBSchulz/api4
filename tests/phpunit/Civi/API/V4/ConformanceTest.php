@@ -122,6 +122,7 @@ class ConformanceTest extends UnitTestCase {
     foreach ($entities as $entity) {
       $entity_blob = array('core_action' => array());
       $entity_class = 'Civi\Api4\\' . $entity;
+      echo '$entity_class: '.json_encode($entity_class,JSON_PRETTY_PRINT)."\n";
       $actions = $entity_class::getActions()
         ->setCheckPermissions(FALSE)
         ->execute()

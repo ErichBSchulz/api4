@@ -54,7 +54,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": "1558",
+    "id": "26",
     "contact_type": "Individual",
     "contact_sub_type": null,
     "do_not_email": "0",
@@ -73,7 +73,7 @@ This is the example derived from the unit tests. A log
     "preferred_communication_method": "",
     "preferred_language": null,
     "preferred_mail_format": "Both",
-    "hash": "18bacec8ffe67aa211ad1ed557e3a442",
+    "hash": "b27593aca47d61794f5d7bdfd88f6ad3",
     "api_key": null,
     "source": null,
     "first_name": "Anthony",
@@ -104,8 +104,8 @@ This is the example derived from the unit tests. A log
     "user_unique_id": null,
     "employer_id": null,
     "is_deleted": "0",
-    "created_date": "2017-03-19 05:09:28",
-    "modified_date": "2017-03-19 05:09:28"
+    "created_date": "2017-03-20 06:04:48",
+    "modified_date": "2017-03-20 06:04:48"
 }
 ```
 
@@ -200,8 +200,8 @@ Params:
         "__table": "civicrm_contact",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -308,8 +308,8 @@ Params:
         "__table": "civicrm_contact",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -629,8 +629,8 @@ Params:
         "__table": "civicrm_contact",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -711,7 +711,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1558"
+        "26"
     ]
 }
 ```
@@ -720,7 +720,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "1558"
+    "0": "26"
 }
 ```
 
@@ -756,7 +756,7 @@ Params:
         [
             "id",
             "=",
-            "1558"
+            "26"
         ]
     ],
     "orderBy": [
@@ -799,7 +799,7 @@ Params:
         [
             "id",
             "=",
-            "1558"
+            "26"
         ]
     ],
     "orderBy": [
@@ -926,7 +926,7 @@ Params:
         [
             "id",
             "=",
-            "1558"
+            "26"
         ]
     ],
     "orderBy": [
@@ -990,7 +990,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        "1558"
+        "26"
     ]
 }
 ```
@@ -999,8 +999,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "1558": {
-        "id": "1558",
+    "26": {
+        "id": "26",
         "contact_type": "Individual",
         "do_not_email": "0",
         "do_not_phone": "0",
@@ -1009,7 +1009,7 @@ This is the example derived from the unit tests. A log
         "do_not_trade": "0",
         "is_opt_out": "0",
         "preferred_mail_format": "Both",
-        "hash": "18bacec8ffe67aa211ad1ed557e3a442",
+        "hash": "b27593aca47d61794f5d7bdfd88f6ad3",
         "first_name": "Anthony",
         "middle_name": "J.",
         "last_name": "Anderson",
@@ -1021,8 +1021,8 @@ This is the example derived from the unit tests. A log
         "addressee_display": "Anthony J. Anderson",
         "is_deceased": "0",
         "is_deleted": "0",
-        "created_date": "2017-03-19 05:09:28",
-        "modified_date": "2017-03-19 05:09:29"
+        "created_date": "2017-03-20 06:04:48",
+        "modified_date": "2017-03-20 06:04:48"
     }
 }
 ```
@@ -1059,7 +1059,7 @@ Params:
         [
             "id",
             "=",
-            "1558"
+            "26"
         ]
     ],
     "orderBy": [
@@ -1102,7 +1102,7 @@ Params:
         [
             "id",
             "=",
-            "1558"
+            "26"
         ]
     ],
     "orderBy": [
@@ -1229,7 +1229,7 @@ Params:
         [
             "id",
             "=",
-            "1558"
+            "26"
         ]
     ],
     "orderBy": [

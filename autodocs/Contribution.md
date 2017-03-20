@@ -42,7 +42,7 @@ This is the example derived from the unit tests. A log
 ```
 {
     "Values": {
-        "contact_id": "1559",
+        "contact_id": "27",
         "financial_type_id": 1,
         "total_amount": 7.3
     }
@@ -53,8 +53,8 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "id": 146,
-    "contact_id": "1559",
+    "id": 3,
+    "contact_id": "27",
     "financial_type_id": 1,
     "contribution_page_id": null,
     "payment_instrument_id": 4,
@@ -123,7 +123,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1559",
+        "contact_id": "27",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -166,8 +166,8 @@ Params:
         "__table": "civicrm_contribution",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -212,7 +212,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1559",
+        "contact_id": "27",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -255,8 +255,8 @@ Params:
         "__table": "civicrm_contribution",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -1283,7 +1283,7 @@ Params:
 ```
 {
     "values": {
-        "contact_id": "1559",
+        "contact_id": "27",
         "financial_type_id": 1,
         "total_amount": 7.3
     },
@@ -1326,8 +1326,8 @@ Params:
         "__table": "civicrm_contribution",
         "N": 0,
         "_database_dsn": "",
-        "_database_dsn_md5": "97f7f719d00a15909bb4f8878bafc59b",
-        "_database": "dmastertes_migqg",
+        "_database_dsn_md5": "60e21cc13bd5b021d4be7b003fe823ae",
+        "_database": "dmastertes_jieh8",
         "_query": {
             "condition": "",
             "group_by": "",
@@ -1413,7 +1413,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        146
+        3
     ]
 }
 ```
@@ -1422,7 +1422,7 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "0": "146"
+    "0": "3"
 }
 ```
 
@@ -1458,7 +1458,7 @@ Params:
         [
             "id",
             "=",
-            146
+            3
         ]
     ],
     "orderBy": [
@@ -1501,7 +1501,7 @@ Params:
         [
             "id",
             "=",
-            146
+            3
         ]
     ],
     "orderBy": [
@@ -1628,7 +1628,7 @@ Params:
         [
             "id",
             "=",
-            146
+            3
         ]
     ],
     "orderBy": [
@@ -1692,7 +1692,7 @@ This is the example derived from the unit tests. A log
     "Clause": [
         "id",
         "=",
-        146
+        3
     ]
 }
 ```
@@ -1701,9 +1701,9 @@ This is the example derived from the unit tests. A log
 
 ```
 {
-    "146": {
-        "id": "146",
-        "contact_id": "1559",
+    "3": {
+        "id": "3",
+        "contact_id": "27",
         "financial_type_id": "1",
         "payment_instrument_id": "4",
         "non_deductible_amount": "0.00",
@@ -1750,7 +1750,7 @@ Params:
         [
             "id",
             "=",
-            146
+            3
         ]
     ],
     "orderBy": [
@@ -1793,7 +1793,7 @@ Params:
         [
             "id",
             "=",
-            146
+            3
         ]
     ],
     "orderBy": [
@@ -1920,7 +1920,7 @@ Params:
         [
             "id",
             "=",
-            146
+            3
         ]
     ],
     "orderBy": [
